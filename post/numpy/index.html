@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://aixin.me/favicon.ico?v=1573038259058">
+<link rel="shortcut icon" href="http://aixin.me/favicon.ico?v=1573038417108">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://aixin.me/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="site-header">
     <div class="left">
       <a href="http://aixin.me">
-        <img class="avatar" src="http://aixin.me/images/avatar.png?v=1573038259058" alt="" width="32px" height="32px">
+        <img class="avatar" src="http://aixin.me/images/avatar.png?v=1573038417108" alt="" width="32px" height="32px">
       </a>
       <a href="http://aixin.me">
         <h1 class="site-title">Aixin</h1>
@@ -119,25 +119,29 @@ array([3, 5])
 </code></pre>
 <p>生成随机整数</p>
 <blockquote>
-<p>numpy.random.randint(low, high=None, size=None, dtype='l')<br>
-示例</p>
+<p>numpy.random.randint(low, high=None, size=None, dtype='l')</p>
 </blockquote>
+<p>示例</p>
 <pre><code>np.random.randint(2, size=10)
 array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])
 np.random.randint(1, size=10)
 array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 </code></pre>
-<p>随机排列<br>
-np.random.shuffle(x)</p>
+<p>随机排列</p>
+<blockquote>
+<p>np.random.shuffle(x)</p>
+</blockquote>
 <p>示例</p>
 <pre><code>arr = np.arange(10)
 np.random.shuffle(arr)
 arr
 [1 7 5 2 9 4 3 6 0 8]
 </code></pre>
-<p>随机采样<br>
-numpy.random.choice(a, size=None, replace=True, p=None)<br>
-示例</p>
+<p>随机采样</p>
+<blockquote>
+<p>numpy.random.choice(a, size=None, replace=True, p=None)</p>
+</blockquote>
+<p>示例</p>
 <pre><code>np.random.choice(5, 3)
 array([0, 3, 4])
 #This is equivalent to np.random.randint(0,5,3)
