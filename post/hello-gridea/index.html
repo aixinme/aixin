@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>Numpy学习笔记 | Aixin</title>
+<meta name="description" content="aixin.me">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1573035452831">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="http://localhost:4000">
+        <img class="avatar" src="http://localhost:4000/images/avatar.png?v=1573035452831" alt="" width="32px" height="32px">
+      </a>
+      <a href="http://localhost:4000">
+        <h1 class="site-title">Aixin</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Numpy学习笔记</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2018-12-12</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="http://localhost:4000/tag/DgekKZJCP">
+                    Gridea
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>生成数组<br>
+numpy.arange([start, ]stop, [step, ]dtype=None)<br>
+示例</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>np.arange(3)<br>
+array([0, 1, 2])</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>np.arange(3.0)<br>
+array([ 0.,  1.,  2.])</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>np.arange(3,7)<br>
+array([3, 4, 5, 6])</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>np.arange(3,7,2)<br>
+array([3, 5])<br>
+生成随机整数<br>
+numpy.random.randint(low, high=None, size=None, dtype='l')<br>
+示例</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>np.random.randint(2, size=10)<br>
+array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>np.random.randint(1, size=10)<br>
+array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])<br>
+随机排列<br>
+np.random.shuffle(x)<br>
+示例</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>arr = np.arange(10)<br>
+np.random.shuffle(arr)<br>
+arr<br>
+[1 7 5 2 9 4 3 6 0 8]<br>
+随机采样<br>
+numpy.random.choice(a, size=None, replace=True, p=None)<br>
+示例</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>np.random.choice(5, 3)<br>
+array([0, 3, 4])</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>#This is equivalent to np.random.randint(0,5,3)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">aixin.me</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  心中有爱，遇见更好的自己 | <a class="rss" href="http://localhost:4000/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
