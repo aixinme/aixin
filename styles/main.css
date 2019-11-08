@@ -1,8 +1,8 @@
 :root {
   --c-base-black: #0C1E29;
   --c-base-blacklight: #4E616C;
-  --c-base-purple: #5978F3;
-  --c-base-purplelight: #C2CCF2;
+  --c-base-purple: #c5363c;
+  --c-base-purplelight: #dc8487;
   --c-base-bluelight: hwb(199, 1%, 4%);
   --c-base-blue: hwb(209, 0%, 35%);
   --c-base-green: hwb(123, 40%, 27%);
@@ -1163,7 +1163,7 @@ a:active,
 }
 a.purple-link {
   position: relative;
-  background: linear-gradient(180deg, transparent 70%, rgba(101, 125, 225, 0.4) 0);
+  background: linear-gradient(180deg, transparent 70%, #f3d5d6 0);
 }
 .main {
   max-width: 768px;
