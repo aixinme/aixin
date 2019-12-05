@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://aixin.me</id>
     <title>Aixin.me</title>
-    <updated>2019-12-05T08:04:31.029Z</updated>
+    <updated>2019-12-05T08:06:08.759Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://aixin.me"/>
     <link rel="self" href="http://aixin.me/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2019, Aixin.me</rights>
     <entry>
         <title type="html"><![CDATA[Spring Boot 入门指南]]></title>
-        <id>http://aixin.me/post/spring-boot-ru-men-zhi-nan</id>
-        <link href="http://aixin.me/post/spring-boot-ru-men-zhi-nan">
+        <id>http://aixin.me/post/spring-boot-getting-started</id>
+        <link href="http://aixin.me/post/spring-boot-getting-started">
         </link>
         <updated>2019-12-05T07:44:55.000Z</updated>
     </entry>
