@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://aixin.me/favicon.ico?v=1575533527679">
+<link rel="shortcut icon" href="http://aixin.me/favicon.ico?v=1575534126623">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://aixin.me/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="site-header">
     <div class="left">
       <a href="http://aixin.me">
-        <img class="avatar" src="http://aixin.me/images/avatar.png?v=1575533527679" alt="" width="32px" height="32px">
+        <img class="avatar" src="http://aixin.me/images/avatar.png?v=1575534126623" alt="" width="32px" height="32px">
       </a>
       <a href="http://aixin.me">
         <h1 class="site-title">Aixin.me</h1>
@@ -148,8 +148,67 @@
 <p>虽然您可以复制Spring Boot jar，但我们通常建议您使用支持依赖管理的构建工具（如Maven或Gradle）。</p>
 </li>
 <li>
-<p>安装方法二、使用Maven安装</p>
+<p>安装方法二、使用Maven安装<br>
+Maven版本最低要求3.3+，前提是先要安装Maven（https://maven.apache.org/）。<br>
+或者通过IDE安装Maven插件<br>
+Spring Boot依赖关系使用org.springframework.bootgroupId。通常，您的Maven POM文件从spring-boot-starter-parent项目中继承并向一个或多个“Starter”声明依赖关系。Spring Boot还提供了一个可选的 Maven插件来创建可执行的jar。<br>
+以下清单显示了一个典型的pom.xml文件：</p>
 </li>
+</ol>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;groupId&gt;com.example&lt;/groupId&gt;
+    &lt;artifactId&gt;myproject&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+
+    &lt;!-- Inherit defaults from Spring Boot --&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+        &lt;version&gt;2.2.1.RELEASE&lt;/version&gt;
+    &lt;/parent&gt;
+
+    &lt;!-- Override inherited settings --&gt;
+    &lt;description/&gt;
+    &lt;developers&gt;
+        &lt;developer/&gt;
+    &lt;/developers&gt;
+    &lt;licenses&gt;
+        &lt;license/&gt;
+    &lt;/licenses&gt;
+    &lt;scm&gt;
+        &lt;url/&gt;
+    &lt;/scm&gt;
+    &lt;url/&gt;
+
+    &lt;!-- Add typical dependencies for a web application --&gt;
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+    &lt;!-- Package as an executable jar --&gt;
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+
+&lt;/project&gt;
+</code></pre>
+<blockquote>
+<p><code>spring-boot-starter-parent</code>方法虽然很好，但不是适合所有场景。</p>
+</blockquote>
+<ol start="3">
+<li>安装方法三、使用Gradle安装</li>
 </ol>
 
           </div>
