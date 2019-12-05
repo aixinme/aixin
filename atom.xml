@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://aixin.me</id>
     <title>Aixin.me</title>
-    <updated>2019-12-05T07:40:35.937Z</updated>
+    <updated>2019-12-05T08:04:31.029Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://aixin.me"/>
     <link rel="self" href="http://aixin.me/atom.xml"/>
@@ -11,54 +11,17 @@
     <icon>http://aixin.me/favicon.ico</icon>
     <rights>All rights reserved 2019, Aixin.me</rights>
     <entry>
+        <title type="html"><![CDATA[Spring Boot 入门指南]]></title>
+        <id>http://aixin.me/post/spring-boot-ru-men-zhi-nan</id>
+        <link href="http://aixin.me/post/spring-boot-ru-men-zhi-nan">
+        </link>
+        <updated>2019-12-05T07:44:55.000Z</updated>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Numpy学习笔记]]></title>
         <id>http://aixin.me/post/numpy</id>
         <link href="http://aixin.me/post/numpy">
         </link>
         <updated>2019-11-06T11:02:30.000Z</updated>
-        <content type="html"><![CDATA[<p>生成数组</p>
-<blockquote>
-<p>numpy.arange([start, ]stop, [step, ]dtype=None)</p>
-</blockquote>
-<p>示例</p>
-<pre><code>np.arange(3)
-array([0, 1, 2])
-np.arange(3.0)
-array([ 0.,  1.,  2.])
-np.arange(3,7)
-array([3, 4, 5, 6])
-np.arange(3,7,2)
-array([3, 5])
-</code></pre>
-<p>生成随机整数</p>
-<blockquote>
-<p>numpy.random.randint(low, high=None, size=None, dtype='l')</p>
-</blockquote>
-<p>示例</p>
-<pre><code>np.random.randint(2, size=10)
-array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])
-np.random.randint(1, size=10)
-array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-</code></pre>
-<p>随机排列</p>
-<blockquote>
-<p>np.random.shuffle(x)</p>
-</blockquote>
-<p>示例</p>
-<pre><code>arr = np.arange(10)
-np.random.shuffle(arr)
-arr
-[1 7 5 2 9 4 3 6 0 8]
-</code></pre>
-<p>随机采样</p>
-<blockquote>
-<p>numpy.random.choice(a, size=None, replace=True, p=None)</p>
-</blockquote>
-<p>示例</p>
-<pre><code>np.random.choice(5, 3)
-array([0, 3, 4])
-#This is equivalent to np.random.randint(0,5,3)
-</code></pre>
-]]></content>
     </entry>
 </feed>
