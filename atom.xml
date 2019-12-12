@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://aixin.me</id>
     <title>Aixin.me</title>
-    <updated>2019-12-12T05:42:59.929Z</updated>
+    <updated>2019-12-12T05:43:13.294Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://aixin.me"/>
     <link rel="self" href="http://aixin.me/atom.xml"/>
