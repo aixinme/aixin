@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://aixin.me</id>
     <title>Aixin.me</title>
-    <updated>2019-12-17T08:03:37.941Z</updated>
+    <updated>2019-12-20T07:53:05.970Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://aixin.me"/>
     <link rel="self" href="http://aixin.me/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>http://aixin.me/images/avatar.png</logo>
     <icon>http://aixin.me/favicon.ico</icon>
     <rights>All rights reserved 2019, Aixin.me</rights>
+    <entry>
+        <title type="html"><![CDATA[MACD 平滑异同移动平均指标]]></title>
+        <id>http://aixin.me/post/macd</id>
+        <link href="http://aixin.me/post/macd">
+        </link>
+        <updated>2019-12-20T07:46:45.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[量化交易相关名词解释]]></title>
         <id>http://aixin.me/post/quantitative-trading-learning</id>
