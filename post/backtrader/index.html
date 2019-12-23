@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://aixin.me/favicon.ico?v=1577077810137">
+<link rel="shortcut icon" href="http://aixin.me/favicon.ico?v=1577100078169">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://aixin.me/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="site-header">
     <div class="left">
       <a href="http://aixin.me">
-        <img class="avatar" src="http://aixin.me/images/avatar.png?v=1577077810137" alt="" width="32px" height="32px">
+        <img class="avatar" src="http://aixin.me/images/avatar.png?v=1577100078169" alt="" width="32px" height="32px">
       </a>
       <a href="http://aixin.me">
         <h1 class="site-title">Aixin.me</h1>
@@ -128,6 +128,16 @@ if __name__ == '__main__':
 <p>Final Portfolio Value: 100.00</p>
 </blockquote>
 <h5 id="2-添加数据">2、添加数据</h5>
+<blockquote>
+<p><code>os.path.dirname</code> 当前文件的绝对路劲目录（不包含文件名）<br>
+<code>__file__</code> 当前文件绝对路劲+文件名<br>
+<code>os.path.abspath(path)</code> 输出绝对路劲、当前目录、上级目录等（反斜杠）<br>
+<code>sys.argv[0]</code> 当前文件绝对路劲+文件名（本地目录，正斜杠，用的时候需要转化成反斜杠）</p>
+<pre><code>print(sys.argv[0]) #输出：D:/python/futures/macd.py
+print(os.path.abspath(sys.argv[0])) #输出：D:\python\futures\macd.py
+print(os.path.dirname(os.path.abspath(sys.argv[0]))) #输出：D:\python\futures
+</code></pre>
+</blockquote>
 
           </div>
         </div>
