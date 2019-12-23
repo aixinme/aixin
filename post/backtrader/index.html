@@ -5,7 +5,7 @@
     
 <meta charset="utf-8" >
 
-<title>Numpy学习笔记 | Aixin.me</title>
+<title>backtrader学习笔记 | Aixin.me</title>
 <meta name="description" content="aixin.me">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -80,22 +80,22 @@
       <div class="content-container">
         <div class="post-detail">
           
-          <h2 class="post-title">Numpy学习笔记</h2>
+          <h2 class="post-title">backtrader学习笔记</h2>
           <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-11-06</span>
+            <span><i class="icon-calendar-outline"></i> 2019-12-23</span>
             
               <span>
                 <i class="icon-pricetags-outline"></i>
                 
-                  <a href="http://aixin.me/tag/python">
-                    Python
+                  <a href="http://aixin.me/tag/quantitative-trading">
+                    量化交易
                     
                       ，
                     
                   </a>
                 
-                  <a href="http://aixin.me/tag/numpy">
-                    Numpy
+                  <a href="http://aixin.me/tag/python">
+                    Python
                     
                   </a>
                 
@@ -103,54 +103,44 @@
             
           </div>
           <div class="post-content">
-            <p>生成数组</p>
-<blockquote>
-<p>numpy.arange([start, ]stop, [step, ]dtype=None)</p>
-</blockquote>
-<p>示例</p>
-<pre><code>np.arange(3)
-array([0, 1, 2])
-np.arange(3.0)
-array([ 0.,  1.,  2.])
-np.arange(3,7)
-array([3, 4, 5, 6])
-np.arange(3,7,2)
-array([3, 5])
+            <h4 id="一-安装backtrader">一、安装backtrader</h4>
+<p>通过pip安装或者pycharm直接安装即可</p>
+<h4 id="二-backtrader用法">二、backtrader用法</h4>
+<h5 id="1-基本功能">1、基本功能</h5>
+<pre><code class="language-python">from __future__ import (absolute_import, division, print_function,unicode_literals) #让python2兼容python3，python3环境下可以不用写
+
+#引入backtrader
+import backtrader as bt
+
+if __name__ == '__main__':
+    cerebro = bt.Cerebro()
+    cerebro.broker.setcash(100.0) #可以自定义金额
+
+    print('Starting Portfolio Value: %.2f' % cerebro.broker.getvalue())
+
+    cerebro.run()
+
+    print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue())
 </code></pre>
-<p>生成随机整数</p>
+<p>执行结果：</p>
 <blockquote>
-<p>numpy.random.randint(low, high=None, size=None, dtype='l')</p>
+<p>Starting Portfolio Value: 100.00</p>
+<p>Final Portfolio Value: 100.00</p>
 </blockquote>
-<p>示例</p>
-<pre><code>np.random.randint(2, size=10)
-array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])
-np.random.randint(1, size=10)
-array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-</code></pre>
-<p>随机排列</p>
-<blockquote>
-<p>np.random.shuffle(x)</p>
-</blockquote>
-<p>示例</p>
-<pre><code>arr = np.arange(10)
-np.random.shuffle(arr)
-arr
-[1 7 5 2 9 4 3 6 0 8]
-</code></pre>
-<p>随机采样</p>
-<blockquote>
-<p>numpy.random.choice(a, size=None, replace=True, p=None)</p>
-</blockquote>
-<p>示例</p>
-<pre><code>np.random.choice(5, 3)
-array([0, 3, 4])
-#This is equivalent to np.random.randint(0,5,3)
-</code></pre>
+<h5 id="2-添加数据">2、添加数据</h5>
 
           </div>
         </div>
 
         
+          <div class="next-post">
+            <a class="purple-link" href="http://aixin.me/post/moving-average">
+              <h3 class="post-title">
+                下一篇：MA/SMA/EMA
+              </h3>
+            </a>
+          </div>
+          
       </div>
 
       

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://aixin.me</id>
     <title>Aixin.me</title>
-    <updated>2019-12-20T10:16:39.551Z</updated>
+    <updated>2019-12-23T05:10:12.565Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://aixin.me"/>
     <link rel="self" href="http://aixin.me/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>http://aixin.me/images/avatar.png</logo>
     <icon>http://aixin.me/favicon.ico</icon>
     <rights>All rights reserved 2019, Aixin.me</rights>
+    <entry>
+        <title type="html"><![CDATA[backtrader学习笔记]]></title>
+        <id>http://aixin.me/post/backtrader</id>
+        <link href="http://aixin.me/post/backtrader">
+        </link>
+        <updated>2019-12-23T02:17:48.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[MA/SMA/EMA]]></title>
         <id>http://aixin.me/post/moving-average</id>
