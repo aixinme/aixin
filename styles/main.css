@@ -1219,12 +1219,13 @@ a.purple-link {
 .post-item .feature-container {
   margin-left: 16px;
   flex-shrink: 0;
-  width: 240px;
-  height: 135px;
+  width: 100px;
+  height: 75px;
   position: relative;
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  border-radius: 4px;
 }
 .post-info {
   color: var(--c-base-purple);
