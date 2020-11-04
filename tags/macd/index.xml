@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MACD on Aixin.me</title>
+    <link>https://aixin.me/tags/macd/</link>
+    <description>Recent content in MACD on Aixin.me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 20 Dec 2019 15:46:45 +0000</lastBuildDate><atom:link href="https://aixin.me/tags/macd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MACD 平滑异同移动平均指标</title>
+      <link>https://aixin.me/post/macd/</link>
+      <pubDate>Fri, 20 Dec 2019 15:46:45 +0000</pubDate>
+      
+      <guid>https://aixin.me/post/macd/</guid>
+      <description>MACD原理介绍 MACD(Moving Average Convergence Divergence),是根据均线的构造原理，对股票价格的收盘价进行平滑处理，求出算术平均值以后再进行计算，是一种趋向类指标。
+MACD指标是运用快速（短期）和慢速（长期）移动平均线及其聚合与分离的征兆，加以双重平滑运算。而根据移动平均线原理发展出来的MACD，一则去除了移动平均线频繁发出假信号的缺陷，二则保留了移动平均线的效果，因此，MACD指标具有均线趋势性、稳重性、安定性等特点，是用来研判买卖股票的时机，预测股票价格涨跌的技术分析指标 。
+MACD指标主要是通过EMA、DIF和DEA（或叫MACD、DEM）这三值之间关系的研判，DIF和DEA连接起来的移动平均线的研判以及DIF减去DEM值而绘制成的柱状图（BAR）的研判等来分析判断行情，预测股价中短期趋势的主要的股市技术分析指标。其中，DIF是核心，DEA是辅助。DIF是快速平滑移动平均线（EMA1）和慢速平滑移动平均线（EMA2）的差。BAR柱状图在股市技术软件上是用红柱和绿柱的收缩来研判行情。 价格数据：收盘价close EMA：指数移动平均线 DIF（差离值） = EMA12日线 - EMA26日线 EMA9：是“信号线”，又称DEA DIF线与EMA9日线比较，DIF穿越到EMA9上方是买入或做多信号，DIF穿越到EMA9的下方为卖出或做空信号， DIF值越大，上涨趋势越大，DIF值越小，下跌趋势越大
+柱状图：(DIF-DEA)*2
+解释方法：交叉、散度、快速上升/下降
+RSI相对强度指标（振荡器），范围是0到100，超过70时，是为超买或高估，可能引发趋势翻转或价格回调，小于30时，视为超卖或低估。
+MACD计算方式 DMA:平行线差指标</description>
+    </item>
+    
+  </channel>
+</rss>
