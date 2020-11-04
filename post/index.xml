@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Aixin.me</title>
-    <link>http://aixin.me/post/</link>
+    <link>https://aixin.me/post/</link>
     <description>Recent content in Posts on Aixin.me</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 17 Jan 2020 15:06:55 +0000</lastBuildDate><atom:link href="http://aixin.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jan 2020 15:06:55 +0000</lastBuildDate><atom:link href="https://aixin.me/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>财会常用知识点</title>
-      <link>http://aixin.me/post/finance-accounting/</link>
+      <link>https://aixin.me/post/finance-accounting/</link>
       <pubDate>Fri, 17 Jan 2020 15:06:55 +0000</pubDate>
       
-      <guid>http://aixin.me/post/finance-accounting/</guid>
+      <guid>https://aixin.me/post/finance-accounting/</guid>
       <description>借贷记账法 借贷记账法下，所有账户的结构都是左方为借方，右方为贷方，但借方、贷方反映会计要素数量变化的增减性质则是不固定的。不同性质的账户，借贷方所登记的内容不同，下面分别说明各类账户的结构。
 有借必有贷，借贷必相等
   资产类账户的结构 在资产类账户中，它的借方记录资产的增加额，贷方记录资产的减少额。在同一会计期间（年、月），借方记录的合计数额称作本期借方发生额，贷方记录的合计数称作本期贷方发生额，在每一会计期间的期末将借贷方发生额相比较，其差额称作期末余额。资产类账户的期末余额一般在借方。
@@ -25,10 +25,10 @@
     
     <item>
       <title>ATR：均幅指标</title>
-      <link>http://aixin.me/post/average-true-range/</link>
+      <link>https://aixin.me/post/average-true-range/</link>
       <pubDate>Fri, 27 Dec 2019 10:41:39 +0000</pubDate>
       
-      <guid>http://aixin.me/post/average-true-range/</guid>
+      <guid>https://aixin.me/post/average-true-range/</guid>
       <description>Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。
 由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。
  t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
@@ -44,10 +44,10 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
     
     <item>
       <title>BackTrader学习笔记</title>
-      <link>http://aixin.me/post/backtrader/</link>
+      <link>https://aixin.me/post/backtrader/</link>
       <pubDate>Mon, 23 Dec 2019 10:17:48 +0000</pubDate>
       
-      <guid>http://aixin.me/post/backtrader/</guid>
+      <guid>https://aixin.me/post/backtrader/</guid>
       <description>一、BackTrader介绍 BackTrader是开源免费的量化交易策略回测系统， 运行流程：
  引入backtrader 加载和注入数据Feed（cerebro.adddata） 执行：cerebro.run() 可视化结果：cerebro.plot()  二、安装BackTrader 1、安装环境要求：  Python 2.7 Python 3.2 / 3.3/ 3.4 / 3.5 pypy/pypy3 Matplotlib&amp;gt; = 1.4.1（如果需要绘图的话需要配置）  2、兼容Python2.x/3.x from __future__ import (absolute_import, division, print_function,unicode_literals) 3.1、通过pip安装: pip install backtrader
 如果想同时安装matplotlib： pip install backtrader[plotting]
@@ -60,10 +60,10 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
     
     <item>
       <title>MA/SMA/EMA</title>
-      <link>http://aixin.me/post/moving-average/</link>
+      <link>https://aixin.me/post/moving-average/</link>
       <pubDate>Fri, 20 Dec 2019 18:13:57 +0000</pubDate>
       
-      <guid>http://aixin.me/post/moving-average/</guid>
+      <guid>https://aixin.me/post/moving-average/</guid>
       <description>MA(Moving Average):移动平均线 可以过滤随机价格波动中的噪音来帮助平滑价格走势，基于过去的价格，因此时趋势跟踪。包括简单移动平均线(SMA)和指数移动平均线(EMA)，常见应用为确定趋势方向并确定支撑位和阻力位
   简单移动平均线(SMA)： $SMA = \frac{A_1 + A_2 + \cdots + A_n}{n}$ A:n期的平均值 n：周期数
   指数移动平均线(EMA): $EMA_t = [V_t \times \big(\frac{s}{1+d}\big)] + EMA_y \times [1 - \big(\frac{s}{1+d}\big)]$
@@ -74,10 +74,10 @@ EMA:指数移动平均（考虑了当天收盘价），快EMA（短时期，通�
     
     <item>
       <title>常用平均数</title>
-      <link>http://aixin.me/post/average/</link>
+      <link>https://aixin.me/post/average/</link>
       <pubDate>Fri, 20 Dec 2019 16:10:56 +0000</pubDate>
       
-      <guid>http://aixin.me/post/average/</guid>
+      <guid>https://aixin.me/post/average/</guid>
       <description>算数平均数 一组数据的所有数据之和除以数据个数，反映数据集中的趋势 $$ A_n = \frac{a_1+a_2+a_3+\cdots+a_n}{n} $$
 几何平均数 n数连续乘积，然后开n次方根 $$ G_n = \sqrt[n]{a_1 \times a_2 \times a_3 \times \cdots \times a_n} $$
 调和平均数（数学，非统计） 每一个数值取倒数，然后将所有倒数求平均，然后将得到的平均数取到数 $$ H_n = \frac{n}{\frac{1}{a_1} + \frac{1}{a_2} \frac{1}{a_3} + \cdots + \frac{1}{a_n}} $$
@@ -86,10 +86,10 @@ EMA:指数移动平均（考虑了当天收盘价），快EMA（短时期，通�
     
     <item>
       <title>MACD 平滑异同移动平均指标</title>
-      <link>http://aixin.me/post/macd/</link>
+      <link>https://aixin.me/post/macd/</link>
       <pubDate>Fri, 20 Dec 2019 15:46:45 +0000</pubDate>
       
-      <guid>http://aixin.me/post/macd/</guid>
+      <guid>https://aixin.me/post/macd/</guid>
       <description>MACD原理介绍 MACD(Moving Average Convergence Divergence),是根据均线的构造原理，对股票价格的收盘价进行平滑处理，求出算术平均值以后再进行计算，是一种趋向类指标。
 MACD指标是运用快速（短期）和慢速（长期）移动平均线及其聚合与分离的征兆，加以双重平滑运算。而根据移动平均线原理发展出来的MACD，一则去除了移动平均线频繁发出假信号的缺陷，二则保留了移动平均线的效果，因此，MACD指标具有均线趋势性、稳重性、安定性等特点，是用来研判买卖股票的时机，预测股票价格涨跌的技术分析指标 。
 MACD指标主要是通过EMA、DIF和DEA（或叫MACD、DEM）这三值之间关系的研判，DIF和DEA连接起来的移动平均线的研判以及DIF减去DEM值而绘制成的柱状图（BAR）的研判等来分析判断行情，预测股价中短期趋势的主要的股市技术分析指标。其中，DIF是核心，DEA是辅助。DIF是快速平滑移动平均线（EMA1）和慢速平滑移动平均线（EMA2）的差。BAR柱状图在股市技术软件上是用红柱和绿柱的收缩来研判行情。 价格数据：收盘价close EMA：指数移动平均线 DIF（差离值） = EMA12日线 - EMA26日线 EMA9：是“信号线”，又称DEA DIF线与EMA9日线比较，DIF穿越到EMA9上方是买入或做多信号，DIF穿越到EMA9的下方为卖出或做空信号， DIF值越大，上涨趋势越大，DIF值越小，下跌趋势越大
@@ -101,10 +101,10 @@ MACD计算方式 DMA:平行线差指标</description>
     
     <item>
       <title>量化交易相关名词解释</title>
-      <link>http://aixin.me/post/quantitative-trading-learning-%E5%86%B2%E7%AA%81-%E5%BC%A0%E5%B0%8F%E7%99%BD_win10/</link>
+      <link>https://aixin.me/post/quantitative-trading-learning-%E5%86%B2%E7%AA%81-%E5%BC%A0%E5%B0%8F%E7%99%BD_win10/</link>
       <pubDate>Tue, 17 Dec 2019 14:49:55 +0000</pubDate>
       
-      <guid>http://aixin.me/post/quantitative-trading-learning-%E5%86%B2%E7%AA%81-%E5%BC%A0%E5%B0%8F%E7%99%BD_win10/</guid>
+      <guid>https://aixin.me/post/quantitative-trading-learning-%E5%86%B2%E7%AA%81-%E5%BC%A0%E5%B0%8F%E7%99%BD_win10/</guid>
       <description>一、凯利公式 英文：The Kelly Criterion
  在概率论中，凯利公式（也称 “凯利方程式”）是一个在期望净收益为正的独立重复赌局中，使本金的长期增长率最大化的投注策略。该公式于 1956 年由约翰·拉里·凯利（John Larry Kelly）在《贝尔系统技术期刊》中发表，可以用来计算每次游戏中应投注的资金比例。若赌局的期望净收益为零或为负，凯利公式给出的结论是不赌为赢。
  公式： $$ f^* = \frac {bp-q}{b} = \frac {p(b+1)-1}{b} $$
@@ -118,10 +118,10 @@ MACD计算方式 DMA:平行线差指标</description>
     
     <item>
       <title>量化交易相关名词解释</title>
-      <link>http://aixin.me/post/quantitative-trading-learning/</link>
+      <link>https://aixin.me/post/quantitative-trading-learning/</link>
       <pubDate>Tue, 17 Dec 2019 14:49:55 +0000</pubDate>
       
-      <guid>http://aixin.me/post/quantitative-trading-learning/</guid>
+      <guid>https://aixin.me/post/quantitative-trading-learning/</guid>
       <description>一、凯利公式 英文：The Kelly Criterion
  在概率论中，凯利公式（也称 “凯利方程式”）是一个在期望净收益为正的独立重复赌局中，使本金的长期增长率最大化的投注策略。该公式于 1956 年由约翰·拉里·凯利（John Larry Kelly）在《贝尔系统技术期刊》中发表，可以用来计算每次游戏中应投注的资金比例。若赌局的期望净收益为零或为负，凯利公式给出的结论是不赌为赢。
  公式： $$ f^* = \frac {bp-q}{b} = \frac {p(b+1)-1}{b} $$
@@ -135,10 +135,10 @@ MACD计算方式 DMA:平行线差指标</description>
     
     <item>
       <title>Spring Boot 入门指南</title>
-      <link>http://aixin.me/post/spring-boot-getting-started/</link>
+      <link>https://aixin.me/post/spring-boot-getting-started/</link>
       <pubDate>Thu, 05 Dec 2019 15:44:55 +0000</pubDate>
       
-      <guid>http://aixin.me/post/spring-boot-getting-started/</guid>
+      <guid>https://aixin.me/post/spring-boot-getting-started/</guid>
       <description>官方教程 https://docs.spring.io/spring-boot/docs/2.2.1.RELEASE/reference/html/
 1、Spring Boot介绍 Spring Boot可以轻松创建可以运行的独立的，生产级的基于Spring的应用程序。我们对Spring平台和第三方库采取自己的看法，以便您尽可能轻松地使用本教程。大多数Spring Boot应用程序只需要很少的Spring配置。
 您可以使用Spring Boot来创建可以使用java -jar或更传统的war部署来启动的Java应用程序 。我们还提供了一个运行“spring script”的命令行工具。
@@ -152,10 +152,10 @@ MACD计算方式 DMA:平行线差指标</description>
     
     <item>
       <title>Numpy学习笔记</title>
-      <link>http://aixin.me/post/numpy/</link>
+      <link>https://aixin.me/post/numpy/</link>
       <pubDate>Wed, 06 Nov 2019 19:02:30 +0000</pubDate>
       
-      <guid>http://aixin.me/post/numpy/</guid>
+      <guid>https://aixin.me/post/numpy/</guid>
       <description>生成数组
  numpy.arange([start, ]stop, [step, ]dtype=None)
  示例

@@ -3,136 +3,130 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://aixin.me/about/</loc>
+    <loc>https://aixin.me/about/</loc>
     <lastmod>2020-11-03T16:54:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/</loc>
+    <loc>https://aixin.me/</loc>
     <lastmod>2020-11-03T16:54:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/tags/</loc>
+    <loc>https://aixin.me/tags/</loc>
     <lastmod>2020-11-03T16:54:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/tags/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/</loc>
+    <loc>https://aixin.me/tags/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/</loc>
     <lastmod>2020-11-03T16:54:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/</loc>
+    <loc>https://aixin.me/post/</loc>
     <lastmod>2020-01-17T15:06:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/finance-accounting/</loc>
+    <loc>https://aixin.me/post/finance-accounting/</loc>
     <lastmod>2020-01-17T15:06:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/</loc>
+    <loc>https://aixin.me/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2020-01-17T15:06:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/average-true-range/</loc>
+    <loc>https://aixin.me/post/average-true-range/</loc>
     <lastmod>2019-12-27T10:41:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/categories/</loc>
+    <loc>https://aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</loc>
     <lastmod>2019-12-27T10:41:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/categories/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%88%86%E7%B1%BB/</loc>
-    <lastmod>2019-12-27T10:41:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</loc>
-    <lastmod>2019-12-27T10:41:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://aixin.me/post/backtrader/</loc>
+    <loc>https://aixin.me/post/backtrader/</loc>
     <lastmod>2019-12-23T10:17:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/tags/python/</loc>
+    <loc>https://aixin.me/tags/python/</loc>
     <lastmod>2019-12-23T10:17:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/moving-average/</loc>
+    <loc>https://aixin.me/post/moving-average/</loc>
     <lastmod>2019-12-20T18:13:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</loc>
+    <loc>https://aixin.me/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</loc>
     <lastmod>2019-12-20T18:13:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/average/</loc>
+    <loc>https://aixin.me/post/average/</loc>
     <lastmod>2019-12-20T16:10:56+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/tags/macd/</loc>
+    <loc>https://aixin.me/tags/macd/</loc>
     <lastmod>2019-12-20T15:46:45+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/macd/</loc>
+    <loc>https://aixin.me/post/macd/</loc>
     <lastmod>2019-12-20T15:46:45+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/quantitative-trading-learning-%E5%86%B2%E7%AA%81-%E5%BC%A0%E5%B0%8F%E7%99%BD_win10/</loc>
+    <loc>https://aixin.me/post/quantitative-trading-learning-%E5%86%B2%E7%AA%81-%E5%BC%A0%E5%B0%8F%E7%99%BD_win10/</loc>
     <lastmod>2019-12-17T14:49:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/quantitative-trading-learning/</loc>
+    <loc>https://aixin.me/post/quantitative-trading-learning/</loc>
     <lastmod>2019-12-17T14:49:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/tags/java/</loc>
+    <loc>https://aixin.me/tags/java/</loc>
     <lastmod>2019-12-05T15:44:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/spring-boot-getting-started/</loc>
+    <loc>https://aixin.me/post/spring-boot-getting-started/</loc>
     <lastmod>2019-12-05T15:44:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/tags/springboot/</loc>
+    <loc>https://aixin.me/tags/springboot/</loc>
     <lastmod>2019-12-05T15:44:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/tags/numpy/</loc>
+    <loc>https://aixin.me/tags/numpy/</loc>
     <lastmod>2019-11-06T19:02:30+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/post/numpy/</loc>
+    <loc>https://aixin.me/post/numpy/</loc>
     <lastmod>2019-11-06T19:02:30+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://aixin.me/archives/</loc>
+    <loc>https://aixin.me/archives/</loc>
   </url>
   
   <url>
-    <loc>http://aixin.me/series/</loc>
+    <loc>https://aixin.me/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://aixin.me/series/</loc>
   </url>
   
 </urlset>

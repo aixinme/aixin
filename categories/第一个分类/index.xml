@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>第一个分类 on Aixin.me</title>
-    <link>http://aixin.me/categories/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%88%86%E7%B1%BB/</link>
+    <link>http://localhost:1313/categories/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%88%86%E7%B1%BB/</link>
     <description>Recent content in 第一个分类 on Aixin.me</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Dec 2019 10:41:39 +0000</lastBuildDate><atom:link href="http://aixin.me/categories/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Dec 2019 10:41:39 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ATR：均幅指标</title>
-      <link>http://aixin.me/post/average-true-range/</link>
+      <link>http://localhost:1313/post/average-true-range/</link>
       <pubDate>Fri, 27 Dec 2019 10:41:39 +0000</pubDate>
       
-      <guid>http://aixin.me/post/average-true-range/</guid>
+      <guid>http://localhost:1313/post/average-true-range/</guid>
       <description>Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。
 由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。
  t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。

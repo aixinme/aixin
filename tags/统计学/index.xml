@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>统计学 on Aixin.me</title>
-    <link>http://aixin.me/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</link>
+    <link>https://aixin.me/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</link>
     <description>Recent content in 统计学 on Aixin.me</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Dec 2019 18:13:57 +0000</lastBuildDate><atom:link href="http://aixin.me/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Dec 2019 18:13:57 +0000</lastBuildDate><atom:link href="https://aixin.me/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MA/SMA/EMA</title>
-      <link>http://aixin.me/post/moving-average/</link>
+      <link>https://aixin.me/post/moving-average/</link>
       <pubDate>Fri, 20 Dec 2019 18:13:57 +0000</pubDate>
       
-      <guid>http://aixin.me/post/moving-average/</guid>
+      <guid>https://aixin.me/post/moving-average/</guid>
       <description>MA(Moving Average):移动平均线 可以过滤随机价格波动中的噪音来帮助平滑价格走势，基于过去的价格，因此时趋势跟踪。包括简单移动平均线(SMA)和指数移动平均线(EMA)，常见应用为确定趋势方向并确定支撑位和阻力位
   简单移动平均线(SMA)： $SMA = \frac{A_1 + A_2 + \cdots + A_n}{n}$ A:n期的平均值 n：周期数
   指数移动平均线(EMA): $EMA_t = [V_t \times \big(\frac{s}{1+d}\big)] + EMA_y \times [1 - \big(\frac{s}{1+d}\big)]$
@@ -22,10 +22,10 @@ EMA:指数移动平均（考虑了当天收盘价），快EMA（短时期，通�
     
     <item>
       <title>常用平均数</title>
-      <link>http://aixin.me/post/average/</link>
+      <link>https://aixin.me/post/average/</link>
       <pubDate>Fri, 20 Dec 2019 16:10:56 +0000</pubDate>
       
-      <guid>http://aixin.me/post/average/</guid>
+      <guid>https://aixin.me/post/average/</guid>
       <description>算数平均数 一组数据的所有数据之和除以数据个数，反映数据集中的趋势 $$ A_n = \frac{a_1+a_2+a_3+\cdots+a_n}{n} $$
 几何平均数 n数连续乘积，然后开n次方根 $$ G_n = \sqrt[n]{a_1 \times a_2 \times a_3 \times \cdots \times a_n} $$
 调和平均数（数学，非统计） 每一个数值取倒数，然后将所有倒数求平均，然后将得到的平均数取到数 $$ H_n = \frac{n}{\frac{1}{a_1} + \frac{1}{a_2} \frac{1}{a_3} + \cdots + \frac{1}{a_n}} $$
