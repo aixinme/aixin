@@ -1,186 +1,50 @@
-
-<!DOCTYPE html>
-<html>
-  <head>
-    
-<meta charset="utf-8" >
-
-<title>ATR：均幅指标 | Aixin.me</title>
-<meta name="description" content="aixin.me">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://aixin.me/favicon.ico?v=1579250753557">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="http://aixin.me/styles/main.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="http://aixin.me">
-        <img class="avatar" src="http://aixin.me/images/avatar.png?v=1579250753557" alt="" width="32px" height="32px">
-      </a>
-      <a href="http://aixin.me">
-        <h1 class="site-title">Aixin.me</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          <!-- 
-            <div class="feature-container" style="background-image: url('http://aixin.me/post-images/average-true-range.jpg')">
-            </div>
-           -->
-          <h2 class="post-title">ATR：均幅指标</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-12-27</span>
-            
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="http://aixin.me/tag/quantitative-trading">
-                    量化交易
-                    
-                  </a>
-                
-              </span>
-            
-          </div>
-          <div class="post-content">
-            <p>Average True Range<br>
-取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。</p>
-<p>由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。</p>
-<blockquote>
-<p>t：当日tody；<br>
-p：上一个节点previous<br>
-n：时间单元unit；<br>
-Ci：第i日的收盘价close；<br>
-Hi：第i日的最高价height；<br>
-Li：第i日的最低价low。</p>
-</blockquote>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mi>R</mi><mo>=</mo><mi>M</mi><mi>a</mi><mi>x</mi><mo>[</mo><mo>(</mo><mi>H</mi><mo>−</mo><mi>L</mi><mo>)</mo><mo separator="true">,</mo><mi>A</mi><mi>b</mi><mi>s</mi><mo>(</mo><mi>H</mi><mo>−</mo><msub><mi>C</mi><mi>p</mi></msub><mo>)</mo><mo separator="true">,</mo><mi>A</mi><mi>b</mi><mi>s</mi><mo>(</mo><mi>L</mi><mo>−</mo><msub><mi>C</mi><mi>p</mi></msub><mo>)</mo><mo>]</mo></mrow><annotation encoding="application/x-tex">TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)]
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mopen">[</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">b</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">b</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault">L</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mclose">]</span></span></span></span></span></p>
-<blockquote>
-<p>Max 取最大值<br>
-Abs 取绝对值absolute</p>
-</blockquote>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>T</mi><mi>R</mi><mo>=</mo><mo fence="false">(</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo fence="false">)</mo><munderover><mo>∑</mo><mrow><mo>(</mo><mi>i</mi><mo>=</mo><mn>1</mn><mo>)</mo></mrow><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow></munderover><mi>T</mi><msub><mi>R</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.4770100000000004em;vertical-align:-1.5160049999999998em;"></span><span class="mord"><span class="delimsizing size2">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="delimsizing size2">)</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.9610050000000006em;"><span style="top:-1.8089950000000001em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.386005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathdefault mtight">n</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5160049999999998em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
-<p>波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。<br>
-它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动<br>
-ATR的使用通常用作退出方法，无论如何做出进入决定</p>
-<p>可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性</p>
-<h4 id="atr使用范围">ATR使用范围</h4>
-<p>1、利用ATR资金配比<br>
-通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划</p>
-<p>2、利用ATR选择入场点位<br>
-短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.</p>
-<p>3、利用ATR止损<br>
-著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作.</p>
-
-          </div>
-        </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="http://aixin.me/post/backtrader">
-              <h3 class="post-title">
-                下一篇：BackTrader学习笔记
-              </h3>
-            </a>
-          </div>
-          
-      </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">aixin.me</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  心中有爱，遇见更好的自己 | <a class="rss" href="http://aixin.me/atom.xml" target="_blank">RSS</a>
-</div>
-
-
-    </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
-  </body>
-</html>
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>ATR：均幅指标 - Aixin.me</title><meta name=keywords content="量化交易"><meta name=description content="Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。
+由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。
+ t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
+ $$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$
+ Max 取最大值 Abs 取绝对值absolute
+ $$ ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i $$
+波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定
+可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性
+ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划
+2、利用ATR选择入场点位 短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.
+3、利用ATR止损 著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作."><meta name=author content="Aixin"><link rel=canonical href=http://aixin.me/post/average-true-range/><link href=http://aixin.me/assets/css/stylesheet.min.5d44456813d58b9cb020e3474e4c5d14b03070ef2a1e81ef3a4de94a1bc6696b.css integrity="sha256-XURFaBPVi5ywIONHTkxdFLAwcO8qHoHvOk3pShvGaWs=" rel="preload stylesheet" as=style><link rel=apple-touch-icon href=http://aixin.me/apple-touch-icon.png><link rel=icon href=http://aixin.me/favicon.ico><meta name=generator content="Hugo 0.77.0"><meta property="og:title" content="ATR：均幅指标"><meta property="og:description" content="Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。
+由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。
+ t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
+ $$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$
+ Max 取最大值 Abs 取绝对值absolute
+ $$ ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i $$
+波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定
+可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性
+ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划
+2、利用ATR选择入场点位 短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.
+3、利用ATR止损 著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作."><meta property="og:type" content="article"><meta property="og:url" content="http://aixin.me/post/average-true-range/"><meta property="article:published_time" content="2019-12-27T10:41:39+00:00"><meta property="article:modified_time" content="2019-12-27T10:41:39+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="ATR：均幅指标"><meta name=twitter:description content="Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。
+由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。
+ t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
+ $$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$
+ Max 取最大值 Abs 取绝对值absolute
+ $$ ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i $$
+波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定
+可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性
+ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划
+2、利用ATR选择入场点位 短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.
+3、利用ATR止损 著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"ATR：均幅指标","name":"ATR：均幅指标","description":"Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。\n由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指 …","keywords":["量化交易"],"articleBody":"Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。\n由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。\n t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。\n $$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$\n Max 取最大值 Abs 取绝对值absolute\n $$ ATR = \\Big( \\frac{1}{n}\\Big) \\sum^{(n)}_{(i=1)} TR_i $$\n波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定\n可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性\nATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划\n2、利用ATR选择入场点位 短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.\n3、利用ATR止损 著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作.\n","wordCount":"39","inLanguage":"en","datePublished":"2019-12-27T10:41:39Z","dateModified":"2019-12-27T10:41:39Z","author":{"@type":"Person","name":"Aixin"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://aixin.me/post/average-true-range/"},"publisher":{"@type":"Organization","name":"Aixin.me","logo":{"@type":"ImageObject","url":"http://aixin.me/favicon.ico"}}}</script></head><body class=single id=top><script>if(localStorage.getItem("pref-theme")==="dark"){document.body.classList.add('dark');}else if(localStorage.getItem("pref-theme")==="light"){document.body.classList.remove('dark')}else{if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.body.classList.add('dark');}}</script><noscript><style type=text/css>.theme-toggle,.top-link{display:none}</style></noscript><header class=header><nav class=nav><div class=logo><a href=http://aixin.me accesskey=h>Aixin.me</a>
+<span class=logo-switches><span class=theme-toggle><a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></a></span></span></div><ul class=menu id=menu onscroll=menu_on_scroll()><li><a href=http://aixin.me/archives/><span>Archives</span></a></li><li><a href=http://aixin.me/tags/><span>Tags</span></a></li><li><a href=http://aixin.me/about/><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>ATR：均幅指标</h1><div class=post-meta>December 27, 2019&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aixin</div></header><div class=post-content><p>Average True Range
+取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。</p><p>由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。</p><blockquote><p>t：当日tody；
+p：上一个节点previous
+n：时间单元unit；
+Ci：第i日的收盘价close；
+Hi：第i日的最高价height；
+Li：第i日的最低价low。</p></blockquote><p>$$
+TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)]
+$$</p><blockquote><p>Max 取最大值
+Abs 取绝对值absolute</p></blockquote><p>$$
+ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i
+$$</p><p>波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。
+它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动
+ATR的使用通常用作退出方法，无论如何做出进入决定</p><p>可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性</p><h4 id=atr使用范围>ATR使用范围</h4><p>1、利用ATR资金配比
+通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划</p><p>2、利用ATR选择入场点位
+短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.</p><p>3、利用ATR止损
+著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作.</p></div><footer class=post-footer><ul class=post-tags><li><a href=http://aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93>量化交易</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2020 <a href=http://aixin.me>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top" accesskey=g><button class=top-link id=top-link type=button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></button></a>
+<script src=http://aixin.me/assets/js/highlight.min.e7afc2928c0925d65c4732dfebe147014d91299a98e819e4b42f25c4fa68e91c.js integrity="sha256-56/CkowJJdZcRzLf6+FHAU2RKZqY6BnktC8lxPpo6Rw="></script><script>hljs.initHighlightingOnLoad();</script><script>window.onload=function(){if(localStorage.getItem("menu-scroll-position")){document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position");}}
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener("click",function(e){e.preventDefault();var id=this.getAttribute("href").substr(1);document.querySelector(`[id='${id}']`).scrollIntoView({behavior:"smooth"});});});var mybutton=document.getElementById("top-link");window.onscroll=function(){if(document.body.scrollTop>800||document.documentElement.scrollTop>800){mybutton.style.visibility="visible";mybutton.style.opacity="1";}else{mybutton.style.visibility="hidden";mybutton.style.opacity="0";}};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft);}</script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{if(document.body.className.includes("dark")){document.body.classList.remove('dark');localStorage.setItem("pref-theme",'light');}else{document.body.classList.add('dark');localStorage.setItem("pref-theme",'dark');}})</script></body></html>

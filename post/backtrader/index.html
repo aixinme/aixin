@@ -1,284 +1,95 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>BackTrader学习笔记 - Aixin.me</title><meta name=keywords content="Python,量化交易"><meta name=description content="一、BackTrader介绍 BackTrader是开源免费的量化交易策略回测系统， 运行流程：
+ 引入backtrader 加载和注入数据Feed（cerebro.adddata） 执行：cerebro.run() 可视化结果：cerebro.plot()  二、安装BackTrader 1、安装环境要求：  Python 2.7 Python 3.2 / 3.3/ 3.4 / 3.5 pypy/pypy3 Matplotlib> = 1.4.1（如果需要绘图的话需要配置）  2、兼容Python2.x/3.x from __future__ import (absolute_import, division, print_function,unicode_literals) 3.1、通过pip安装: pip install backtrader
+如果想同时安装matplotlib： pip install backtrader[plotting]
+3.2、通过源安装 https://github.com/mementum/backtrader python安装源文件，自己搜索
+3.3、通过pycharm安装 新建项目 -> Files -> Settings -> Project 项目名称 -> Project Interpreter -> 右侧加号，搜索backtrader Install Package即可
+三、backtrader用法 1、使用前说明 常用数据名称： 开盘价，最高价，最低价，收盘价，成交量，持仓量
+数据索引方式： 当前值：[0] 前一个值：[-1] 前2个值：[-2] ……
+ 说明：所有的数字都是历史值，所以只能往后推"><meta name=author content="Aixin"><link rel=canonical href=http://aixin.me/post/backtrader/><link href=http://aixin.me/assets/css/stylesheet.min.5d44456813d58b9cb020e3474e4c5d14b03070ef2a1e81ef3a4de94a1bc6696b.css integrity="sha256-XURFaBPVi5ywIONHTkxdFLAwcO8qHoHvOk3pShvGaWs=" rel="preload stylesheet" as=style><link rel=apple-touch-icon href=http://aixin.me/apple-touch-icon.png><link rel=icon href=http://aixin.me/favicon.ico><meta name=generator content="Hugo 0.77.0"><meta property="og:title" content="BackTrader学习笔记"><meta property="og:description" content="一、BackTrader介绍 BackTrader是开源免费的量化交易策略回测系统， 运行流程：
+ 引入backtrader 加载和注入数据Feed（cerebro.adddata） 执行：cerebro.run() 可视化结果：cerebro.plot()  二、安装BackTrader 1、安装环境要求：  Python 2.7 Python 3.2 / 3.3/ 3.4 / 3.5 pypy/pypy3 Matplotlib> = 1.4.1（如果需要绘图的话需要配置）  2、兼容Python2.x/3.x from __future__ import (absolute_import, division, print_function,unicode_literals) 3.1、通过pip安装: pip install backtrader
+如果想同时安装matplotlib： pip install backtrader[plotting]
+3.2、通过源安装 https://github.com/mementum/backtrader python安装源文件，自己搜索
+3.3、通过pycharm安装 新建项目 -> Files -> Settings -> Project 项目名称 -> Project Interpreter -> 右侧加号，搜索backtrader Install Package即可
+三、backtrader用法 1、使用前说明 常用数据名称： 开盘价，最高价，最低价，收盘价，成交量，持仓量
+数据索引方式： 当前值：[0] 前一个值：[-1] 前2个值：[-2] ……
+ 说明：所有的数字都是历史值，所以只能往后推"><meta property="og:type" content="article"><meta property="og:url" content="http://aixin.me/post/backtrader/"><meta property="article:published_time" content="2019-12-23T10:17:48+00:00"><meta property="article:modified_time" content="2019-12-23T10:17:48+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="BackTrader学习笔记"><meta name=twitter:description content="一、BackTrader介绍 BackTrader是开源免费的量化交易策略回测系统， 运行流程：
+ 引入backtrader 加载和注入数据Feed（cerebro.adddata） 执行：cerebro.run() 可视化结果：cerebro.plot()  二、安装BackTrader 1、安装环境要求：  Python 2.7 Python 3.2 / 3.3/ 3.4 / 3.5 pypy/pypy3 Matplotlib> = 1.4.1（如果需要绘图的话需要配置）  2、兼容Python2.x/3.x from __future__ import (absolute_import, division, print_function,unicode_literals) 3.1、通过pip安装: pip install backtrader
+如果想同时安装matplotlib： pip install backtrader[plotting]
+3.2、通过源安装 https://github.com/mementum/backtrader python安装源文件，自己搜索
+3.3、通过pycharm安装 新建项目 -> Files -> Settings -> Project 项目名称 -> Project Interpreter -> 右侧加号，搜索backtrader Install Package即可
+三、backtrader用法 1、使用前说明 常用数据名称： 开盘价，最高价，最低价，收盘价，成交量，持仓量
+数据索引方式： 当前值：[0] 前一个值：[-1] 前2个值：[-2] ……
+ 说明：所有的数字都是历史值，所以只能往后推"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"BackTrader学习笔记","name":"BackTrader学习笔记","description":"一、BackTrader介绍 BackTrader是开源免费的量化交易策略回测系统， 运行流程：\n 引入backtrader 加载和注入数据Feed（cerebro.adddata） 执行：cerebro.run() 可视化结果：cerebro.plot()  二、安装BackTrader 1、安装环境要求：  Python 2.7 Python 3.2 / …","keywords":["Python","量化交易"],"articleBody":"一、BackTrader介绍 BackTrader是开源免费的量化交易策略回测系统， 运行流程：\n 引入backtrader 加载和注入数据Feed（cerebro.adddata） 执行：cerebro.run() 可视化结果：cerebro.plot()  二、安装BackTrader 1、安装环境要求：  Python 2.7 Python 3.2 / 3.3/ 3.4 / 3.5 pypy/pypy3 Matplotlib = 1.4.1（如果需要绘图的话需要配置）  2、兼容Python2.x/3.x from __future__ import (absolute_import, division, print_function,unicode_literals) 3.1、通过pip安装: pip install backtrader\n如果想同时安装matplotlib： pip install backtrader[plotting]\n3.2、通过源安装 https://github.com/mementum/backtrader python安装源文件，自己搜索\n3.3、通过pycharm安装 新建项目 - Files - Settings - Project 项目名称 - Project Interpreter - 右侧加号，搜索backtrader Install Package即可\n三、backtrader用法 1、使用前说明 常用数据名称： 开盘价，最高价，最低价，收盘价，成交量，持仓量\n数据索引方式： 当前值：[0] 前一个值：[-1] 前2个值：[-2] ……\n 说明：所有的数字都是历史值，所以只能往后推\n 1、基本功能 from __future__ import (absolute_import, division, print_function,unicode_literals) #让python2兼容python3，python3环境下可以不用写 #引入backtrader import backtrader as bt if __name__ == '__main__': cerebro = bt.Cerebro() cerebro.broker.setcash(100.0) #可以自定义金额 print('Starting Portfolio Value: %.2f' % cerebro.broker.getvalue()) cerebro.run() print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue()) 执行结果：\n Starting Portfolio Value: 100.00\nFinal Portfolio Value: 100.00\n 2、添加数据  说明： os.path.dirname 当前文件的绝对路劲目录（不包含文件名） __file__ 当前文件绝对路劲+文件名 os.path.abspath(path) 输出绝对路劲、当前目录、上级目录等（反斜杠） sys.argv[0] 当前文件绝对路劲+文件名（本地目录，正斜杠，用的时候需要转化成反斜杠）\nprint(sys.argv[0]) #输出：D:/python/futures/macd.py\rprint(os.path.abspath(sys.argv[0])) #输出：D:\\python\\futures\\macd.py\rprint(os.path.dirname(os.path.abspath(sys.argv[0]))) #输出：D:\\python\\futures\r 代码：\nimport datetime # For datetime objects import os.path # To manage paths import sys # To find out the script name (in argv[0]) # Import the backtrader platform import backtrader as bt if __name__ == '__main__': # Create a cerebro entity cerebro = bt.Cerebro() # Datas are in a subfolder of the samples. Need to find where the script is # because it could have been called from anywhere modpath = os.path.dirname(os.path.abspath(sys.argv[0])) datapath = os.path.join(modpath, '../../datas/orcl-1995-2014.txt') # Create a Data Feed data = bt.feeds.YahooFinanceCSVData( dataname=datapath, # Do not pass values before this date fromdate=datetime.datetime(2000, 1, 1), # Do not pass values after this date todate=datetime.datetime(2000, 12, 31), reverse=False) # Add the Data Feed to Cerebro cerebro.adddata(data) # Set our desired cash start cerebro.broker.setcash(100000.0) # Print out the starting conditions print('Starting Portfolio Value: %.2f' % cerebro.broker.getvalue()) # Run over everything cerebro.run() # Print out the final result print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue()) 运行结果：\n Starting Portfolio Value: 1000000.00\nFinal Portfolio Value: 1000000.00\n ","wordCount":"288","inLanguage":"en","datePublished":"2019-12-23T10:17:48Z","dateModified":"2019-12-23T10:17:48Z","author":{"@type":"Person","name":"Aixin"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://aixin.me/post/backtrader/"},"publisher":{"@type":"Organization","name":"Aixin.me","logo":{"@type":"ImageObject","url":"http://aixin.me/favicon.ico"}}}</script></head><body class=single id=top><script>if(localStorage.getItem("pref-theme")==="dark"){document.body.classList.add('dark');}else if(localStorage.getItem("pref-theme")==="light"){document.body.classList.remove('dark')}else{if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.body.classList.add('dark');}}</script><noscript><style type=text/css>.theme-toggle,.top-link{display:none}</style></noscript><header class=header><nav class=nav><div class=logo><a href=http://aixin.me accesskey=h>Aixin.me</a>
+<span class=logo-switches><span class=theme-toggle><a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></a></span></span></div><ul class=menu id=menu onscroll=menu_on_scroll()><li><a href=http://aixin.me/archives/><span>Archives</span></a></li><li><a href=http://aixin.me/tags/><span>Tags</span></a></li><li><a href=http://aixin.me/about/><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>BackTrader学习笔记</h1><div class=post-meta>December 23, 2019&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aixin</div></header><div class=post-content><h2 id=一backtrader介绍>一、BackTrader介绍</h2><p>BackTrader是开源免费的量化交易策略回测系统，
+运行流程：</p><ol><li>引入backtrader</li><li>加载和注入数据Feed（cerebro.adddata）</li><li>执行：cerebro.run()</li><li>可视化结果：cerebro.plot()</li></ol><h2 id=二安装backtrader>二、安装BackTrader</h2><h4 id=1安装环境要求>1、安装环境要求：</h4><ul><li>Python 2.7</li><li>Python 3.2 / 3.3/ 3.4 / 3.5</li><li>pypy/pypy3</li><li>Matplotlib> = 1.4.1（如果需要绘图的话需要配置）</li></ul><h4 id=2兼容python2x3x>2、兼容Python2.x/3.x</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> __future__ <span style=color:#f92672>import</span> (absolute_import, division, print_function,unicode_literals)
+</code></pre></div><h4 id=31通过pip安装>3.1、通过pip安装:</h4><p><code>pip install backtrader</code></p><p>如果想同时安装matplotlib：
+<code>pip install backtrader[plotting]</code></p><h4 id=32通过源安装>3.2、通过源安装</h4><p><a href=https://github.com/mementum/backtrader>https://github.com/mementum/backtrader</a>
+python安装源文件，自己搜索</p><h4 id=33通过pycharm安装>3.3、通过pycharm安装</h4><p>新建项目 -> Files -> Settings -> Project 项目名称 -> Project Interpreter -> 右侧加号，搜索<code>backtrader</code> Install Package即可</p><h2 id=三backtrader用法>三、backtrader用法</h2><h4 id=1使用前说明>1、使用前说明</h4><p>常用数据名称：
+开盘价，最高价，最低价，收盘价，成交量，持仓量</p><p>数据索引方式：
+当前值：[0]
+前一个值：[-1]
+前2个值：[-2]
+……</p><blockquote><p>说明：所有的数字都是历史值，所以只能往后推</p></blockquote><h5 id=1基本功能>1、基本功能</h5><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> __future__ <span style=color:#f92672>import</span> (absolute_import, division, print_function,unicode_literals) 
+<span style=color:#75715e>#让python2兼容python3，python3环境下可以不用写</span>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    
-<meta charset="utf-8" >
+<span style=color:#75715e>#引入backtrader</span>
+<span style=color:#f92672>import</span> backtrader <span style=color:#f92672>as</span> bt
 
-<title>BackTrader学习笔记 | Aixin.me</title>
-<meta name="description" content="aixin.me">
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
+    cerebro <span style=color:#f92672>=</span> bt<span style=color:#f92672>.</span>Cerebro()
+    cerebro<span style=color:#f92672>.</span>broker<span style=color:#f92672>.</span>setcash(<span style=color:#ae81ff>100.0</span>) <span style=color:#75715e>#可以自定义金额</span>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Starting Portfolio Value: </span><span style=color:#e6db74>%.2f</span><span style=color:#e6db74>&#39;</span> <span style=color:#f92672>%</span> cerebro<span style=color:#f92672>.</span>broker<span style=color:#f92672>.</span>getvalue())
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://aixin.me/favicon.ico?v=1579250753557">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="http://aixin.me/styles/main.css">
+    cerebro<span style=color:#f92672>.</span>run()
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="http://aixin.me">
-        <img class="avatar" src="http://aixin.me/images/avatar.png?v=1579250753557" alt="" width="32px" height="32px">
-      </a>
-      <a href="http://aixin.me">
-        <h1 class="site-title">Aixin.me</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          <!-- 
-            <div class="feature-container" style="background-image: url('http://aixin.me/post-images/backtrader.jpg')">
-            </div>
-           -->
-          <h2 class="post-title">BackTrader学习笔记</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-12-23</span>
-            
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="http://aixin.me/tag/quantitative-trading">
-                    量化交易
-                    
-                      ，
-                    
-                  </a>
-                
-                  <a href="http://aixin.me/tag/python">
-                    Python
-                    
-                  </a>
-                
-              </span>
-            
-          </div>
-          <div class="post-content">
-            <h2 id="一-backtrader介绍">一、BackTrader介绍</h2>
-<p>BackTrader是开源免费的量化交易策略回测系统，<br>
-运行流程：</p>
-<ol>
-<li>引入backtrader</li>
-<li>加载和注入数据Feed（cerebro.adddata）</li>
-<li>执行：cerebro.run()</li>
-<li>可视化结果：cerebro.plot()</li>
-</ol>
-<h2 id="二-安装backtrader">二、安装BackTrader</h2>
-<h4 id="1-安装环境要求">1、安装环境要求：</h4>
-<ul>
-<li>Python 2.7</li>
-<li>Python 3.2 / 3.3/ 3.4 / 3.5</li>
-<li>pypy/pypy3</li>
-<li>Matplotlib&gt; = 1.4.1（如果需要绘图的话需要配置）</li>
-</ul>
-<h4 id="2-兼容python2x3x">2、兼容Python2.x/3.x</h4>
-<pre><code class="language-python">from __future__ import (absolute_import, division, print_function,unicode_literals)
-</code></pre>
-<h4 id="31-通过pip安装">3.1、通过pip安装:</h4>
-<p><code>pip install backtrader</code></p>
-<p>如果想同时安装matplotlib：<br>
-<code>pip install backtrader[plotting]</code></p>
-<h4 id="32-通过源安装">3.2、通过源安装</h4>
-<p>https://github.com/mementum/backtrader<br>
-python安装源文件，自己搜索</p>
-<h4 id="33-通过pycharm安装">3.3、通过pycharm安装</h4>
-<p>新建项目 -&gt; Files -&gt; Settings -&gt; Project 项目名称 -&gt; Project Interpreter -&gt; 右侧加号，搜索<code>backtrader</code> Install Package即可</p>
-<h2 id="三-backtrader用法">三、backtrader用法</h2>
-<h4 id="1-使用前说明">1、使用前说明</h4>
-<p>常用数据名称：<br>
-开盘价，最高价，最低价，收盘价，成交量，持仓量</p>
-<p>数据索引方式：<br>
-当前值：[0]<br>
-前一个值：[-1]<br>
-前2个值：[-2]<br>
-……</p>
-<blockquote>
-<p>说明：所有的数字都是历史值，所以只能往后推</p>
-</blockquote>
-<h5 id="1-基本功能">1、基本功能</h5>
-<pre><code class="language-python">from __future__ import (absolute_import, division, print_function,unicode_literals) 
-#让python2兼容python3，python3环境下可以不用写
-
-#引入backtrader
-import backtrader as bt
-
-if __name__ == '__main__':
-    cerebro = bt.Cerebro()
-    cerebro.broker.setcash(100.0) #可以自定义金额
-
-    print('Starting Portfolio Value: %.2f' % cerebro.broker.getvalue())
-
-    cerebro.run()
-
-    print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue())
-</code></pre>
-<p>执行结果：</p>
-<blockquote>
-<p>Starting Portfolio Value: 100.00</p>
-<p>Final Portfolio Value: 100.00</p>
-</blockquote>
-<h5 id="2-添加数据">2、添加数据</h5>
-<blockquote>
-<p>说明：<br>
-<code>os.path.dirname</code> 当前文件的绝对路劲目录（不包含文件名）<br>
-<code>__file__</code> 当前文件绝对路劲+文件名<br>
-<code>os.path.abspath(path)</code> 输出绝对路劲、当前目录、上级目录等（反斜杠）<br>
-<code>sys.argv[0]</code> 当前文件绝对路劲+文件名（本地目录，正斜杠，用的时候需要转化成反斜杠）</p>
-<pre><code>print(sys.argv[0]) #输出：D:/python/futures/macd.py
+    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Final Portfolio Value: </span><span style=color:#e6db74>%.2f</span><span style=color:#e6db74>&#39;</span> <span style=color:#f92672>%</span> cerebro<span style=color:#f92672>.</span>broker<span style=color:#f92672>.</span>getvalue())
+</code></pre></div><p>执行结果：</p><blockquote><p>Starting Portfolio Value: 100.00</p><p>Final Portfolio Value: 100.00</p></blockquote><h5 id=2添加数据>2、添加数据</h5><blockquote><p>说明：
+<code>os.path.dirname</code> 当前文件的绝对路劲目录（不包含文件名）
+<code>__file__</code> 当前文件绝对路劲+文件名
+<code>os.path.abspath(path)</code> 输出绝对路劲、当前目录、上级目录等（反斜杠）
+<code>sys.argv[0]</code> 当前文件绝对路劲+文件名（本地目录，正斜杠，用的时候需要转化成反斜杠）</p><pre><code>print(sys.argv[0]) #输出：D:/python/futures/macd.py
 print(os.path.abspath(sys.argv[0])) #输出：D:\python\futures\macd.py
 print(os.path.dirname(os.path.abspath(sys.argv[0]))) #输出：D:\python\futures
-</code></pre>
-</blockquote>
-<p>代码：</p>
-<pre><code class="language-python">import datetime  # For datetime objects
-import os.path  # To manage paths
-import sys  # To find out the script name (in argv[0])
+</code></pre></blockquote><p>代码：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> datetime  <span style=color:#75715e># For datetime objects</span>
+<span style=color:#f92672>import</span> os.path  <span style=color:#75715e># To manage paths</span>
+<span style=color:#f92672>import</span> sys  <span style=color:#75715e># To find out the script name (in argv[0])</span>
 
-# Import the backtrader platform
-import backtrader as bt
+<span style=color:#75715e># Import the backtrader platform</span>
+<span style=color:#f92672>import</span> backtrader <span style=color:#f92672>as</span> bt
 
-if __name__ == '__main__':
-    # Create a cerebro entity
-    cerebro = bt.Cerebro()
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
+    <span style=color:#75715e># Create a cerebro entity</span>
+    cerebro <span style=color:#f92672>=</span> bt<span style=color:#f92672>.</span>Cerebro()
 
-    # Datas are in a subfolder of the samples. Need to find where the script is
-    # because it could have been called from anywhere
-    modpath = os.path.dirname(os.path.abspath(sys.argv[0]))
-    datapath = os.path.join(modpath, '../../datas/orcl-1995-2014.txt')
+    <span style=color:#75715e># Datas are in a subfolder of the samples. Need to find where the script is</span>
+    <span style=color:#75715e># because it could have been called from anywhere</span>
+    modpath <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>dirname(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>abspath(sys<span style=color:#f92672>.</span>argv[<span style=color:#ae81ff>0</span>]))
+    datapath <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>join(modpath, <span style=color:#e6db74>&#39;../../datas/orcl-1995-2014.txt&#39;</span>)
 
-    # Create a Data Feed
-    data = bt.feeds.YahooFinanceCSVData(
-        dataname=datapath,
-        # Do not pass values before this date
-        fromdate=datetime.datetime(2000, 1, 1),
-        # Do not pass values after this date
-        todate=datetime.datetime(2000, 12, 31),
-        reverse=False)
+    <span style=color:#75715e># Create a Data Feed</span>
+    data <span style=color:#f92672>=</span> bt<span style=color:#f92672>.</span>feeds<span style=color:#f92672>.</span>YahooFinanceCSVData(
+        dataname<span style=color:#f92672>=</span>datapath,
+        <span style=color:#75715e># Do not pass values before this date</span>
+        fromdate<span style=color:#f92672>=</span>datetime<span style=color:#f92672>.</span>datetime(<span style=color:#ae81ff>2000</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>),
+        <span style=color:#75715e># Do not pass values after this date</span>
+        todate<span style=color:#f92672>=</span>datetime<span style=color:#f92672>.</span>datetime(<span style=color:#ae81ff>2000</span>, <span style=color:#ae81ff>12</span>, <span style=color:#ae81ff>31</span>),
+        reverse<span style=color:#f92672>=</span>False)
 
-    # Add the Data Feed to Cerebro
-    cerebro.adddata(data)
+    <span style=color:#75715e># Add the Data Feed to Cerebro</span>
+    cerebro<span style=color:#f92672>.</span>adddata(data)
 
-    # Set our desired cash start
-    cerebro.broker.setcash(100000.0)
+    <span style=color:#75715e># Set our desired cash start</span>
+    cerebro<span style=color:#f92672>.</span>broker<span style=color:#f92672>.</span>setcash(<span style=color:#ae81ff>100000.0</span>)
 
-    # Print out the starting conditions
-    print('Starting Portfolio Value: %.2f' % cerebro.broker.getvalue())
+    <span style=color:#75715e># Print out the starting conditions</span>
+    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Starting Portfolio Value: </span><span style=color:#e6db74>%.2f</span><span style=color:#e6db74>&#39;</span> <span style=color:#f92672>%</span> cerebro<span style=color:#f92672>.</span>broker<span style=color:#f92672>.</span>getvalue())
 
-    # Run over everything
-    cerebro.run()
+    <span style=color:#75715e># Run over everything</span>
+    cerebro<span style=color:#f92672>.</span>run()
 
-    # Print out the final result
-    print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue())
-</code></pre>
-<p>运行结果：</p>
-<blockquote>
-<p>Starting Portfolio Value: 1000000.00</p>
-<p>Final Portfolio Value: 1000000.00</p>
-</blockquote>
-
-          </div>
-        </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="http://aixin.me/post/moving-average">
-              <h3 class="post-title">
-                下一篇：MA/SMA/EMA
-              </h3>
-            </a>
-          </div>
-          
-      </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">aixin.me</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  心中有爱，遇见更好的自己 | <a class="rss" href="http://aixin.me/atom.xml" target="_blank">RSS</a>
-</div>
-
-
-    </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
-  </body>
-</html>
+    <span style=color:#75715e># Print out the final result</span>
+    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Final Portfolio Value: </span><span style=color:#e6db74>%.2f</span><span style=color:#e6db74>&#39;</span> <span style=color:#f92672>%</span> cerebro<span style=color:#f92672>.</span>broker<span style=color:#f92672>.</span>getvalue())
+</code></pre></div><p>运行结果：</p><blockquote><p>Starting Portfolio Value: 1000000.00</p><p>Final Portfolio Value: 1000000.00</p></blockquote></div><footer class=post-footer><ul class=post-tags><li><a href=http://aixin.me/tags/python>Python</a></li><li><a href=http://aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93>量化交易</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2020 <a href=http://aixin.me>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top" accesskey=g><button class=top-link id=top-link type=button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></button></a>
+<script src=http://aixin.me/assets/js/highlight.min.e7afc2928c0925d65c4732dfebe147014d91299a98e819e4b42f25c4fa68e91c.js integrity="sha256-56/CkowJJdZcRzLf6+FHAU2RKZqY6BnktC8lxPpo6Rw="></script><script>hljs.initHighlightingOnLoad();</script><script>window.onload=function(){if(localStorage.getItem("menu-scroll-position")){document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position");}}
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener("click",function(e){e.preventDefault();var id=this.getAttribute("href").substr(1);document.querySelector(`[id='${id}']`).scrollIntoView({behavior:"smooth"});});});var mybutton=document.getElementById("top-link");window.onscroll=function(){if(document.body.scrollTop>800||document.documentElement.scrollTop>800){mybutton.style.visibility="visible";mybutton.style.opacity="1";}else{mybutton.style.visibility="hidden";mybutton.style.opacity="0";}};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft);}</script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{if(document.body.className.includes("dark")){document.body.classList.remove('dark');localStorage.setItem("pref-theme",'light');}else{document.body.classList.add('dark');localStorage.setItem("pref-theme",'dark');}})</script></body></html>

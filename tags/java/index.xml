@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Aixin.me</title>
+    <link>http://aixin.me/tags/java/</link>
+    <description>Recent content in Java on Aixin.me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Dec 2019 15:44:55 +0000</lastBuildDate><atom:link href="http://aixin.me/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring Boot 入门指南</title>
+      <link>http://aixin.me/post/spring-boot-getting-started/</link>
+      <pubDate>Thu, 05 Dec 2019 15:44:55 +0000</pubDate>
+      
+      <guid>http://aixin.me/post/spring-boot-getting-started/</guid>
+      <description>官方教程 https://docs.spring.io/spring-boot/docs/2.2.1.RELEASE/reference/html/
+1、Spring Boot介绍 Spring Boot可以轻松创建可以运行的独立的，生产级的基于Spring的应用程序。我们对Spring平台和第三方库采取自己的看法，以便您尽可能轻松地使用本教程。大多数Spring Boot应用程序只需要很少的Spring配置。
+您可以使用Spring Boot来创建可以使用java -jar或更传统的war部署来启动的Java应用程序 。我们还提供了一个运行“spring script”的命令行工具。
+2、系统要求 Spring Boot 2.2.1需要Java 8 及以上版本，同时也兼容了Java 13
+支持以下构建程序：
+ Maven 版本3.3+ Gradle 5.x  Servlet容器：
+   Name Servlet版本     Tomcat 9.0 4.0   Jetty 9.4 3.1   Undertow 2.0 4.0    3、Spring Boot安装  服务器SDK最低要求为：Java SDK v1.8 查看环境Java版本：java -version
+   安装方法一 您可以像使用任何标准Java库一样使用Spring Boot。为此，请spring-boot-*.jar在类路径中包含相应的文件。Spring Boot不需要任何特殊的工具集成，因此您可以使用任何IDE或文本编辑器。此外，Spring Boot应用程序没有什么特别之处，因此您可以像运行其他任何Java程序一样运行和调试Spring Boot应用程序。
+虽然您可以复制Spring Boot jar，但我们通常建议您使用支持依赖管理的构建工具（如Maven或Gradle）。</description>
+    </item>
+    
+  </channel>
+</rss>
