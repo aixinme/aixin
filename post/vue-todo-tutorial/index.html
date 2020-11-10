@@ -1,0 +1,115 @@
+<!doctype html><html lang=zh-cn dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Vue Todo Tutorial - Aixin.me</title><meta name=keywords content="Vue3"><meta name=description content="本文状态：未完成
+ 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型
+ 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli
+ 在项目src\views下面新建Todolist.vue
+<template> <div class=&#34;todolist&#34;> <div class=&#34;todo-header&#34;><svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;19.8&#34; height=&#34;24&#34; viewBox=&#34;0 0 19.8 24&#34;> <path id=&#34;路径_6&#34; data-name=&#34;路径 6&#34; d=&#34;M157.636,67.245a1.5,1.5,0,0,1-1.5,1.5h-13.2a1.5,1.5,0,0,1-1.5-1.5v-14.4a1.5,1.5,0,0,1,1.5-1.5h1.705l-.12,1.2h-.985a.9.9,0,1,0,0,1.8h12a.9.9,0,0,0,0-1.8h-.985l-.12-1.2h1.705a1.5,1.5,0,0,1,1.5,1.5Zm-10.912-18.63a.3.3,0,0,1,.3-.27h5.028a.3.3,0,0,1,.3.27l.094.93h0l.3,3h-6.41l.3-3h0l.094-.93Zm9.412.93H154.25l-.11-1.109a2.094,2.094,0,0,0-2.09-1.891h-5.028a2.094,2.094,0,0,0-2.09,1.891l-.11,1.109h-1.886a3.3,3.3,0,0,0-3.3,3.3v14.4a3.3,3.3,0,0,0,3.3,3.3h13.2a3.3,3.3,0,0,0,3.3-3.3v-14.4A3.3,3.3,0,0,0,156.136,49.545Zm-1.56,7.38a.9.9,0,0,0-1.26.18l-4.831,6.442-2.872-2.394a.9.9,0,1,0-1.153,1.384l3.115,2.6a1.5,1.5,0,0,0,2.16-.253l5.021-6.7a.9.9,0,0,0-.18-1.261&#34; transform=&#34;translate(-139.636 -46.545)&#34; fill=&#34;#3063ab&#34;/> </svg>待办</div> <div class=&#34;todo-body&#34;> <div class=&#34;todo-list&#34;> <div class=&#34;todo&#34;> <span class=&#34;todo-selet&#34;><svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;20&#34; height=&#34;20&#34; viewBox=&#34;0 0 20 20&#34;> <g id=&#34;椭圆_1&#34; data-name=&#34;椭圆 1&#34; fill=&#34;#fff&#34; stroke=&#34;#666&#34; stroke-width=&#34;2&#34;> <circle cx=&#34;10&#34; cy=&#34;10&#34; r=&#34;10&#34; stroke=&#34;none&#34;/> <circle cx=&#34;10&#34; cy=&#34;10&#34; r=&#34;9&#34; fill=&#34;none&#34;/> </g> </svg> </span> <span class=&#34;todo-center&#34;>这是一条待办的标题</span> <span class=&#34;todo-star&#34;><svg xmlns=&#34;http://www."><meta name=author content="Aixin"><link rel=canonical href=https://aixin.me/post/vue-todo-tutorial/><link href=https://aixin.me/assets/css/stylesheet.min.5d44456813d58b9cb020e3474e4c5d14b03070ef2a1e81ef3a4de94a1bc6696b.css integrity="sha256-XURFaBPVi5ywIONHTkxdFLAwcO8qHoHvOk3pShvGaWs=" rel="preload stylesheet" as=style><link rel=apple-touch-icon href=https://aixin.me/apple-touch-icon.png><link rel=icon href=https://aixin.me/favicon.ico><meta name=generator content="Hugo 0.77.0"><meta property="og:title" content="Vue Todo Tutorial"><meta property="og:description" content="本文状态：未完成
+ 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型
+ 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli
+ 在项目src\views下面新建Todolist.vue
+<template> <div class=&#34;todolist&#34;> <div class=&#34;todo-header&#34;><svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;19.8&#34; height=&#34;24&#34; viewBox=&#34;0 0 19.8 24&#34;> <path id=&#34;路径_6&#34; data-name=&#34;路径 6&#34; d=&#34;M157.636,67.245a1.5,1.5,0,0,1-1.5,1.5h-13.2a1.5,1.5,0,0,1-1.5-1.5v-14.4a1.5,1.5,0,0,1,1.5-1.5h1.705l-.12,1.2h-.985a.9.9,0,1,0,0,1.8h12a.9.9,0,0,0,0-1.8h-.985l-.12-1.2h1.705a1.5,1.5,0,0,1,1.5,1.5Zm-10.912-18.63a.3.3,0,0,1,.3-.27h5.028a.3.3,0,0,1,.3.27l.094.93h0l.3,3h-6.41l.3-3h0l.094-.93Zm9.412.93H154.25l-.11-1.109a2.094,2.094,0,0,0-2.09-1.891h-5.028a2.094,2.094,0,0,0-2.09,1.891l-.11,1.109h-1.886a3.3,3.3,0,0,0-3.3,3.3v14.4a3.3,3.3,0,0,0,3.3,3.3h13.2a3.3,3.3,0,0,0,3.3-3.3v-14.4A3.3,3.3,0,0,0,156.136,49.545Zm-1.56,7.38a.9.9,0,0,0-1.26.18l-4.831,6.442-2.872-2.394a.9.9,0,1,0-1.153,1.384l3.115,2.6a1.5,1.5,0,0,0,2.16-.253l5.021-6.7a.9.9,0,0,0-.18-1.261&#34; transform=&#34;translate(-139.636 -46.545)&#34; fill=&#34;#3063ab&#34;/> </svg>待办</div> <div class=&#34;todo-body&#34;> <div class=&#34;todo-list&#34;> <div class=&#34;todo&#34;> <span class=&#34;todo-selet&#34;><svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;20&#34; height=&#34;20&#34; viewBox=&#34;0 0 20 20&#34;> <g id=&#34;椭圆_1&#34; data-name=&#34;椭圆 1&#34; fill=&#34;#fff&#34; stroke=&#34;#666&#34; stroke-width=&#34;2&#34;> <circle cx=&#34;10&#34; cy=&#34;10&#34; r=&#34;10&#34; stroke=&#34;none&#34;/> <circle cx=&#34;10&#34; cy=&#34;10&#34; r=&#34;9&#34; fill=&#34;none&#34;/> </g> </svg> </span> <span class=&#34;todo-center&#34;>这是一条待办的标题</span> <span class=&#34;todo-star&#34;><svg xmlns=&#34;http://www."><meta property="og:type" content="article"><meta property="og:url" content="https://aixin.me/post/vue-todo-tutorial/"><meta property="article:published_time" content="2020-11-10T13:54:51+08:00"><meta property="article:modified_time" content="2020-11-10T13:54:51+08:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Vue Todo Tutorial"><meta name=twitter:description content="本文状态：未完成
+ 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型
+ 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli
+ 在项目src\views下面新建Todolist.vue
+<template> <div class=&#34;todolist&#34;> <div class=&#34;todo-header&#34;><svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;19.8&#34; height=&#34;24&#34; viewBox=&#34;0 0 19.8 24&#34;> <path id=&#34;路径_6&#34; data-name=&#34;路径 6&#34; d=&#34;M157.636,67.245a1.5,1.5,0,0,1-1.5,1.5h-13.2a1.5,1.5,0,0,1-1.5-1.5v-14.4a1.5,1.5,0,0,1,1.5-1.5h1.705l-.12,1.2h-.985a.9.9,0,1,0,0,1.8h12a.9.9,0,0,0,0-1.8h-.985l-.12-1.2h1.705a1.5,1.5,0,0,1,1.5,1.5Zm-10.912-18.63a.3.3,0,0,1,.3-.27h5.028a.3.3,0,0,1,.3.27l.094.93h0l.3,3h-6.41l.3-3h0l.094-.93Zm9.412.93H154.25l-.11-1.109a2.094,2.094,0,0,0-2.09-1.891h-5.028a2.094,2.094,0,0,0-2.09,1.891l-.11,1.109h-1.886a3.3,3.3,0,0,0-3.3,3.3v14.4a3.3,3.3,0,0,0,3.3,3.3h13.2a3.3,3.3,0,0,0,3.3-3.3v-14.4A3.3,3.3,0,0,0,156.136,49.545Zm-1.56,7.38a.9.9,0,0,0-1.26.18l-4.831,6.442-2.872-2.394a.9.9,0,1,0-1.153,1.384l3.115,2.6a1.5,1.5,0,0,0,2.16-.253l5.021-6.7a.9.9,0,0,0-.18-1.261&#34; transform=&#34;translate(-139.636 -46.545)&#34; fill=&#34;#3063ab&#34;/> </svg>待办</div> <div class=&#34;todo-body&#34;> <div class=&#34;todo-list&#34;> <div class=&#34;todo&#34;> <span class=&#34;todo-selet&#34;><svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;20&#34; height=&#34;20&#34; viewBox=&#34;0 0 20 20&#34;> <g id=&#34;椭圆_1&#34; data-name=&#34;椭圆 1&#34; fill=&#34;#fff&#34; stroke=&#34;#666&#34; stroke-width=&#34;2&#34;> <circle cx=&#34;10&#34; cy=&#34;10&#34; r=&#34;10&#34; stroke=&#34;none&#34;/> <circle cx=&#34;10&#34; cy=&#34;10&#34; r=&#34;9&#34; fill=&#34;none&#34;/> </g> </svg> </span> <span class=&#34;todo-center&#34;>这是一条待办的标题</span> <span class=&#34;todo-star&#34;><svg xmlns=&#34;http://www."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Vue Todo Tutorial","name":"Vue Todo Tutorial","description":"本文状态：未完成\n 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型\n 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli\n 在项目src\\views下面新建Todolist.vue\n\u0026amp;lt;template\u0026amp;gt; \u0026amp;lt;div …","keywords":["Vue3"],"articleBody":" 本文状态：未完成\n 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型\n 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli\n 在项目src\\views下面新建Todolist.vue\n 待办    这是一条待办的标题           export default { name: \"Todo\" }  .todolist{ width: 414px; height: 896px; background-color: #DFEDF9; margin: 0 auto; padding: 0 24px; } .todo-header{ text-align: center; height: 60px; font-size: 24px; font-weight: bold; color: #3063AB; line-height: 60px; } .todo-header svg{ vertical-align: text-bottom; margin-right: 6px; margin-bottom: 1px; } .todo-body{ padding-top: 14px; } .todo{ background-color: #FFFFFF; padding: 14px; border-radius: 4px; } .todo:hover{ background-color: #F5F5F5; } .todo-selet{ float: left; color: #666666; } .todo-center{ float: left; padding: 0 14px; color: #333333; } .todo-star{ float: right; color: #666666; } .todo:after { content: \"\"; clear: both; display: block; } .todo span{ vertical-align: center; }  2、添加路由 router\\index.js中添加\nconst routes = [ //... { path: '/todo', name: 'Todo', component: ()= import('../views/Todo') } 3、入口文件增加Todo页面入口（可以不要这一步） App.vue 文件\nTodo // router-view 公用的不用多次添加  4、预览页面 现在就可以npm run serve运行查看，\n打开首页后，点击Todo就可以打开todo页面，也可以直接在浏览器输入下面地址查看\n http://localhost:8080/todo\n ","wordCount":"225","inLanguage":"en","datePublished":"2020-11-10T13:54:51+08:00","dateModified":"2020-11-10T13:54:51+08:00","author":{"@type":"Person","name":"Aixin"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aixin.me/post/vue-todo-tutorial/"},"publisher":{"@type":"Organization","name":"Aixin.me","logo":{"@type":"ImageObject","url":"https://aixin.me/favicon.ico"}}}</script></head><body class=single id=top><script>if(localStorage.getItem("pref-theme")==="dark"){document.body.classList.add('dark');}else if(localStorage.getItem("pref-theme")==="light"){document.body.classList.remove('dark')}else{if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.body.classList.add('dark');}}</script><noscript><style type=text/css>.theme-toggle,.top-link{display:none}</style></noscript><header class=header><nav class=nav><div class=logo><a href=https://aixin.me/ accesskey=h>Aixin.me</a>
+<span class=logo-switches><span class=theme-toggle><a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></a></span></span></div><ul class=menu id=menu onscroll=menu_on_scroll()><li><a href=https://aixin.me/tags/><span>Tags</span></a></li><li><a href=https://aixin.me/archives/><span>Archives</span></a></li><li><a href=https://aixin.me/about/><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Vue Todo Tutorial</h1><div class=post-meta>November 10, 2020&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aixin</div></header><div class=toc><details><summary><div class=details accesskey=c>Table of Contents</div></summary><blockquote><ul><li><a href=#%e4%b8%80%e4%ba%a7%e5%93%81%e5%8e%9f%e5%9e%8b>一、产品原型</a></li><li><a href=#%e4%ba%8c%e5%bc%80%e5%8f%91%e6%95%99%e7%a8%8b>二、开发教程</a><ul><ul><ul><li><a href=#1%e6%96%b0%e5%bb%batodolistvue>1、新建Todolist.vue</a></li><li><a href=#2%e6%b7%bb%e5%8a%a0%e8%b7%af%e7%94%b1>2、添加路由</a></li><li><a href=#3%e5%85%a5%e5%8f%a3%e6%96%87%e4%bb%b6%e5%a2%9e%e5%8a%a0todo%e9%a1%b5%e9%9d%a2%e5%85%a5%e5%8f%a3%e5%8f%af%e4%bb%a5%e4%b8%8d%e8%a6%81%e8%bf%99%e4%b8%80%e6%ad%a5>3、入口文件增加Todo页面入口（可以不要这一步）</a></li><li><a href=#4%e9%a2%84%e8%a7%88%e9%a1%b5%e9%9d%a2>4、预览页面</a></li></ul></ul></ul></li></ul></blockquote></details></div><div class=post-content><blockquote><p>本文状态：未完成</p></blockquote><h1 id=一产品原型>一、产品原型</h1><p><img src=https://s1.ax1x.com/2020/11/10/Bq56dH.png alt=todo></p><blockquote><p>参考 Windows todo设计一个简单的移动端todo页面原型</p></blockquote><h1 id=二开发教程>二、开发教程</h1><h4 id=1新建todolistvue>1、新建Todolist.vue</h4><blockquote><p>先通过脚手架配置好vue项目：@vue/cli</p></blockquote><p>在项目src\views下面新建Todolist.vue</p><pre><code>&lt;template&gt;
+  &lt;div class=&quot;todolist&quot;&gt;
+    &lt;div class=&quot;todo-header&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;19.8&quot; height=&quot;24&quot; viewBox=&quot;0 0 19.8 24&quot;&gt;
+      &lt;path id=&quot;路径_6&quot; data-name=&quot;路径 6&quot; d=&quot;M157.636,67.245a1.5,1.5,0,0,1-1.5,1.5h-13.2a1.5,1.5,0,0,1-1.5-1.5v-14.4a1.5,1.5,0,0,1,1.5-1.5h1.705l-.12,1.2h-.985a.9.9,0,1,0,0,1.8h12a.9.9,0,0,0,0-1.8h-.985l-.12-1.2h1.705a1.5,1.5,0,0,1,1.5,1.5Zm-10.912-18.63a.3.3,0,0,1,.3-.27h5.028a.3.3,0,0,1,.3.27l.094.93h0l.3,3h-6.41l.3-3h0l.094-.93Zm9.412.93H154.25l-.11-1.109a2.094,2.094,0,0,0-2.09-1.891h-5.028a2.094,2.094,0,0,0-2.09,1.891l-.11,1.109h-1.886a3.3,3.3,0,0,0-3.3,3.3v14.4a3.3,3.3,0,0,0,3.3,3.3h13.2a3.3,3.3,0,0,0,3.3-3.3v-14.4A3.3,3.3,0,0,0,156.136,49.545Zm-1.56,7.38a.9.9,0,0,0-1.26.18l-4.831,6.442-2.872-2.394a.9.9,0,1,0-1.153,1.384l3.115,2.6a1.5,1.5,0,0,0,2.16-.253l5.021-6.7a.9.9,0,0,0-.18-1.261&quot; transform=&quot;translate(-139.636 -46.545)&quot; fill=&quot;#3063ab&quot;/&gt;
+    &lt;/svg&gt;待办&lt;/div&gt;
+    &lt;div class=&quot;todo-body&quot;&gt;
+      &lt;div class=&quot;todo-list&quot;&gt;
+        &lt;div class=&quot;todo&quot;&gt;
+          &lt;span class=&quot;todo-selet&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+  &lt;g id=&quot;椭圆_1&quot; data-name=&quot;椭圆 1&quot; fill=&quot;#fff&quot; stroke=&quot;#666&quot; stroke-width=&quot;2&quot;&gt;
+    &lt;circle cx=&quot;10&quot; cy=&quot;10&quot; r=&quot;10&quot; stroke=&quot;none&quot;/&gt;
+    &lt;circle cx=&quot;10&quot; cy=&quot;10&quot; r=&quot;9&quot; fill=&quot;none&quot;/&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+&lt;/span&gt;
+          &lt;span class=&quot;todo-center&quot;&gt;这是一条待办的标题&lt;/span&gt;
+          &lt;span class=&quot;todo-star&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;18.018&quot; height=&quot;18&quot; viewBox=&quot;0 0 18.018 18&quot;&gt;
+  &lt;path id=&quot;路径_10&quot; data-name=&quot;路径 10&quot; d=&quot;M77.326,74.7a2.5,2.5,0,0,0-.624,2.007l.634,3.866-3.314-1.82a2.25,2.25,0,0,0-2.032,0l-3.314,1.82.634-3.866a2.506,2.506,0,0,0-.624-2.007l-2.692-2.742,3.715-.564a2.352,2.352,0,0,0,1.641-1.244l1.657-3.507,1.655,3.507A2.352,2.352,0,0,0,76.3,71.392l3.715.564Zm4.291-2.183a1.2,1.2,0,0,0,.348-1.22,1.14,1.14,0,0,0-.972-.769l-4.472-.679a.889.889,0,0,1-.507-.387l-2-4.236a1.063,1.063,0,0,0-2.015,0l-2,4.236a.879.879,0,0,1-.509.387l-4.472.679a1.137,1.137,0,0,0-.97.769,1.207,1.207,0,0,0,.348,1.22l3.236,3.3a.947.947,0,0,1,.2.632L67.062,81.1a1.2,1.2,0,0,0,.407,1.2.984.984,0,0,0,.6.2,1.308,1.308,0,0,0,.624-.173l4-2.2a.856.856,0,0,1,.624,0l4,2.2a1.093,1.093,0,0,0,1.222-.026,1.2,1.2,0,0,0,.409-1.2l-.765-4.655a.969.969,0,0,1,.2-.632Zm0,0&quot; transform=&quot;translate(-63.998 -64.5)&quot; fill=&quot;#666&quot;/&gt;
+&lt;/svg&gt;
+&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;done-list&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;todo-footer&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;Todo&quot;
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+.todolist{
+  width: 414px;
+  height: 896px;
+  background-color: #DFEDF9;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.todo-header{
+  text-align: center;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3063AB;
+  line-height: 60px;
+}
+.todo-header svg{
+  vertical-align: text-bottom;
+  margin-right: 6px;
+  margin-bottom: 1px;
+}
+.todo-body{
+  padding-top: 14px;
+}
+.todo{
+  background-color: #FFFFFF;
+  padding: 14px;
+  border-radius: 4px;
+}
+.todo:hover{
+  background-color: #F5F5F5;
+}
+.todo-selet{
+  float: left;
+  color: #666666;
+}
+.todo-center{
+  float: left;
+  padding: 0 14px;
+  color: #333333;
+}
+.todo-star{
+  float: right;
+  color: #666666;
+}
+.todo:after {
+  content: &quot;&quot;;
+  clear: both;
+  display: block;
+}
+.todo span{
+  vertical-align: center;
+}
+&lt;/style&gt;
+</code></pre><h4 id=2添加路由>2、添加路由</h4><p>router\index.js中添加</p><pre><code>const routes = [
+    //...
+    {
+        path: '/todo',
+        name: 'Todo',
+        component: ()=&gt; import('../views/Todo')
+    }
+</code></pre><h4 id=3入口文件增加todo页面入口可以不要这一步>3、入口文件增加Todo页面入口（可以不要这一步）</h4><p>App.vue 文件</p><pre><code>&lt;router-link to=&quot;/todo&quot;&gt;Todo&lt;/router-link&gt;
+
+// router-view 公用的不用多次添加
+&lt;router-view/&gt;
+</code></pre><h4 id=4预览页面>4、预览页面</h4><p>现在就可以<code>npm run serve</code>运行查看，</p><p>打开首页后，点击Todo就可以打开todo页面，也可以直接在浏览器输入下面地址查看</p><blockquote><p>http://localhost:8080/todo</p></blockquote></div><footer class=post-footer><ul class=post-tags><li><a href=https://aixin.me/tags/vue3>Vue3</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2020 <a href=https://aixin.me/>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top" accesskey=g><button class=top-link id=top-link type=button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></button></a>
+<script src=https://aixin.me/assets/js/highlight.min.e7afc2928c0925d65c4732dfebe147014d91299a98e819e4b42f25c4fa68e91c.js integrity="sha256-56/CkowJJdZcRzLf6+FHAU2RKZqY6BnktC8lxPpo6Rw="></script><script>hljs.initHighlightingOnLoad();</script><script>window.onload=function(){if(localStorage.getItem("menu-scroll-position")){document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position");}}
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener("click",function(e){e.preventDefault();var id=this.getAttribute("href").substr(1);document.querySelector(`[id='${id}']`).scrollIntoView({behavior:"smooth"});});});var mybutton=document.getElementById("top-link");window.onscroll=function(){if(document.body.scrollTop>800||document.documentElement.scrollTop>800){mybutton.style.visibility="visible";mybutton.style.opacity="1";}else{mybutton.style.visibility="hidden";mybutton.style.opacity="0";}};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft);}</script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{if(document.body.className.includes("dark")){document.body.classList.remove('dark');localStorage.setItem("pref-theme",'light');}else{document.body.classList.add('dark');localStorage.setItem("pref-theme",'dark');}})</script></body></html>
