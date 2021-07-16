@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>软件工具 on Aixin.me</title>
+    <link>https://aixin.me/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 软件工具 on Aixin.me</description>
+    <image>
+      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 16 Jul 2021 13:06:08 +0800</lastBuildDate><atom:link href="https://aixin.me/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visual Studio Code Tutorial</title>
+      <link>https://aixin.me/post/visual-studio-code-tutorial/</link>
+      <pubDate>Fri, 16 Jul 2021 13:06:08 +0800</pubDate>
+      
+      <guid>https://aixin.me/post/visual-studio-code-tutorial/</guid>
+      <description>下载地址 https://code.visualstudio.com/
+插件推荐 汉化： Chinese (Simplified) Language Pack for Visual Studio Code
+Vue：Vetur
+运行代码：Code Runner
+同步配置：Settings Sync
+美化代码：beautify
+自动修改标签头尾：Atuo Rename Tag
+自动修改标签头尾：Atuo Close Tag
+多颜色交替缩进：Indent-Rainbow
+自动填充文件名：Path Intellisense
+egg.js插件：eggjs
+nest.js插件：Vscode NestJs Snippets
+随机生成内容：Random Something
+打字效果：Power Mode
+主题 Atom One Dark Theme
+快捷键 通用 General
+   按 Press 功能 Function     Ctrl + Shift + P，F1 显示命令面板 Show Command Palette   Ctrl + P 快速打开 Quick Open   Ctrl + Shift + N 新窗口/实例 New window/instance   Ctrl + Shift + W 关闭窗口/实例 Close window/instance    基础编辑 Basic editing</description>
+    </item>
+    
+  </channel>
+</rss>

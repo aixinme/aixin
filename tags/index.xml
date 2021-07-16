@@ -4,8 +4,21 @@
     <title>Tags on Aixin.me</title>
     <link>https://aixin.me/tags/</link>
     <description>Recent content in Tags on Aixin.me</description>
+    <image>
+      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 10 Nov 2020 13:54:51 +0800</lastBuildDate><atom:link href="https://aixin.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 13:06:08 +0800</lastBuildDate><atom:link href="https://aixin.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>软件工具</title>
+      <link>https://aixin.me/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Fri, 16 Jul 2021 13:06:08 +0800</pubDate>
+      
+      <guid>https://aixin.me/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Vue3</title>
       <link>https://aixin.me/tags/vue3/</link>
