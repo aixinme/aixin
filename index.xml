@@ -9,7 +9,7 @@
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Aug 2021 16:09:52 +0800</lastBuildDate><atom:link href="https://aixin.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Aug 2021 20:37:27 +0800</lastBuildDate><atom:link href="https://aixin.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://aixin.me/about/</link>
@@ -17,6 +17,24 @@
       
       <guid>https://aixin.me/about/</guid>
       <description>aixin.me 心中有爱，遇见更好的自己</description>
+    </item>
+    
+    <item>
+      <title>Egg.js Basic Tutorial</title>
+      <link>https://aixin.me/post/eggjs-basic-tutorial/</link>
+      <pubDate>Sat, 07 Aug 2021 20:37:27 +0800</pubDate>
+      
+      <guid>https://aixin.me/post/eggjs-basic-tutorial/</guid>
+      <description>官网：https://eggjs.org/zh-cn/
+安装 // 1、创建并进入项目目录 mkdir egg-example &amp;amp;&amp;amp; cd egg-example // 2、初始化 npm init egg --type=simple // 3、安装项目 npm i // 4、启动项目 npm run dev // http://localhost:7001  type的类型
+simple - 基础应用模板
+microservice - 基于egg的微服务模板
+sequelize - 带有sequelize的egg应用
+ts - typescript的基础应用模板
+empty - 空模板
+plugin - egg 插件模板
+framework - 框架模板
+ 核心功能 1、控制器 Controller // app/controller/home.js const Controller = require(&#39;egg&#39;).Controller; class HomeController extends Controller { async index() { this.ctx.body = &#39;Hello world&#39;; } } module.</description>
     </item>
     
     <item>
@@ -60,7 +78,7 @@
  一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型
  二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli
  在项目src\views下面新建Todo.vue
-&amp;lt;template&amp;gt; &amp;lt;div class=&amp;quot;todo&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;Todolist&amp;lt;/h1&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; v-model=&amp;quot;content&amp;quot; @keypress=&amp;quot;add&amp;quot;&amp;gt;&amp;lt;button @click=&amp;quot;add&amp;quot;&amp;gt;Add&amp;lt;/button&amp;gt; &amp;lt;p&amp;gt;{{content}}&amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;section-title&amp;quot;&amp;gt;待办&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;quot;todolist underway&amp;quot;&amp;gt; &amp;lt;TodoItem :=&amp;quot;todo&amp;quot; v-for=&amp;quot;todo in underway&amp;quot; :key=&amp;quot;todo.id&amp;quot; :class=&amp;quot;{done:todo.status}&amp;quot; v-model=&amp;quot;todo.status&amp;quot; /&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;div class=&amp;quot;section-title&amp;quot;&amp;gt;已完成&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;quot;todolist completed&amp;quot;&amp;gt; &amp;lt;TodoItem :=&amp;quot;todo&amp;quot; v-for=&amp;quot;todo in completed&amp;quot; :key=&amp;quot;todo.id&amp;quot; :class=&amp;quot;{done:todo.status}&amp;quot; v-model=&amp;quot;todo.status&amp;quot; /&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; import TodoItem from &#39;../components/TodoItem&#39;; export default { name: &amp;quot;Todo&amp;quot;, components:{ TodoItem }, data(){ return{ content:&#39;hello world!</description>
+&amp;lt;template&amp;gt;&amp;lt;div class=&amp;quot;todo&amp;quot;&amp;gt;&amp;lt;h1&amp;gt;Todolist&amp;lt;/h1&amp;gt;&amp;lt;input type=&amp;quot;text&amp;quot; v-model=&amp;quot;content&amp;quot; @keypress=&amp;quot;add&amp;quot;&amp;gt;&amp;lt;button @click=&amp;quot;add&amp;quot;&amp;gt;Add&amp;lt;/button&amp;gt;&amp;lt;p&amp;gt;{{content}}&amp;lt;/p&amp;gt;&amp;lt;div class=&amp;quot;section-title&amp;quot;&amp;gt;待办&amp;lt;/div&amp;gt;&amp;lt;ul class=&amp;quot;todolist underway&amp;quot;&amp;gt;&amp;lt;TodoItem :=&amp;quot;todo&amp;quot; v-for=&amp;quot;todo in underway&amp;quot; :key=&amp;quot;todo.id&amp;quot; :class=&amp;quot;{done:todo.status}&amp;quot; v-model=&amp;quot;todo.status&amp;quot; /&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;div class=&amp;quot;section-title&amp;quot;&amp;gt;已完成&amp;lt;/div&amp;gt;&amp;lt;ul class=&amp;quot;todolist completed&amp;quot;&amp;gt;&amp;lt;TodoItem :=&amp;quot;todo&amp;quot; v-for=&amp;quot;todo in completed&amp;quot; :key=&amp;quot;todo.id&amp;quot; :class=&amp;quot;{done:todo.status}&amp;quot; v-model=&amp;quot;todo.status&amp;quot; /&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/template&amp;gt;&amp;lt;script&amp;gt;import TodoItem from &#39;../components/TodoItem&#39;;export default {name: &amp;quot;Todo&amp;quot;,components:{TodoItem},data(){return{content:&#39;hello world!</description>
     </item>
     
     <item>
@@ -69,8 +87,8 @@
       <pubDate>Thu, 05 Nov 2020 16:04:12 +0800</pubDate>
       
       <guid>https://aixin.me/post/vue3-base-tutorials/</guid>
-      <description>安装VUE npm install webpack -g npm install webpack-cli -g npm install -g @vue/cli @vue/cli-service-global vue create hello-world npm run serve npm run build 基本框架 &amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt; &amp;lt;p&amp;gt;{{ message }}&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;{{ content() }}&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; var vm = new Vue({ el: &#39;#app&#39;, data: { message: &#39;Hello&#39; }, methods: { content: function(){ return this.message + &#39; Vue.js&#39;; } } }) 说明： vue代码结构：
-new Vue({ el: &#39;#app&#39;,//根元素 data: { //变量 message: &#39;Hello&#39; }, methods: { //函数方法 content: function(){ return this.</description>
+      <description>安装VUE npm install webpack -gnpm install webpack-cli -gnpm install -g @vue/cli @vue/cli-service-globalvue create hello-worldnpm run servenpm run build基本框架 &amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;&amp;lt;p&amp;gt;{{ message }}&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;{{ content() }}&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;var vm = new Vue({el: &#39;#app&#39;,data: {message: &#39;Hello&#39;},methods: {content: function(){return this.message + &#39; Vue.js&#39;;}}})说明： vue代码结构：
+new Vue({el: &#39;#app&#39;,//根元素data: { //变量message: &#39;Hello&#39;},methods: { //函数方法content: function(){return this.</description>
     </item>
     
     <item>
@@ -89,9 +107,9 @@ D:\Hugo\Sites
  将下载的安装包里面的hugo.exe解压到D:\Hugo\bin下面
 3、配置环境 我的电脑→右键→高级→环境变量→系统变量→Path，增加D:\Hugo\bin
 4、安装完成 验证
-hugo version //查看版本 hugo help //帮助文档  能正常输出即安装成功
+hugo version //查看版本hugo help //帮助文档 能正常输出即安装成功
  二、新建网站 在D:\Hugo\Sites下面打开cmd，或其他命令工具
-hugo new site simple.com  新建simple.com 网站名自定义
+hugo new site simple.com 新建simple.com 网站名自定义
   回车创建成功！
 然后在D:\Hugo\Sites下面就会新建一个simple文件夹
  三、编写内容 1、目录说明  archetypes/ 创建页面的原型文件，比如标题时间等，可以自定义
@@ -101,7 +119,7 @@ static/ 静态文件
 themes/ 主题会安装在这儿
 config.toml 配置文件
  2、创建页面 在网站目录下面执行命令
-hugo new about.md  自动在当前网站下的content目录下生成about.md文件
+hugo new about.md 自动在当前网站下的content目录下生成about.md文件
  3、创建文章 hugo new post/hello-world.</description>
     </item>
     
@@ -241,13 +259,13 @@ MACD计算方式 DMA:平行线差指标</description>
       <description>生成数组
  numpy.arange([start, ]stop, [step, ]dtype=None)
  示例
-np.arange(3) array([0, 1, 2]) np.arange(3.0) array([ 0., 1., 2.]) np.arange(3,7) array([3, 4, 5, 6]) np.arange(3,7,2) array([3, 5]) 生成随机整数
+np.arange(3)array([0, 1, 2])np.arange(3.0)array([ 0., 1., 2.])np.arange(3,7)array([3, 4, 5, 6])np.arange(3,7,2)array([3, 5])生成随机整数
  numpy.random.randint(low, high=None, size=None, dtype=&amp;lsquo;l&amp;rsquo;)
  示例
-np.random.randint(2, size=10) array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0]) np.random.randint(1, size=10) array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]) 随机排列
+np.random.randint(2, size=10)array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])np.random.randint(1, size=10)array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])随机排列
  np.random.shuffle(x)
  示例
-arr = np.arange(10) np.random.shuffle(arr) arr [1 7 5 2 9 4 3 6 0 8] 随机采样</description>
+arr = np.arange(10)np.random.shuffle(arr)arr[1 7 5 2 9 4 3 6 0 8]随机采样</description>
     </item>
     
     
