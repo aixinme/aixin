@@ -12,7 +12,7 @@
 <template><div class=&#34;todo&#34;><h1>Todolist</h1><input type=&#34;text&#34; v-model=&#34;content&#34; @keypress=&#34;add&#34;><button @click=&#34;add&#34;>Add</button><p>{{content}}</p><div class=&#34;section-title&#34;>待办</div><ul class=&#34;todolist underway&#34;><TodoItem :=&#34;todo&#34; v-for=&#34;todo in underway&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /></ul><div class=&#34;section-title&#34;>已完成</div><ul class=&#34;todolist completed&#34;><TodoItem :=&#34;todo&#34; v-for=&#34;todo in completed&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /></ul></div></template><script>import TodoItem from '../components/TodoItem';export default {name: &#34;Todo&#34;,components:{TodoItem},data(){return{content:'hello world!">
 <meta name=author content="Aixin.me">
 <link rel=canonical href=https://aixin.me/post/vue-todo-tutorial/>
-<link href=/assets/css/stylesheet.min.275a0a33393626d644b93d33d889bc674b3855fd2ba286daa9ed0aa5ebd462c9.css integrity="sha256-J1oKMzk2JtZEuT0z2Im8Z0s4Vf0roobaqe0KpevUYsk=" rel="preload stylesheet" as=style>
+<link href=/assets/css/stylesheet.min.8789c5df4ea3b34b1562841ac30476c6a8eac3f3731920d0459b2d8529baf531.css integrity="sha256-h4nF306js0sVYoQawwR2xqjqw/NzGSDQRZsthSm69TE=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://aixin.me/images/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://aixin.me/%3Clink%20/%20abs%20url%3E>
 <link rel=icon type=image/png sizes=32x32 href=https://aixin.me/%3Clink%20/%20abs%20url%3E>
@@ -21,6 +21,9 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.87.0">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css integrity=sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js integrity=sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8 crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js integrity=sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl crossorigin=anonymous onload=renderMathInElement(document.body)></script>
 <meta property="og:title" content="Vue3 开发 Todolist 教程">
 <meta property="og:description" content="本文状态：未完成
  一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型
