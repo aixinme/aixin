@@ -74,6 +74,48 @@
 <article class=post-entry>
 <header class=entry-header>
 <h2>
+Vue3 开发 Todolist 教程
+</h2>
+</header>
+<section class=entry-content>
+<p>本文状态：未完成
+一、产品原型 参考 Windows todo设计一个简单的移动端todo页面原型
+二、开发教程 1、新建Todolist.vue 先通过脚手架配置好vue项目：@vue/cli
+在项目src\views下面新建Todo.vue
+&lt;template>
+&lt;div class="todo">
+&lt;h1>Todolist&lt;/h1>
+&lt;input type="text" v-model="content" @keypress="add">&lt;button @click="add">Add&lt;/button>
+&lt;p>{{content}}&lt;/p>
+&lt;div class="section-title">待办&lt;/div>
+&lt;ul class="todolist underway">
+&lt;TodoItem :="todo" v-for="todo in underway" :key="todo.id" :class="{done:todo.status}" v-model="todo.status" />
+&lt;/ul>
+&lt;div class="section-title">已完成&lt;/div>
+&lt;ul class="todolist completed">
+&lt;TodoItem :="todo" v-for="todo in completed" :key="todo.id" :class="{done:todo.status}" v-model="todo.status" />
+&lt;/ul>
+&lt;/div>
+&lt;/template>
+&lt;script>
+import TodoItem from '../components/TodoItem';
+export default {
+name: "Todo",
+components:{
+TodoItem
+},
+data(){
+return{
+content:'hello world!...</p>
+</section>
+<footer class=entry-footer>
+November 10, 2020&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Aixin.me
+</footer>
+<a class=entry-link aria-label="post link to Vue3 开发 Todolist 教程" href=https://aixin.me/post/vue-todo-tutorial/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>
 Vue3 基础知识点
 </h2>
 </header>
@@ -200,27 +242,6 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
 December 27, 2019&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Aixin.me
 </footer>
 <a class=entry-link aria-label="post link to ATR：均幅指标" href=https://aixin.me/post/average-true-range/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>
-BackTrader学习笔记
-</h2>
-</header>
-<section class=entry-content>
-<p>一、BackTrader介绍 BackTrader是开源免费的量化交易策略回测系统， 运行流程：
-引入backtrader 加载和注入数据Feed（cerebro.adddata） 执行：cerebro.run() 可视化结果：cerebro.plot() 二、安装BackTrader 1、安装环境要求： Python 2.7 Python 3.2 / 3.3/ 3.4 / 3.5 pypy/pypy3 Matplotlib> = 1.4.1（如果需要绘图的话需要配置） 2、兼容Python2.x/3.x from __future__ import (absolute_import, division, print_function,unicode_literals) 3.1、通过pip安装: pip install backtrader
-如果想同时安装matplotlib： pip install backtrader[plotting]
-3.2、通过源安装 https://github.com/mementum/backtrader python安装源文件，自己搜索
-3.3、通过pycharm安装 新建项目 -> Files -> Settings -> Project 项目名称 -> Project Interpreter -> 右侧加号，搜索backtrader Install Package即可
-三、backtrader用法 1、使用前说明 常用数据名称： 开盘价，最高价，最低价，收盘价，成交量，持仓量
-数据索引方式： 当前值：[0] 前一个值：[-1] 前2个值：[-2] ……
-说明：所有的数字都是历史值，所以只能往后推...</p>
-</section>
-<footer class=entry-footer>
-December 23, 2019&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Aixin.me
-</footer>
-<a class=entry-link aria-label="post link to BackTrader学习笔记" href=https://aixin.me/post/backtrader/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
