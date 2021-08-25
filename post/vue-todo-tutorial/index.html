@@ -1,138 +1,17 @@
-<!doctype html><html lang=zh dir=auto>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=robots content="index, follow">
-<title>Vue3 开发 Todolist 教程 | 爱心网-Aixin.me</title>
-<meta name=keywords content="Vue3">
-<meta name=description content="本文状态：未完成
+<!doctype html><html lang=zh dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Vue3 开发 Todolist 教程 | 爱心网-Aixin.me</title><meta name=keywords content="Vue3"><meta name=description content="本文状态：未完成
  一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型
  二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli
  在项目src\views下面新建Todo.vue
-<template><div class=&#34;todo&#34;><h1>Todolist</h1><input type=&#34;text&#34; v-model=&#34;content&#34; @keypress=&#34;add&#34;><button @click=&#34;add&#34;>Add</button><p>{{content}}</p><div class=&#34;section-title&#34;>待办</div><ul class=&#34;todolist underway&#34;><TodoItem :=&#34;todo&#34; v-for=&#34;todo in underway&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /></ul><div class=&#34;section-title&#34;>已完成</div><ul class=&#34;todolist completed&#34;><TodoItem :=&#34;todo&#34; v-for=&#34;todo in completed&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /></ul></div></template><script>import TodoItem from '../components/TodoItem';export default {name: &#34;Todo&#34;,components:{TodoItem},data(){return{content:'hello world!">
-<meta name=author content="Aixin.me">
-<link rel=canonical href=https://aixin.me/post/vue-todo-tutorial/>
-<link href=/assets/css/stylesheet.min.8789c5df4ea3b34b1562841ac30476c6a8eac3f3731920d0459b2d8529baf531.css integrity="sha256-h4nF306js0sVYoQawwR2xqjqw/NzGSDQRZsthSm69TE=" rel="preload stylesheet" as=style>
-<link rel=icon href=https://aixin.me/images/favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=https://aixin.me/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=32x32 href=https://aixin.me/%3Clink%20/%20abs%20url%3E>
-<link rel=apple-touch-icon href=https://aixin.me/%3Clink%20/%20abs%20url%3E>
-<link rel=mask-icon href=https://aixin.me/%3Clink%20/%20abs%20url%3E>
-<meta name=theme-color content="#2e2e33">
-<meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.87.0">
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css integrity=sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js integrity=sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8 crossorigin=anonymous></script>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js integrity=sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl crossorigin=anonymous onload=renderMathInElement(document.body)></script>
-<meta property="og:title" content="Vue3 开发 Todolist 教程">
-<meta property="og:description" content="本文状态：未完成
+<template> <div class=&#34;todo&#34;> <h1>Todolist</h1> <input type=&#34;text&#34; v-model=&#34;content&#34; @keypress=&#34;add&#34;><button @click=&#34;add&#34;>Add</button> <p>{{content}}</p> <div class=&#34;section-title&#34;>待办</div> <ul class=&#34;todolist underway&#34;> <TodoItem :=&#34;todo&#34; v-for=&#34;todo in underway&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /> </ul> <div class=&#34;section-title&#34;>已完成</div> <ul class=&#34;todolist completed&#34;> <TodoItem :=&#34;todo&#34; v-for=&#34;todo in completed&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /> </ul> </div> </template> <script> import TodoItem from '../components/TodoItem'; export default { name: &#34;Todo&#34;, components:{ TodoItem }, data(){ return{ content:'hello world!"><meta name=author content="Aixin.me"><link rel=canonical href=https://aixin.me/post/vue-todo-tutorial/><link href=/assets/css/stylesheet.min.65503748e9ebcf60fe22865c7e7727c1cf70e446031c37ef428743ad2310156a.css integrity="sha256-ZVA3SOnrz2D+IoZcfncnwc9w5EYDHDfvQodDrSMQFWo=" rel="preload stylesheet" as=style><link rel=icon href=https://aixin.me/images/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://aixin.me/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://aixin.me/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://aixin.me/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://aixin.me/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.85.0"><meta property="og:title" content="Vue3 开发 Todolist 教程"><meta property="og:description" content="本文状态：未完成
  一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型
  二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli
  在项目src\views下面新建Todo.vue
-<template><div class=&#34;todo&#34;><h1>Todolist</h1><input type=&#34;text&#34; v-model=&#34;content&#34; @keypress=&#34;add&#34;><button @click=&#34;add&#34;>Add</button><p>{{content}}</p><div class=&#34;section-title&#34;>待办</div><ul class=&#34;todolist underway&#34;><TodoItem :=&#34;todo&#34; v-for=&#34;todo in underway&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /></ul><div class=&#34;section-title&#34;>已完成</div><ul class=&#34;todolist completed&#34;><TodoItem :=&#34;todo&#34; v-for=&#34;todo in completed&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /></ul></div></template><script>import TodoItem from '../components/TodoItem';export default {name: &#34;Todo&#34;,components:{TodoItem},data(){return{content:'hello world!">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://aixin.me/post/vue-todo-tutorial/"><meta property="og:image" content="https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="post">
-<meta property="article:published_time" content="2020-11-10T13:54:51+08:00">
-<meta property="article:modified_time" content="2020-11-10T13:54:51+08:00">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
-<meta name=twitter:title content="Vue3 开发 Todolist 教程">
-<meta name=twitter:description content="本文状态：未完成
+<template> <div class=&#34;todo&#34;> <h1>Todolist</h1> <input type=&#34;text&#34; v-model=&#34;content&#34; @keypress=&#34;add&#34;><button @click=&#34;add&#34;>Add</button> <p>{{content}}</p> <div class=&#34;section-title&#34;>待办</div> <ul class=&#34;todolist underway&#34;> <TodoItem :=&#34;todo&#34; v-for=&#34;todo in underway&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /> </ul> <div class=&#34;section-title&#34;>已完成</div> <ul class=&#34;todolist completed&#34;> <TodoItem :=&#34;todo&#34; v-for=&#34;todo in completed&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /> </ul> </div> </template> <script> import TodoItem from '../components/TodoItem'; export default { name: &#34;Todo&#34;, components:{ TodoItem }, data(){ return{ content:'hello world!"><meta property="og:type" content="article"><meta property="og:url" content="https://aixin.me/post/vue-todo-tutorial/"><meta property="og:image" content="https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:published_time" content="2020-11-10T13:54:51+08:00"><meta property="article:modified_time" content="2020-11-10T13:54:51+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="Vue3 开发 Todolist 教程"><meta name=twitter:description content="本文状态：未完成
  一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型
  二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli
  在项目src\views下面新建Todo.vue
-<template><div class=&#34;todo&#34;><h1>Todolist</h1><input type=&#34;text&#34; v-model=&#34;content&#34; @keypress=&#34;add&#34;><button @click=&#34;add&#34;>Add</button><p>{{content}}</p><div class=&#34;section-title&#34;>待办</div><ul class=&#34;todolist underway&#34;><TodoItem :=&#34;todo&#34; v-for=&#34;todo in underway&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /></ul><div class=&#34;section-title&#34;>已完成</div><ul class=&#34;todolist completed&#34;><TodoItem :=&#34;todo&#34; v-for=&#34;todo in completed&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /></ul></div></template><script>import TodoItem from '../components/TodoItem';export default {name: &#34;Todo&#34;,components:{TodoItem},data(){return{content:'hello world!">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://aixin.me/post/"},{"@type":"ListItem","position":3,"name":"Vue3 开发 Todolist 教程","item":"https://aixin.me/post/vue-todo-tutorial/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Vue3 开发 Todolist 教程","name":"Vue3 开发 Todolist 教程","description":"本文状态：未完成\n 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型\n 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli\n 在项目src\\views下面新建Todo.vue\n\u0026lt;template\u0026gt;\r\u0026lt;div class=\u0026quot;todo\u0026quot;\u0026gt;\r\u0026lt;h1\u0026gt;Todolist\u0026lt;/h1\u0026gt;\r\u0026lt;input type=\u0026quot;text\u0026quot; v-model=\u0026quot;content\u0026quot; @keypress=\u0026quot;add\u0026quot;\u0026gt;\u0026lt;button @click=\u0026quot;add\u0026quot;\u0026gt;Add\u0026lt;/button\u0026gt;\r\u0026lt;p\u0026gt;{{content}}\u0026lt;/p\u0026gt;\r\u0026lt;div class=\u0026quot;section-title\u0026quot;\u0026gt;待办\u0026lt;/div\u0026gt;\r\u0026lt;ul class=\u0026quot;todolist underway\u0026quot;\u0026gt;\r\u0026lt;TodoItem :=\u0026quot;todo\u0026quot; v-for=\u0026quot;todo in underway\u0026quot; :key=\u0026quot;todo.id\u0026quot; :class=\u0026quot;{done:todo.status}\u0026quot; v-model=\u0026quot;todo.status\u0026quot; /\u0026gt;\r\u0026lt;/ul\u0026gt;\r\u0026lt;div class=\u0026quot;section-title\u0026quot;\u0026gt;已完成\u0026lt;/div\u0026gt;\r\u0026lt;ul class=\u0026quot;todolist completed\u0026quot;\u0026gt;\r\u0026lt;TodoItem :=\u0026quot;todo\u0026quot; v-for=\u0026quot;todo in completed\u0026quot; :key=\u0026quot;todo.id\u0026quot; :class=\u0026quot;{done:todo.status}\u0026quot; v-model=\u0026quot;todo.status\u0026quot; /\u0026gt;\r\u0026lt;/ul\u0026gt;\r\u0026lt;/div\u0026gt;\r\u0026lt;/template\u0026gt;\r\u0026lt;script\u0026gt;\rimport TodoItem from '../components/TodoItem';\rexport default {\rname: \u0026quot;Todo\u0026quot;,\rcomponents:{\rTodoItem\r},\rdata(){\rreturn{\rcontent:'hello world!","keywords":["Vue3"],"articleBody":" 本文状态：未完成\n 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型\n 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli\n 在项目src\\views下面新建Todo.vue\n\rTodolist\rAdd\r{{content}}\n待办\r\r已完成\r\r\r\r\rimport TodoItem from '../components/TodoItem';\rexport default {\rname: \"Todo\",\rcomponents:{\rTodoItem\r},\rdata(){\rreturn{\rcontent:'hello world!',\rchecked:'',\rtodos:[\r{\rid:1,\rcontent:'这是内容1',\rstatus:false\r},\r{\rid:2,\rcontent:'这是内容2',\rstatus:true\r},\r{\rid:3,\rcontent:'这是内容3',\rstatus:true\r},\r{\rid:4,\rcontent:'这是内容4',\rstatus:false\r},\r{\rid:5,\rcontent:'这是内容5',\rstatus:true\r}\r],\r}\r},\rmethods:{\radd(){\rthis.todos.push({\rid:this.todos.length+1,\rcontent:this.content,\rstatus:false\r})\r}\r},\rcomputed:{\runderway(){\rreturn this.todos.filter(todos=!todos.status);\r},\rcompleted(){\rreturn this.todos.filter(todos=todos.status);\r}\r}\r}\r\r.section-title{font-weight: bold;font-size: 18px;}\r.todolist li{list-style: none;}\r.todolist li.done{text-decoration:line-through; }\r\r2、添加组件 \r\r{{content}}\r\r\r\rexport default {\rname: \"TodoItem\",\rdata(){\rreturn{\r}\r},\rprops:{\rid:Number,\rcontent:String,\rmodelValue:Boolean\r},\rmethods:{\ronInput(e){\rthis.$emit('update:modelValue',e.target.checked);\r}\r}\r}\r\r\r2、添加路由 router\\index.js中添加\nconst routes = [\r//...\r{\rpath: '/todo',\rname: 'Todo',\rcomponent: ()= import('../views/Todo')\r}\r3、入口文件增加Todo页面入口（可以不要这一步） App.vue 文件\nTodo\r// router-view 公用的不用多次添加\r\r4、预览页面 现在就可以npm run serve运行查看，\n打开首页后，点击Todo就可以打开todo页面，也可以直接在浏览器输入下面地址查看\n http://localhost:8080/todo\n 四、备注 父子组件相互传递数据\n==单条参数==\n\r{{ name }}\n\r\rimport Son from '../components/Son';\rexport default {\rname: \"Father\",\rcomponents:{\rSon\r},\rdata(){\rreturn{\rname:'Ketty'\r}\r}\r}\r\r\r\r\rexport default {\rname: \"Son\",\rprops:{\rmodelValue:String\r},\rmethods:{\ronInput(e){\rthis.$emit('update:modelValue',e.target.value);\r}\r}\r}\r\r\r==多条参数==\n\r{{ name }}\n{{ addr }}\n\r\rimport Son from '../components/Son';\rexport default {\rname: \"Father\",\rcomponents:{\rSon\r},\rdata(){\rreturn{\rname:'Ketty',\raddr:\"\"\r}\r}\r}\r\r\r\r\rexport default {\rname: \"Son\",\rprops:{\rname:String,\raddr:String\r},\rmethods:{\ronNameInput(e){\rthis.$emit('update:name',e.target.value);\r},\ronAddrInput(e){\rthis.$emit('update:addr',e.target.value);\r}\r}\r}\r\r","wordCount":"332","inLanguage":"zh","datePublished":"2020-11-10T13:54:51+08:00","dateModified":"2020-11-10T13:54:51+08:00","author":{"@type":"Person","name":"Aixin.me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aixin.me/post/vue-todo-tutorial/"},"publisher":{"@type":"Organization","name":"爱心网-Aixin.me","logo":{"@type":"ImageObject","url":"https://aixin.me/images/favicon.ico"}}}</script>
-</head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-<noscript>
-<style type=text/css>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript>
-<header class=header>
-<nav class=nav>
-<div class=logo>
-<a href=https://aixin.me accesskey=h title="Aixin.me (Alt + H)">Aixin.me</a>
-<span class=logo-switches>
-<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-</button>
-</span>
-</div>
-<ul id=menu onscroll=menu_on_scroll()>
-<li>
-<a href=https://aixin.me/about/ title=About>
-<span>About</span>
-</a>
-</li>
-<li>
-<a href=https://aixin.me/archives/ title=Archives>
-<span>Archives</span>
-</a>
-</li>
-<li>
-<a href=https://aixin.me/tags/ title=Tags>
-<span>Tags</span>
-</a>
-</li>
-<li>
-<a href=https://aixin.me/search/ title="Search (Alt + /)" accesskey=/>
-<span>Search</span>
-</a>
-</li></ul>
-</nav>
-</header>
-<main class=main>
-<article class=post-single>
-<header class=post-header>
-<h1 class=post-title>
-Vue3 开发 Todolist 教程
-</h1>
-<div class=post-meta>
-November 10, 2020&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Aixin.me
-</div>
-</header>
-<div class=toc>
-<details>
-<summary accesskey=c title="(Alt + C)">
-<div class=details>目录</div>
-</summary>
-<div class=inner><ul><li>
-<a href=#%e4%b8%80%e4%ba%a7%e5%93%81%e5%8e%9f%e5%9e%8b aria-label=一、产品原型>一、产品原型</a></li><li>
-<a href=#%e4%ba%8c%e5%bc%80%e5%8f%91%e6%95%99%e7%a8%8b aria-label=二、开发教程>二、开发教程</a><ul>
-<ul>
-<ul>
-<li>
-<a href=#1%e6%96%b0%e5%bb%batodolistvue aria-label=1、新建Todolist.vue>1、新建Todolist.vue</a></li><li>
-<a href=#2%e6%b7%bb%e5%8a%a0%e7%bb%84%e4%bb%b6 aria-label=2、添加组件>2、添加组件</a></li><li>
-<a href=#2%e6%b7%bb%e5%8a%a0%e8%b7%af%e7%94%b1 aria-label=2、添加路由>2、添加路由</a></li><li>
-<a href=#3%e5%85%a5%e5%8f%a3%e6%96%87%e4%bb%b6%e5%a2%9e%e5%8a%a0todo%e9%a1%b5%e9%9d%a2%e5%85%a5%e5%8f%a3%e5%8f%af%e4%bb%a5%e4%b8%8d%e8%a6%81%e8%bf%99%e4%b8%80%e6%ad%a5 aria-label=3、入口文件增加Todo页面入口（可以不要这一步）>3、入口文件增加Todo页面入口（可以不要这一步）</a></li><li>
-<a href=#4%e9%a2%84%e8%a7%88%e9%a1%b5%e9%9d%a2 aria-label=4、预览页面>4、预览页面</a></li></ul>
-</ul>
-</ul>
-</li><li>
-<a href=#%e5%9b%9b%e5%a4%87%e6%b3%a8 aria-label=四、备注>四、备注</a></li></ul>
-</div>
-</details>
-</div>
-<div class=post-content>
-<blockquote>
-<p>本文状态：未完成</p>
-</blockquote>
-<h1 id=一产品原型>一、产品原型<a hidden class=anchor aria-hidden=true href=#一产品原型>#</a></h1>
-<p><img loading=lazy src=https://s1.ax1x.com/2020/11/10/Bq56dH.png alt=todo>
-</p>
-<blockquote>
-<p>参考 Windows todo设计一个简单的移动端todo页面原型</p>
-</blockquote>
-<h1 id=二开发教程>二、开发教程<a hidden class=anchor aria-hidden=true href=#二开发教程>#</a></h1>
-<h4 id=1新建todolistvue>1、新建Todolist.vue<a hidden class=anchor aria-hidden=true href=#1新建todolistvue>#</a></h4>
-<blockquote>
-<p>先通过脚手架配置好vue项目：@vue/cli</p>
-</blockquote>
-<p>在项目src\views下面新建Todo.vue</p>
-<pre><code>&lt;template&gt;
+<template> <div class=&#34;todo&#34;> <h1>Todolist</h1> <input type=&#34;text&#34; v-model=&#34;content&#34; @keypress=&#34;add&#34;><button @click=&#34;add&#34;>Add</button> <p>{{content}}</p> <div class=&#34;section-title&#34;>待办</div> <ul class=&#34;todolist underway&#34;> <TodoItem :=&#34;todo&#34; v-for=&#34;todo in underway&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /> </ul> <div class=&#34;section-title&#34;>已完成</div> <ul class=&#34;todolist completed&#34;> <TodoItem :=&#34;todo&#34; v-for=&#34;todo in completed&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /> </ul> </div> </template> <script> import TodoItem from '../components/TodoItem'; export default { name: &#34;Todo&#34;, components:{ TodoItem }, data(){ return{ content:'hello world!"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Vue3 开发 Todolist 教程","name":"Vue3 开发 Todolist 教程","description":"本文状态：未完成\n 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型\n 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli\n 在项目src\\views下面新建Todo.vue\n\u0026amp;lt;template\u0026amp;gt; \u0026amp;lt;div class=\u0026amp;quot;todo\u0026amp;quot;\u0026amp;gt; …","keywords":["Vue3"],"articleBody":" 本文状态：未完成\n 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型\n 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli\n 在项目src\\views下面新建Todo.vue\n Todolist Add {{content}}\n待办  已完成     import TodoItem from '../components/TodoItem'; export default { name: \"Todo\", components:{ TodoItem }, data(){ return{ content:'hello world!', checked:'', todos:[ { id:1, content:'这是内容1', status:false }, { id:2, content:'这是内容2', status:true }, { id:3, content:'这是内容3', status:true }, { id:4, content:'这是内容4', status:false }, { id:5, content:'这是内容5', status:true } ], } }, methods:{ add(){ this.todos.push({ id:this.todos.length+1, content:this.content, status:false }) } }, computed:{ underway(){ return this.todos.filter(todos=!todos.status); }, completed(){ return this.todos.filter(todos=todos.status); } } }  .section-title{font-weight: bold;font-size: 18px;} .todolist li{list-style: none;} .todolist li.done{text-decoration:line-through; }  2、添加组件   {{content}}    export default { name: \"TodoItem\", data(){ return{ } }, props:{ id:Number, content:String, modelValue:Boolean }, methods:{ onInput(e){ this.$emit('update:modelValue',e.target.checked); } } }   2、添加路由 router\\index.js中添加\nconst routes = [ //... { path: '/todo', name: 'Todo', component: ()= import('../views/Todo') } 3、入口文件增加Todo页面入口（可以不要这一步） App.vue 文件\nTodo // router-view 公用的不用多次添加  4、预览页面 现在就可以npm run serve运行查看，\n打开首页后，点击Todo就可以打开todo页面，也可以直接在浏览器输入下面地址查看\n http://localhost:8080/todo\n 四、备注 父子组件相互传递数据\n==单条参数==\n {{ name }}\n  import Son from '../components/Son'; export default { name: \"Father\", components:{ Son }, data(){ return{ name:'Ketty' } } }     export default { name: \"Son\", props:{ modelValue:String }, methods:{ onInput(e){ this.$emit('update:modelValue',e.target.value); } } }   ==多条参数==\n {{ name }}\n{{ addr }}\n  import Son from '../components/Son'; export default { name: \"Father\", components:{ Son }, data(){ return{ name:'Ketty', addr:\"\" } } }     export default { name: \"Son\", props:{ name:String, addr:String }, methods:{ onNameInput(e){ this.$emit('update:name',e.target.value); }, onAddrInput(e){ this.$emit('update:addr',e.target.value); } } }  ","wordCount":"332","inLanguage":"zh","datePublished":"2020-11-10T13:54:51+08:00","dateModified":"2020-11-10T13:54:51+08:00","author":{"@type":"Person","name":"Aixin.me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aixin.me/post/vue-todo-tutorial/"},"publisher":{"@type":"Organization","name":"爱心网-Aixin.me","logo":{"@type":"ImageObject","url":"https://aixin.me/images/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script><noscript><style type=text/css>.theme-toggle,.top-link{display:none}</style></noscript><header class=header><nav class=nav><div class=logo><a href=https://aixin.me accesskey=h title="Aixin.me (Alt + H)">Aixin.me</a>
+<span class=logo-switches><span class=theme-toggle title="(Alt + T)"><a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></a></span></span></div><ul class=menu id=menu onscroll=menu_on_scroll()><li><a href=https://aixin.me/about/ title=About><span>About</span></a></li><li><a href=https://aixin.me/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://aixin.me/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://aixin.me/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Vue3 开发 Todolist 教程</h1><div class=post-description></div><div class=post-meta>November 10, 2020&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Aixin.me</div></header><div class=toc><details><summary accesskey=c title="(Alt + C)"><div class=details>目录</div></summary><blockquote><ul><li><a href=#%e4%b8%80%e4%ba%a7%e5%93%81%e5%8e%9f%e5%9e%8b aria-label=一、产品原型>一、产品原型</a></li><li><a href=#%e4%ba%8c%e5%bc%80%e5%8f%91%e6%95%99%e7%a8%8b aria-label=二、开发教程>二、开发教程</a><ul><ul><ul><li><a href=#1%e6%96%b0%e5%bb%batodolistvue aria-label=1、新建Todolist.vue>1、新建Todolist.vue</a></li><li><a href=#2%e6%b7%bb%e5%8a%a0%e7%bb%84%e4%bb%b6 aria-label=2、添加组件>2、添加组件</a></li><li><a href=#2%e6%b7%bb%e5%8a%a0%e8%b7%af%e7%94%b1 aria-label=2、添加路由>2、添加路由</a></li><li><a href=#3%e5%85%a5%e5%8f%a3%e6%96%87%e4%bb%b6%e5%a2%9e%e5%8a%a0todo%e9%a1%b5%e9%9d%a2%e5%85%a5%e5%8f%a3%e5%8f%af%e4%bb%a5%e4%b8%8d%e8%a6%81%e8%bf%99%e4%b8%80%e6%ad%a5 aria-label=3、入口文件增加Todo页面入口（可以不要这一步）>3、入口文件增加Todo页面入口（可以不要这一步）</a></li><li><a href=#4%e9%a2%84%e8%a7%88%e9%a1%b5%e9%9d%a2 aria-label=4、预览页面>4、预览页面</a></li></ul></ul></ul></li><li><a href=#%e5%9b%9b%e5%a4%87%e6%b3%a8 aria-label=四、备注>四、备注</a></li></ul></blockquote></details></div><div class=post-content><blockquote><p>本文状态：未完成</p></blockquote><h1 id=一产品原型>一、产品原型<a hidden class=anchor aria-hidden=true href=#一产品原型>#</a></h1><p><img loading=lazy src=https://s1.ax1x.com/2020/11/10/Bq56dH.png alt=todo></p><blockquote><p>参考 Windows todo设计一个简单的移动端todo页面原型</p></blockquote><h1 id=二开发教程>二、开发教程<a hidden class=anchor aria-hidden=true href=#二开发教程>#</a></h1><h4 id=1新建todolistvue>1、新建Todolist.vue<a hidden class=anchor aria-hidden=true href=#1新建todolistvue>#</a></h4><blockquote><p>先通过脚手架配置好vue项目：@vue/cli</p></blockquote><p>在项目src\views下面新建Todo.vue</p><pre><code>&lt;template&gt;
   &lt;div class=&quot;todo&quot;&gt;
     &lt;h1&gt;Todolist&lt;/h1&gt;
     &lt;input type=&quot;text&quot; v-model=&quot;content&quot; @keypress=&quot;add&quot;&gt;&lt;button @click=&quot;add&quot;&gt;Add&lt;/button&gt;
@@ -213,8 +92,7 @@ export default {
 .todolist li{list-style: none;}
 .todolist li.done{text-decoration:line-through; }
 &lt;/style&gt;
-</code></pre><h4 id=2添加组件>2、添加组件<a hidden class=anchor aria-hidden=true href=#2添加组件>#</a></h4>
-<pre><code>&lt;template&gt;
+</code></pre><h4 id=2添加组件>2、添加组件<a hidden class=anchor aria-hidden=true href=#2添加组件>#</a></h4><pre><code>&lt;template&gt;
   &lt;li&gt;
     &lt;input type=&quot;checkbox&quot; :name=&quot;id&quot; :id=&quot;id&quot; :value=&quot;content&quot; :checked=&quot;modelValue&quot; @input=&quot;onInput&quot;/&gt;
     &lt;label :for=&quot;id&quot;&gt;{{content}}&lt;/label&gt;
@@ -245,31 +123,18 @@ export default {
 &lt;style scoped&gt;
 
 &lt;/style&gt;
-</code></pre><h4 id=2添加路由>2、添加路由<a hidden class=anchor aria-hidden=true href=#2添加路由>#</a></h4>
-<p>router\index.js中添加</p>
-<pre><code>const routes = [
+</code></pre><h4 id=2添加路由>2、添加路由<a hidden class=anchor aria-hidden=true href=#2添加路由>#</a></h4><p>router\index.js中添加</p><pre><code>const routes = [
     //...
     {
         path: '/todo',
         name: 'Todo',
         component: ()=&gt; import('../views/Todo')
     }
-</code></pre><h4 id=3入口文件增加todo页面入口可以不要这一步>3、入口文件增加Todo页面入口（可以不要这一步）<a hidden class=anchor aria-hidden=true href=#3入口文件增加todo页面入口可以不要这一步>#</a></h4>
-<p>App.vue 文件</p>
-<pre><code>&lt;router-link to=&quot;/todo&quot;&gt;Todo&lt;/router-link&gt;
+</code></pre><h4 id=3入口文件增加todo页面入口可以不要这一步>3、入口文件增加Todo页面入口（可以不要这一步）<a hidden class=anchor aria-hidden=true href=#3入口文件增加todo页面入口可以不要这一步>#</a></h4><p>App.vue 文件</p><pre><code>&lt;router-link to=&quot;/todo&quot;&gt;Todo&lt;/router-link&gt;
 
 // router-view 公用的不用多次添加
 &lt;router-view/&gt;
-</code></pre><h4 id=4预览页面>4、预览页面<a hidden class=anchor aria-hidden=true href=#4预览页面>#</a></h4>
-<p>现在就可以<code>npm run serve</code>运行查看，</p>
-<p>打开首页后，点击Todo就可以打开todo页面，也可以直接在浏览器输入下面地址查看</p>
-<blockquote>
-<p>http://localhost:8080/todo</p>
-</blockquote>
-<h1 id=四备注>四、备注<a hidden class=anchor aria-hidden=true href=#四备注>#</a></h1>
-<p>父子组件相互传递数据</p>
-<p>==单条参数==</p>
-<pre><code>&lt;!-- 父组件 --&gt;
+</code></pre><h4 id=4预览页面>4、预览页面<a hidden class=anchor aria-hidden=true href=#4预览页面>#</a></h4><p>现在就可以<code>npm run serve</code>运行查看，</p><p>打开首页后，点击Todo就可以打开todo页面，也可以直接在浏览器输入下面地址查看</p><blockquote><p>http://localhost:8080/todo</p></blockquote><h1 id=四备注>四、备注<a hidden class=anchor aria-hidden=true href=#四备注>#</a></h1><p>父子组件相互传递数据</p><p>==单条参数==</p><pre><code>&lt;!-- 父组件 --&gt;
 &lt;template&gt;
 &lt;p&gt;{{ name }}&lt;/p&gt;
   &lt;TodoItem v-model=&quot;name&quot; /&gt;
@@ -312,8 +177,7 @@ export default {
 &lt;style scoped&gt;
 
 &lt;/style&gt;
-</code></pre><p>==多条参数==</p>
-<pre><code>&lt;!-- 父组件 --&gt;
+</code></pre><p>==多条参数==</p><pre><code>&lt;!-- 父组件 --&gt;
 &lt;template&gt;
 &lt;p&gt;{{ name }}&lt;/p&gt;
 &lt;p&gt;{{ addr }}&lt;/p&gt;
@@ -359,24 +223,5 @@ export default {
   }
 }
 &lt;/script&gt;
-</code></pre>
-</div>
-<footer class=post-footer>
-<ul class=post-tags>
-<li><a href=https://aixin.me/tags/vue3/>Vue3</a></li>
-</ul>
-</footer>
-</article>
-</main><footer class=footer>
-<span>&copy; 2021 <a href=https://aixin.me>爱心网-Aixin.me</a></span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
-<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</button>
-</a>
-<script defer src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})});var _hmt=_hmt||[];(function(){var a=document.createElement("script"),b;a.src="https://hm.baidu.com/hm.js?4ebd66106c8ed3e1fc88a9e64ee33fb8",b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b)})()</script>
-<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
-</body>
-</html>
+</code></pre></div><footer class=post-footer><ul class=post-tags><li><a href=https://aixin.me/tags/vue3/>Vue3</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2021 <a href=https://aixin.me>爱心网-Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></button></a>
+<script defer src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script><script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.replaceState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script></body></html>

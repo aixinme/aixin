@@ -17,7 +17,7 @@
       
       <guid>https://aixin.me/post/eggjs-basic-tutorial/</guid>
       <description>官网：https://eggjs.org/zh-cn/
-安装 // 1、创建并进入项目目录 mkdir egg-example &amp;amp;&amp;amp; cd egg-example // 2、初始化 npm init egg --type=simple // 3、安装项目 npm i // 4、启动项目 npm run dev // http://localhost:7001  type的类型
+安装 // 1、创建并进入项目目录mkdir egg-example &amp;amp;&amp;amp; cd egg-example// 2、初始化npm init egg --type=simple// 3、安装项目npm i// 4、启动项目npm run dev// http://localhost:7001 type的类型
 simple - 基础应用模板
 microservice - 基于egg的微服务模板
 sequelize - 带有sequelize的egg应用
@@ -25,7 +25,7 @@ ts - typescript的基础应用模板
 empty - 空模板
 plugin - egg 插件模板
 framework - 框架模板
- 核心功能 1、控制器 Controller // app/controller/home.js const Controller = require(&#39;egg&#39;).Controller; class HomeController extends Controller { async index() { this.ctx.body = &#39;Hello world&#39;; } } module.</description>
+ 核心功能 1、控制器 Controller // app/controller/home.jsconst Controller = require(&#39;egg&#39;).Controller;class HomeController extends Controller {async index() {this.ctx.body = &#39;Hello world&#39;;}}module.</description>
     </item>
     
   </channel>

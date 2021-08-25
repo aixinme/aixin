@@ -35,13 +35,13 @@
       <description>生成数组
  numpy.arange([start, ]stop, [step, ]dtype=None)
  示例
-np.arange(3)array([0, 1, 2])np.arange(3.0)array([ 0., 1., 2.])np.arange(3,7)array([3, 4, 5, 6])np.arange(3,7,2)array([3, 5])生成随机整数
+np.arange(3) array([0, 1, 2]) np.arange(3.0) array([ 0., 1., 2.]) np.arange(3,7) array([3, 4, 5, 6]) np.arange(3,7,2) array([3, 5]) 生成随机整数
  numpy.random.randint(low, high=None, size=None, dtype=&amp;lsquo;l&amp;rsquo;)
  示例
-np.random.randint(2, size=10)array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])np.random.randint(1, size=10)array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])随机排列
+np.random.randint(2, size=10) array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0]) np.random.randint(1, size=10) array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]) 随机排列
  np.random.shuffle(x)
  示例
-arr = np.arange(10)np.random.shuffle(arr)arr[1 7 5 2 9 4 3 6 0 8]随机采样</description>
+arr = np.arange(10) np.random.shuffle(arr) arr [1 7 5 2 9 4 3 6 0 8] 随机采样</description>
     </item>
     
   </channel>
