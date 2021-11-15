@@ -25,8 +25,9 @@ D:\Hugo\Sites
 盘符和目录都可以自定义，但bin和Sites要固定
  将下载的安装包里面的hugo.exe解压到D:\Hugo\bin下面
 3、配置环境 我的电脑→右键→高级→环境变量→系统变量→Path，增加D:\Hugo\bin
-4、安装完成 验证
-hugo version //查看版本 hugo help //帮助文档  能正常输出即安装成功
+ 也可以命令执行：set PATH=%PATH%;D:\Hugo\bin
+ 4、安装完成 验证
+hugo version //查看版本 hugo help //帮助文档  能正常输出即安装成功，如果输出错误，则需要重启电脑后再试
  二、新建网站 在D:\Hugo\Sites下面打开cmd，或其他命令工具
 hugo new site simple.com  新建simple.com 网站名自定义
   回车创建成功！
@@ -38,8 +39,7 @@ static/ 静态文件
 themes/ 主题会安装在这儿
 config.toml 配置文件
  2、创建页面 在网站目录下面执行命令
-hugo new about.md  自动在当前网站下的content目录下生成about.md文件
- 3、创建文章 hugo new post/hello-world.</description>
+hugo new about.md  自动在当前网站下的content目录下生成about.md文件</description>
     </item>
     
   </channel>

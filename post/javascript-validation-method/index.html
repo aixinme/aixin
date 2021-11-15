@@ -3,12 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>2021年祝大家春节愉快，牛年大吉！ | 爱心网-Aixin.me</title>
-<meta name=keywords content>
-<meta name=description content="2021年祝大家春节愉快，牛年大吉！ 艰难的一年过去了，未来或许更加艰难，也或许越来越好，但任何时候依然要不忘初心，努力奋斗。
-2021年目标  专注最重要的事情，做精做好 多些远谋，少些近虑 放下该放下的  ">
+<title>JavaScript validation method | 爱心网-Aixin.me</title>
+<meta name=keywords content="JavaScript">
+<meta name=description content="// 是否为空 vernull = function(value){ if(value.trim(value).length == 0){ return false; }else{ return true; } } // 身份证校验 veridc = function(value){ var ext = /(^\d{15}&)|(^\d{18})|(^\d{17}(\d|X|x)$)/; return ext.test(value); } // 英文校验 veren = function(value){ var ext = /(^[a-zA-Z]+$)/; return ext.test(value); } // 数字校验 vernum = function(value){ var ext = /^[0-9]*$/; return ext.test(value); } // 小数校验 verdou = function(value){ var ext = /^[0-9]+(.[0-9]{1,3})?$/; return ext.test(value); } // 邮箱校验 vermail = function(value){ var ext = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.">
 <meta name=author content="Aixin.me">
-<link rel=canonical href=https://aixin.me/post/2021-spring-festivald/>
+<link rel=canonical href=https://aixin.me/post/javascript-validation-method/>
 <link href=/assets/css/stylesheet.min.65503748e9ebcf60fe22865c7e7727c1cf70e446031c37ef428743ad2310156a.css integrity="sha256-ZVA3SOnrz2D+IoZcfncnwc9w5EYDHDfvQodDrSMQFWo=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://aixin.me/images/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://aixin.me/%3Clink%20/%20abs%20url%3E>
@@ -21,20 +20,18 @@
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css integrity=sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn crossorigin=anonymous>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js integrity=sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8 crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js integrity=sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl crossorigin=anonymous onload=renderMathInElement(document.body)></script>
-<meta property="og:title" content="2021年祝大家春节愉快，牛年大吉！">
-<meta property="og:description" content="2021年祝大家春节愉快，牛年大吉！ 艰难的一年过去了，未来或许更加艰难，也或许越来越好，但任何时候依然要不忘初心，努力奋斗。
-2021年目标  专注最重要的事情，做精做好 多些远谋，少些近虑 放下该放下的  ">
+<meta property="og:title" content="JavaScript validation method">
+<meta property="og:description" content="// 是否为空 vernull = function(value){ if(value.trim(value).length == 0){ return false; }else{ return true; } } // 身份证校验 veridc = function(value){ var ext = /(^\d{15}&)|(^\d{18})|(^\d{17}(\d|X|x)$)/; return ext.test(value); } // 英文校验 veren = function(value){ var ext = /(^[a-zA-Z]+$)/; return ext.test(value); } // 数字校验 vernum = function(value){ var ext = /^[0-9]*$/; return ext.test(value); } // 小数校验 verdou = function(value){ var ext = /^[0-9]+(.[0-9]{1,3})?$/; return ext.test(value); } // 邮箱校验 vermail = function(value){ var ext = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://aixin.me/post/2021-spring-festivald/"><meta property="og:image" content="https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="post">
-<meta property="article:published_time" content="2021-02-10T13:20:11+08:00">
-<meta property="article:modified_time" content="2021-02-10T13:20:11+08:00">
+<meta property="og:url" content="https://aixin.me/post/javascript-validation-method/"><meta property="og:image" content="https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-11-15T12:33:04+08:00">
+<meta property="article:modified_time" content="2021-11-15T12:33:04+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
-<meta name=twitter:title content="2021年祝大家春节愉快，牛年大吉！">
-<meta name=twitter:description content="2021年祝大家春节愉快，牛年大吉！ 艰难的一年过去了，未来或许更加艰难，也或许越来越好，但任何时候依然要不忘初心，努力奋斗。
-2021年目标  专注最重要的事情，做精做好 多些远谋，少些近虑 放下该放下的  ">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://aixin.me/post/"},{"@type":"ListItem","position":3,"name":"2021年祝大家春节愉快，牛年大吉！","item":"https://aixin.me/post/2021-spring-festivald/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"2021年祝大家春节愉快，牛年大吉！","name":"2021年祝大家春节愉快，牛年大吉！","description":"2021年祝大家春节愉快，牛年大吉！ 艰难的一年过去了，未来或许更加艰难，也或许越来越好，但任何时候依然要不忘初心，努力奋斗。\n2021年目标  专注最重要的事情，做精做好 多些远谋，少些近虑 放下该放下的  ","keywords":[],"articleBody":"2021年祝大家春节愉快，牛年大吉！ 艰难的一年过去了，未来或许更加艰难，也或许越来越好，但任何时候依然要不忘初心，努力奋斗。\n2021年目标  专注最重要的事情，做精做好 多些远谋，少些近虑 放下该放下的  ","wordCount":"6","inLanguage":"zh","datePublished":"2021-02-10T13:20:11+08:00","dateModified":"2021-02-10T13:20:11+08:00","author":{"@type":"Person","name":"Aixin.me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aixin.me/post/2021-spring-festivald/"},"publisher":{"@type":"Organization","name":"爱心网-Aixin.me","logo":{"@type":"ImageObject","url":"https://aixin.me/images/favicon.ico"}}}</script>
+<meta name=twitter:title content="JavaScript validation method">
+<meta name=twitter:description content="// 是否为空 vernull = function(value){ if(value.trim(value).length == 0){ return false; }else{ return true; } } // 身份证校验 veridc = function(value){ var ext = /(^\d{15}&)|(^\d{18})|(^\d{17}(\d|X|x)$)/; return ext.test(value); } // 英文校验 veren = function(value){ var ext = /(^[a-zA-Z]+$)/; return ext.test(value); } // 数字校验 vernum = function(value){ var ext = /^[0-9]*$/; return ext.test(value); } // 小数校验 verdou = function(value){ var ext = /^[0-9]+(.[0-9]{1,3})?$/; return ext.test(value); } // 邮箱校验 vermail = function(value){ var ext = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://aixin.me/post/"},{"@type":"ListItem","position":3,"name":"JavaScript validation method","item":"https://aixin.me/post/javascript-validation-method/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"JavaScript validation method","name":"JavaScript validation method","description":"// 是否为空 vernull = function(value){ if(value.trim(value).length == 0){ return false; }else{ return true; } } // 身份证校验 veridc = function(value){ var ext = /(^\\d{15}\u0026amp;)|(^\\d{18})|(^\\d{17}(\\d|X|x)$)/; return ext.test(value); } // 英文校验 veren = function(value){ var ext = /(^[a-zA-Z]+$)/; return ext.test(value); } // 数字校验 vernum = function(value){ var ext = /^[0-9]*$/; return ext.test(value); } // 小数校验 verdou = function(value){ var ext = /^[0-9]+(.[0-9]{1,3})?$/; return ext.test(value); } // 邮箱校验 vermail = function(value){ var ext = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\\.","keywords":["JavaScript"],"articleBody":"// 是否为空 vernull = function(value){ if(value.trim(value).length == 0){ return false; }else{ return true; } } // 身份证校验 veridc = function(value){ var ext = /(^\\d{15}\u0026)|(^\\d{18})|(^\\d{17}(\\d|X|x)$)/; return ext.test(value); } // 英文校验 veren = function(value){ var ext = /(^[a-zA-Z]+$)/; return ext.test(value); } // 数字校验 vernum = function(value){ var ext = /^[0-9]*$/; return ext.test(value); } // 小数校验 verdou = function(value){ var ext = /^[0-9]+(.[0-9]{1,3})?$/; return ext.test(value); } // 邮箱校验 vermail = function(value){ var ext = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\\.[a-zA-Z0-9_-]{2,3}){1,2})$/; return ext.test(value); } // 手机号校验 vermob =function(value){ var ext = /^1[3456789][0-9]{9}$/; return ext.test(value); } ","wordCount":"86","inLanguage":"zh","datePublished":"2021-11-15T12:33:04+08:00","dateModified":"2021-11-15T12:33:04+08:00","author":{"@type":"Person","name":"Aixin.me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aixin.me/post/javascript-validation-method/"},"publisher":{"@type":"Organization","name":"爱心网-Aixin.me","logo":{"@type":"ImageObject","url":"https://aixin.me/images/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -78,23 +75,75 @@
 <article class=post-single>
 <header class=post-header>
 <h1 class=post-title>
-2021年祝大家春节愉快，牛年大吉！
+JavaScript validation method
 </h1>
 <div class=post-meta>
-February 10, 2021&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Aixin.me
+November 15, 2021&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Aixin.me
 </div>
 </header>
+<div class=toc>
+<details>
+<summary accesskey=c title="(Alt + C)">
+<div class=details>目录</div>
+</summary>
+<div class=inner>
+</div>
+</details>
+</div>
 <div class=post-content>
-<h4 id=2021年祝大家春节愉快牛年大吉>2021年祝大家春节愉快，牛年大吉！<a hidden class=anchor aria-hidden=true href=#2021年祝大家春节愉快牛年大吉>#</a></h4>
-<p>艰难的一年过去了，未来或许更加艰难，也或许越来越好，但任何时候依然要不忘初心，努力奋斗。</p>
-<h4 id=2021年目标>2021年目标<a hidden class=anchor aria-hidden=true href=#2021年目标>#</a></h4>
-<ul>
-<li>专注最重要的事情，做精做好</li>
-<li>多些远谋，少些近虑</li>
-<li>放下该放下的</li>
-</ul>
+<pre tabindex=0><code>// 是否为空
+vernull = function(value){
+　　if(value.trim(value).length == 0){
+　　　　return false;
+　　}else{
+　　　　return true;
+　　}
+}
+// 身份证校验
+veridc = function(value){
+　　var ext = /(^\d{15}&amp;)|(^\d{18})|(^\d{17}(\d|X|x)$)/;
+　　return ext.test(value);
+}
+
+ 
+// 英文校验
+veren = function(value){
+　　var ext = /(^[a-zA-Z]+$)/;
+　　return ext.test(value);
+}
+
+ 
+// 数字校验
+vernum = function(value){
+　　var ext = /^[0-9]*$/;
+　　return ext.test(value);
+}
+
+ // 小数校验
+verdou = function(value){
+　　var ext = /^[0-9]+(.[0-9]{1,3})?$/;
+　　return ext.test(value);
+}
+
+ 
+// 邮箱校验
+vermail = function(value){
+　　var ext = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+　　return ext.test(value);
+}
+
+ 
+// 手机号校验
+vermob =function(value){
+　　var ext = /^1[3456789][0-9]{9}$/;
+　　return ext.test(value);
+}
+</code></pre>
 </div>
 <footer class=post-footer>
+<ul class=post-tags>
+<li><a href=https://aixin.me/tags/javascript/>JavaScript</a></li>
+</ul>
 </footer>
 </article>
 </main><footer class=footer>
