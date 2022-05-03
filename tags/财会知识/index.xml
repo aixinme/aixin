@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>财会知识 on 爱心网-Aixin.me</title>
+    <title>财会知识 on Aixin.me</title>
     <link>https://aixin.me/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/</link>
-    <description>Recent content in 财会知识 on 爱心网-Aixin.me</description>
+    <description>Recent content in 财会知识 on Aixin.me</description>
     <image>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://aixin.me/papermod-cover.png</url>
+      <link>https://aixin.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 17 Jan 2020 15:06:55 +0000</lastBuildDate><atom:link href="https://aixin.me/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
