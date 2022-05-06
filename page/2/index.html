@@ -198,15 +198,17 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Vue3 基础知识点
+    <h2>Vue3.2 组合式API基础知识点
     </h2>
   </header>
   <section class="entry-content">
-    <p>安装VUE npm install webpack -g npm install webpack-cli -g npm install -g @vue/cli @vue/cli-service-global vue create hello-world npm run serve npm run build 基本框架 &lt;div id=&#34;app&#34;&gt; &lt;p&gt;{{ message }}&lt;/p&gt; &lt;p&gt;{{ content() }}&lt;/p&gt; &lt;/div&gt; var vm = new Vue({ el: &#39;#app&#39;, data: { message: &#39;Hello&#39; }, methods: { content: function(){ return this.message &#43; &#39; Vue.js&#39;; } } }) 说明： vue代码结构：
-new Vue({ el: &#39;#app&#39;,//根元素 data: { //变量 message: &#39;Hello&#39; }, methods: { //函数方法 content: function(){ return this....</p>
+    <p>本页内容基于VUE3.2版本，且以组合式API模式编写&lt;script setup&gt;
+推荐的 IDE 配置是 Visual Studio Code &#43; Volar 扩展
+中文文档：https://staging-cn.vuejs.org/
+ 使用Vite安装Vue npm init vite@latest &lt;project-name&gt; -- --template vue # 或者 npm create vite@latest &lt;project-name&gt; -- --template vue cd &lt;project-name&gt; npm install npm run dev 模板语法 // 显示文本 &lt;span&gt;Message: {{ msg }}&lt;/span&gt; // 显示原始HTML &lt;p&gt;Using v-html directive: &lt;span v-html=&#34;rawHtml&#34;&gt;&lt;/span&gt;&lt;/p&gt; // 绑定HTML属性 &lt;div v-bind:id=&#34;dynamicId&#34;&gt;&lt;/div&gt; // 绑定多个HTML属性 &lt;div v-bind=&#34;objectOfAttrs&#34;&gt;&lt;/div&gt; // 调用函数 &lt;span :title=&#34;toTitleDate(date)&#34;&gt; {{ formatDate(date) }} &lt;/span&gt; // 绑定动态参数 &lt;a v-bind:[attributeName]=&#34;url&#34;&gt; ....</p>
   </section>
   <footer class="entry-footer"><span title='2020-11-05 16:04:12 +0800 CST'>十一月 5, 2020</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Aixin.me</footer>
-  <a class="entry-link" aria-label="post link to Vue3 基础知识点" href="https://aixin.me/post/vue3-base-tutorials/"></a>
+  <a class="entry-link" aria-label="post link to Vue3.2 组合式API基础知识点" href="https://aixin.me/post/vue3-base-tutorials/"></a>
 </article>
 
 <article class="post-entry"> 

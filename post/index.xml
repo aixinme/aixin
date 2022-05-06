@@ -143,13 +143,15 @@ framework - 框架模板
     </item>
     
     <item>
-      <title>Vue3 基础知识点</title>
+      <title>Vue3.2 组合式API基础知识点</title>
       <link>https://aixin.me/post/vue3-base-tutorials/</link>
       <pubDate>Thu, 05 Nov 2020 16:04:12 +0800</pubDate>
       
       <guid>https://aixin.me/post/vue3-base-tutorials/</guid>
-      <description>安装VUE npm install webpack -g npm install webpack-cli -g npm install -g @vue/cli @vue/cli-service-global vue create hello-world npm run serve npm run build 基本框架 &amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt; &amp;lt;p&amp;gt;{{ message }}&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;{{ content() }}&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; var vm = new Vue({ el: &#39;#app&#39;, data: { message: &#39;Hello&#39; }, methods: { content: function(){ return this.message + &#39; Vue.js&#39;; } } }) 说明： vue代码结构：
-new Vue({ el: &#39;#app&#39;,//根元素 data: { //变量 message: &#39;Hello&#39; }, methods: { //函数方法 content: function(){ return this.</description>
+      <description>本页内容基于VUE3.2版本，且以组合式API模式编写&amp;lt;script setup&amp;gt;
+推荐的 IDE 配置是 Visual Studio Code + Volar 扩展
+中文文档：https://staging-cn.vuejs.org/
+ 使用Vite安装Vue npm init vite@latest &amp;lt;project-name&amp;gt; -- --template vue # 或者 npm create vite@latest &amp;lt;project-name&amp;gt; -- --template vue cd &amp;lt;project-name&amp;gt; npm install npm run dev 模板语法 // 显示文本 &amp;lt;span&amp;gt;Message: {{ msg }}&amp;lt;/span&amp;gt; // 显示原始HTML &amp;lt;p&amp;gt;Using v-html directive: &amp;lt;span v-html=&amp;#34;rawHtml&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; // 绑定HTML属性 &amp;lt;div v-bind:id=&amp;#34;dynamicId&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; // 绑定多个HTML属性 &amp;lt;div v-bind=&amp;#34;objectOfAttrs&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; // 调用函数 &amp;lt;span :title=&amp;#34;toTitleDate(date)&amp;#34;&amp;gt; {{ formatDate(date) }} &amp;lt;/span&amp;gt; // 绑定动态参数 &amp;lt;a v-bind:[attributeName]=&amp;#34;url&amp;#34;&amp;gt; .</description>
     </item>
     
     <item>
