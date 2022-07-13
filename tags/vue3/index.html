@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://aixin.me/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.101.0" />
 <link rel="alternate" type="application/rss+xml" href="https://aixin.me/tags/vue3/index.xml">
 <noscript>
     <style>
@@ -116,13 +116,13 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://aixin.me/archives" title="存档">
-                    <span>存档</span>
+                <a href="https://aixin.me/tags/" title="标签">
+                    <span>标签</span>
                 </a>
             </li>
             <li>
-                <a href="https://aixin.me/categories/" title="分类">
-                    <span>分类</span>
+                <a href="https://aixin.me/archives" title="存档">
+                    <span>存档</span>
                 </a>
             </li>
             <li>
@@ -131,8 +131,8 @@
                 </a>
             </li>
             <li>
-                <a href="https://aixin.me/tags/" title="标签">
-                    <span>标签</span>
+                <a href="https://aixin.me/about/" title="关于">
+                    <span>关于</span>
                 </a>
             </li>
         </ul>
@@ -150,10 +150,10 @@
   </header>
   <section class="entry-content">
     <p>本文状态：未完成
- 一、产品原型  参考 Windows todo设计一个简单的移动端todo页面原型
- 二、开发教程 1、新建Todolist.vue  先通过脚手架配置好vue项目：@vue/cli
- 在项目src\views下面新建Todo.vue
-&lt;template&gt; &lt;div class=&#34;todo&#34;&gt; &lt;h1&gt;Todolist&lt;/h1&gt; &lt;input type=&#34;text&#34; v-model=&#34;content&#34; @keypress=&#34;add&#34;&gt;&lt;button @click=&#34;add&#34;&gt;Add&lt;/button&gt; &lt;p&gt;{{content}}&lt;/p&gt; &lt;div class=&#34;section-title&#34;&gt;待办&lt;/div&gt; &lt;ul class=&#34;todolist underway&#34;&gt; &lt;TodoItem :=&#34;todo&#34; v-for=&#34;todo in underway&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /&gt; &lt;/ul&gt; &lt;div class=&#34;section-title&#34;&gt;已完成&lt;/div&gt; &lt;ul class=&#34;todolist completed&#34;&gt; &lt;TodoItem :=&#34;todo&#34; v-for=&#34;todo in completed&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import TodoItem from &#39;../components/TodoItem&#39;; export default { name: &#34;Todo&#34;, components:{ TodoItem }, data(){ return{ content:&#39;hello world!...</p>
+一、产品原型 参考 Windows todo设计一个简单的移动端todo页面原型
+二、开发教程 1、新建Todolist.vue 先通过脚手架配置好vue项目：@vue/cli
+在项目src\views下面新建Todo.vue
+&lt;template&gt; &lt;div class=&#34;todo&#34;&gt; &lt;h1&gt;Todolist&lt;/h1&gt; &lt;input type=&#34;text&#34; v-model=&#34;content&#34; @keypress=&#34;add&#34;&gt;&lt;button @click=&#34;add&#34;&gt;Add&lt;/button&gt; &lt;p&gt;{{content}}&lt;/p&gt; &lt;div class=&#34;section-title&#34;&gt;待办&lt;/div&gt; &lt;ul class=&#34;todolist underway&#34;&gt; &lt;TodoItem :=&#34;todo&#34; v-for=&#34;todo in underway&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /&gt; &lt;/ul&gt; &lt;div class=&#34;section-title&#34;&gt;已完成&lt;/div&gt; &lt;ul class=&#34;todolist completed&#34;&gt; &lt;TodoItem :=&#34;todo&#34; v-for=&#34;todo in completed&#34; :key=&#34;todo.id&#34; :class=&#34;{done:todo.status}&#34; v-model=&#34;todo.status&#34; /&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import TodoItem from &#39;../components/TodoItem&#39;; export default { name: &#34;Todo&#34;, components:{ TodoItem }, data(){ return{ content:&#39;hello world!&#39;, checked:&#39;&#39;, todos:[ { id:1, content:&#39;这是内容1&#39;, status:false }, { id:2, content:&#39;这是内容2&#39;, status:true }, { id:3, content:&#39;这是内容3&#39;, status:true }, { id:4, content:&#39;这是内容4&#39;, status:false }, { id:5, content:&#39;这是内容5&#39;, status:true } ], } }, methods:{ add(){ this....</p>
   </section>
   <footer class="entry-footer"><span title='2020-11-10 13:54:51 +0800 CST'>十一月 10, 2020</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Aixin.me</footer>
   <a class="entry-link" aria-label="post link to Vue3 开发 Todolist 教程" href="https://aixin.me/post/vue-todo-tutorial/"></a>
@@ -168,7 +168,7 @@
     <p>本页内容基于VUE3.2版本，且以组合式API模式编写&lt;script setup&gt;
 推荐的 IDE 配置是 Visual Studio Code &#43; Volar 扩展
 中文文档：https://staging-cn.vuejs.org/
- 使用Vite安装Vue npm init vite@latest &lt;project-name&gt; -- --template vue # 或者 npm create vite@latest &lt;project-name&gt; -- --template vue cd &lt;project-name&gt; npm install npm run dev 模板语法 // 显示文本 &lt;span&gt;Message: {{ msg }}&lt;/span&gt; // 显示原始HTML &lt;p&gt;Using v-html directive: &lt;span v-html=&#34;rawHtml&#34;&gt;&lt;/span&gt;&lt;/p&gt; // 绑定HTML属性 &lt;div v-bind:id=&#34;dynamicId&#34;&gt;&lt;/div&gt; // 绑定多个HTML属性 &lt;div v-bind=&#34;objectOfAttrs&#34;&gt;&lt;/div&gt; // 调用函数 &lt;span :title=&#34;toTitleDate(date)&#34;&gt; {{ formatDate(date) }} &lt;/span&gt; // 绑定动态参数 &lt;a v-bind:[attributeName]=&#34;url&#34;&gt; ....</p>
+使用Vite安装Vue npm init vite@latest &lt;project-name&gt; -- --template vue # 或者 npm create vite@latest &lt;project-name&gt; -- --template vue cd &lt;project-name&gt; npm install npm run dev 模板语法 // 显示文本 &lt;span&gt;Message: {{ msg }}&lt;/span&gt; // 显示原始HTML &lt;p&gt;Using v-html directive: &lt;span v-html=&#34;rawHtml&#34;&gt;&lt;/span&gt;&lt;/p&gt; // 绑定HTML属性 &lt;div v-bind:id=&#34;dynamicId&#34;&gt;&lt;/div&gt; // 绑定多个HTML属性 &lt;div v-bind=&#34;objectOfAttrs&#34;&gt;&lt;/div&gt; // 调用函数 &lt;span :title=&#34;toTitleDate(date)&#34;&gt; {{ formatDate(date) }} &lt;/span&gt; // 绑定动态参数 &lt;a v-bind:[attributeName]=&#34;url&#34;&gt; ....</p>
   </section>
   <footer class="entry-footer"><span title='2020-11-05 16:04:12 +0800 CST'>十一月 5, 2020</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;Aixin.me</footer>
   <a class="entry-link" aria-label="post link to Vue3.2 组合式API基础知识点" href="https://aixin.me/post/vue3-base-tutorials/"></a>

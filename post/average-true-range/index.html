@@ -9,10 +9,10 @@
 <meta name="keywords" content="量化交易" />
 <meta name="description" content="Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。
 由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。
- t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
- $$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$
- Max 取最大值 Abs 取绝对值absolute
- $$ ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i $$
+t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
+$$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$
+Max 取最大值 Abs 取绝对值absolute
+$$ ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i $$
 波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定
 可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性
 ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划
@@ -21,7 +21,7 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
 <meta name="author" content="Aixin.me">
 <link rel="canonical" href="https://aixin.me/post/average-true-range/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.f8d12d75c76b434793248904634c123d46037822e41dfc533b5d5631f28ac9d8.css" integrity="sha256-&#43;NEtdcdrQ0eTJIkEY0wSPUYDeCLkHfxTO11WMfKKydg=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.e85ad0406048e8176e1c7661b25d5c69297ddfe41dc4124cf75ecb99a4f7b3d1.js" integrity="sha256-6FrQQGBI6BduHHZhsl1caSl93&#43;QdxBJM917LmaT3s9E="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://aixin.me/images/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://aixin.me/images/favicon.ico">
@@ -30,7 +30,7 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
 <link rel="mask-icon" href="https://aixin.me/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.101.0" />
 <noscript>
     <style>
         #theme-toggle,
@@ -76,10 +76,10 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
 <meta property="og:title" content="ATR：均幅指标" />
 <meta property="og:description" content="Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。
 由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。
- t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
- $$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$
- Max 取最大值 Abs 取绝对值absolute
- $$ ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i $$
+t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
+$$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$
+Max 取最大值 Abs 取绝对值absolute
+$$ ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i $$
 波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定
 可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性
 ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划
@@ -96,10 +96,10 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
 <meta name="twitter:title" content="ATR：均幅指标"/>
 <meta name="twitter:description" content="Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。
 由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。
- t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
- $$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$
- Max 取最大值 Abs 取绝对值absolute
- $$ ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i $$
+t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
+$$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$
+Max 取最大值 Abs 取绝对值absolute
+$$ ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i $$
 波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定
 可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性
 ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划
@@ -133,11 +133,11 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
   "@type": "BlogPosting",
   "headline": "ATR：均幅指标",
   "name": "ATR：均幅指标",
-  "description": "Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。\n由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。\n t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。\n $$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$\n Max 取最大值 Abs 取绝对值absolute\n $$ ATR = \\Big( \\frac{1}{n}\\Big) \\sum^{(n)}_{(i=1)} TR_i $$\n波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定\n可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性\nATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划\n2、利用ATR选择入场点位 短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.\n3、利用ATR止损 著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作.",
+  "description": "Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。\n由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。\nt：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。\n$$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$\nMax 取最大值 Abs 取绝对值absolute\n$$ ATR = \\Big( \\frac{1}{n}\\Big) \\sum^{(n)}_{(i=1)} TR_i $$\n波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定\n可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性\nATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划\n2、利用ATR选择入场点位 短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.\n3、利用ATR止损 著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作.",
   "keywords": [
     "量化交易"
   ],
-  "articleBody": "Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。\n由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。\n t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。\n $$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$\n Max 取最大值 Abs 取绝对值absolute\n $$ ATR = \\Big( \\frac{1}{n}\\Big) \\sum^{(n)}_{(i=1)} TR_i $$\n波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定\n可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性\nATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划\n2、利用ATR选择入场点位 短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.\n3、利用ATR止损 著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作.\n",
+  "articleBody": "Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。\n由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。\nt：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。\n$$ TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)] $$\nMax 取最大值 Abs 取绝对值absolute\n$$ ATR = \\Big( \\frac{1}{n}\\Big) \\sum^{(n)}_{(i=1)} TR_i $$\n波动性较高的股票具有较高的ATR，而波动性较低的股票具有较低的ATR。 它的创建是为了使交易者可以通过简单的计算来更准确地衡量资产的每日波动性。该指标未指示价格方向；相反，它主要用于衡量由缺口引起的波动并限制上下波动 ATR的使用通常用作退出方法，无论如何做出进入决定\n可以使用ATR方法来确定头寸规模，从而说明单个交易者自己接受风险的意愿以及基础市场的波动性\nATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们可以看到一些基本的信息,从中分别具体货币的波动情况,这样就可以调整资金的配比.并且每种产品的价格都在不断的波动中,所以可以根据具体的ATR指标的参数来调整交易的计划\n2、利用ATR选择入场点位 短期ATR一般大于长期的ATR,我们可以通过短期和长期的波动性的差值,并根据相应的价格方向入场,同时在趋势比较稳定的时候平仓出局.\n3、利用ATR止损 著名的海龟法则中,海龟交易法则按照价格高于初始价格0.5ATR进行加仓操作,按照价格低于建仓价2ATR进行止损操作.\n",
   "wordCount" : "39",
   "inLanguage": "zh",
   "datePublished": "2019-12-27T10:41:39Z",
@@ -203,13 +203,13 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
         </div>
         <ul id="menu">
             <li>
-                <a href="https://aixin.me/archives" title="存档">
-                    <span>存档</span>
+                <a href="https://aixin.me/tags/" title="标签">
+                    <span>标签</span>
                 </a>
             </li>
             <li>
-                <a href="https://aixin.me/categories/" title="分类">
-                    <span>分类</span>
+                <a href="https://aixin.me/archives" title="存档">
+                    <span>存档</span>
                 </a>
             </li>
             <li>
@@ -218,8 +218,8 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
                 </a>
             </li>
             <li>
-                <a href="https://aixin.me/tags/" title="标签">
-                    <span>标签</span>
+                <a href="https://aixin.me/about/" title="关于">
+                    <span>关于</span>
                 </a>
             </li>
         </ul>

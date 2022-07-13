@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://aixin.me/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.101.0" />
 <link rel="alternate" type="application/rss+xml" href="https://aixin.me/tags/springboot/index.xml">
 <noscript>
     <style>
@@ -116,13 +116,13 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://aixin.me/archives" title="存档">
-                    <span>存档</span>
+                <a href="https://aixin.me/tags/" title="标签">
+                    <span>标签</span>
                 </a>
             </li>
             <li>
-                <a href="https://aixin.me/categories/" title="分类">
-                    <span>分类</span>
+                <a href="https://aixin.me/archives" title="存档">
+                    <span>存档</span>
                 </a>
             </li>
             <li>
@@ -131,8 +131,8 @@
                 </a>
             </li>
             <li>
-                <a href="https://aixin.me/tags/" title="标签">
-                    <span>标签</span>
+                <a href="https://aixin.me/about/" title="关于">
+                    <span>关于</span>
                 </a>
             </li>
         </ul>
@@ -154,10 +154,12 @@
 您可以使用Spring Boot来创建可以使用java -jar或更传统的war部署来启动的Java应用程序 。我们还提供了一个运行“spring script”的命令行工具。
 2、系统要求 Spring Boot 2.2.1需要Java 8 及以上版本，同时也兼容了Java 13
 支持以下构建程序：
- Maven 版本3.3&#43; Gradle 5.x  Servlet容器：
-   Name Servlet版本     Tomcat 9.0 4.0   Jetty 9.4 3.1   Undertow 2.0 4.0    3、Spring Boot安装  服务器SDK最低要求为：Java SDK v1.8 查看环境Java版本：java -version
-   安装方法一 您可以像使用任何标准Java库一样使用Spring Boot。为此，请spring-boot-*.jar在类路径中包含相应的文件。Spring Boot不需要任何特殊的工具集成，因此您可以使用任何IDE或文本编辑器。此外，Spring Boot应用程序没有什么特别之处，因此您可以像运行其他任何Java程序一样运行和调试Spring Boot应用程序。
-虽然您可以复制Spring Boot jar，但我们通常建议您使用支持依赖管理的构建工具（如Maven或Gradle）。...</p>
+Maven 版本3.3&#43; Gradle 5.x Servlet容器：
+Name Servlet版本 Tomcat 9.0 4.0 Jetty 9.4 3.1 Undertow 2.0 4.0 3、Spring Boot安装 服务器SDK最低要求为：Java SDK v1.8 查看环境Java版本：java -version
+安装方法一 您可以像使用任何标准Java库一样使用Spring Boot。为此，请spring-boot-*.jar在类路径中包含相应的文件。Spring Boot不需要任何特殊的工具集成，因此您可以使用任何IDE或文本编辑器。此外，Spring Boot应用程序没有什么特别之处，因此您可以像运行其他任何Java程序一样运行和调试Spring Boot应用程序。
+虽然您可以复制Spring Boot jar，但我们通常建议您使用支持依赖管理的构建工具（如Maven或Gradle）。
+安装方法二、使用Maven安装（推荐） Maven版本最低要求3.3&#43;，前提是先要安装Maven（https://maven.apache.org/）。 或者通过IDE安装Maven插件 Spring Boot依赖关系使用org.springframework.bootgroupId。通常，您的Maven POM文件从spring-boot-starter-parent项目中继承并向一个或多个“Starter”声明依赖关系。Spring Boot还提供了一个可选的 Maven插件来创建可执行的jar。 以下清单显示了一个典型的pom.xml文件：
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;&lt;project xmlns=&#34;http://maven.apache.org/POM/4.0.0&#34; xmlns:xsi=&#34;http://www.w3.org/2001/XMLSchema-instance&#34;xsi:schemaLocation=&#34;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&#34;&gt;&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&lt;groupId&gt;com....</p>
   </section>
   <footer class="entry-footer"><span title='2019-12-05 15:44:55 +0000 UTC'>十二月 5, 2019</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Aixin.me</footer>
   <a class="entry-link" aria-label="post link to Spring Boot 入门指南" href="https://aixin.me/post/spring-boot-getting-started/"></a>
