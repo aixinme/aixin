@@ -160,6 +160,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Vue3.2 组合式API基础知识点
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>本页内容基于VUE3.2版本，且以组合式API模式编写&lt;script setup&gt;
+推荐的 IDE 配置是 Visual Studio Code &#43; Volar 扩展
+中文文档：https://staging-cn.vuejs.org/
+使用Vite安装Vue npm init vite@latest &lt;project-name&gt; -- --template vue # 或者 npm create vite@latest &lt;project-name&gt; -- --template vue cd &lt;project-name&gt; npm install npm run dev 模板语法 // 显示文本 &lt;span&gt;Message: {{ msg }}&lt;/span&gt; // 显示原始HTML &lt;p&gt;Using v-html directive: &lt;span v-html=&#34;rawHtml&#34;&gt;&lt;/span&gt;&lt;/p&gt; // 绑定HTML属性 &lt;div v-bind:id=&#34;dynamicId&#34;&gt;&lt;/div&gt; // 绑定多个HTML属性 &lt;div v-bind=&#34;objectOfAttrs&#34;&gt;&lt;/div&gt; // 调用函数 &lt;span :title=&#34;toTitleDate(date)&#34;&gt; {{ formatDate(date) }} &lt;/span&gt; // 绑定动态参数 &lt;a v-bind:[attributeName]=&#34;url&#34;&gt; ....</p>
+  </section>
+  <footer class="entry-footer"><span title='2020-11-05 16:04:12 +0800 CST'>十一月 5, 2020</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;Aixin.me</footer>
+  <a class="entry-link" aria-label="post link to Vue3.2 组合式API基础知识点" href="https://aixin.me/post/vue3-base-tutorials/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>静态博客Hugo安装及使用教程
     </h2>
   </header>
@@ -255,23 +270,6 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
   </section>
   <footer class="entry-footer"><span title='2019-12-23 10:17:48 +0000 UTC'>十二月 23, 2019</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Aixin.me</footer>
   <a class="entry-link" aria-label="post link to BackTrader学习笔记" href="https://aixin.me/post/backtrader/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>MA/SMA/EMA
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>MA(Moving Average):移动平均线 可以过滤随机价格波动中的噪音来帮助平滑价格走势，基于过去的价格，因此时趋势跟踪。包括简单移动平均线(SMA)和指数移动平均线(EMA)，常见应用为确定趋势方向并确定支撑位和阻力位
-简单移动平均线(SMA)： $$SMA = \frac{A_1 &#43; A_2 &#43; \cdots &#43; A_n}{n}$$ A:n期的平均值 n：周期数
-指数移动平均线(EMA): $$EMA_t = [V_t \times \big(\frac{s}{1&#43;d}\big)] &#43; EMA_y \times [1 - \big(\frac{s}{1&#43;d}\big)]$$
-$$EMA_t$$:当天或当期的EMA $$V_t$$:当天或当期的价格值 $$EMA_y$$:昨天或上期的EMA s:平滑度 d:天数或期数
-要计算EMA，线要计算SMA，然后再计算平滑度s 平滑度的计算公式：$$s = \frac{2}{选定天数&#43;1}$$
-EMA:指数移动平均（考虑了当天收盘价），快EMA（短时期，通常用12周期），慢EMA（长时期，通常用26周期）</p>
-  </section>
-  <footer class="entry-footer"><span title='2019-12-20 18:13:57 +0000 UTC'>十二月 20, 2019</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Aixin.me</footer>
-  <a class="entry-link" aria-label="post link to MA/SMA/EMA" href="https://aixin.me/post/moving-average/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

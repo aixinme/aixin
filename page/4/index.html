@@ -156,6 +156,23 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>MA/SMA/EMA
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>MA(Moving Average):移动平均线 可以过滤随机价格波动中的噪音来帮助平滑价格走势，基于过去的价格，因此时趋势跟踪。包括简单移动平均线(SMA)和指数移动平均线(EMA)，常见应用为确定趋势方向并确定支撑位和阻力位
+简单移动平均线(SMA)： $$SMA = \frac{A_1 &#43; A_2 &#43; \cdots &#43; A_n}{n}$$ A:n期的平均值 n：周期数
+指数移动平均线(EMA): $$EMA_t = [V_t \times \big(\frac{s}{1&#43;d}\big)] &#43; EMA_y \times [1 - \big(\frac{s}{1&#43;d}\big)]$$
+$$EMA_t$$:当天或当期的EMA $$V_t$$:当天或当期的价格值 $$EMA_y$$:昨天或上期的EMA s:平滑度 d:天数或期数
+要计算EMA，线要计算SMA，然后再计算平滑度s 平滑度的计算公式：$$s = \frac{2}{选定天数&#43;1}$$
+EMA:指数移动平均（考虑了当天收盘价），快EMA（短时期，通常用12周期），慢EMA（长时期，通常用26周期）</p>
+  </section>
+  <footer class="entry-footer"><span title='2019-12-20 18:13:57 +0000 UTC'>十二月 20, 2019</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Aixin.me</footer>
+  <a class="entry-link" aria-label="post link to MA/SMA/EMA" href="https://aixin.me/post/moving-average/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>常用平均数
     </h2>
   </header>
@@ -228,30 +245,10 @@ Name Servlet版本 Tomcat 9.0 4.0 Jetty 9.4 3.1 Undertow 2.0 4.0 3、Spring Boot
   <footer class="entry-footer"><span title='2019-12-05 15:44:55 +0000 UTC'>十二月 5, 2019</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Aixin.me</footer>
   <a class="entry-link" aria-label="post link to Spring Boot 入门指南" href="https://aixin.me/post/spring-boot-getting-started/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Numpy学习笔记
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>生成数组
-numpy.arange([start, ]stop, [step, ]dtype=None)
-示例
-np.arange(3) array([0, 1, 2]) np.arange(3.0) array([ 0., 1., 2.]) np.arange(3,7) array([3, 4, 5, 6]) np.arange(3,7,2) array([3, 5]) 生成随机整数
-numpy.random.randint(low, high=None, size=None, dtype=‘l’)
-示例
-np.random.randint(2, size=10) array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0]) np.random.randint(1, size=10) array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]) 随机排列
-np.random.shuffle(x)
-示例
-arr = np.arange(10) np.random.shuffle(arr) arr [1 7 5 2 9 4 3 6 0 8] 随机采样...</p>
-  </section>
-  <footer class="entry-footer"><span title='2019-11-06 19:02:30 +0000 UTC'>十一月 6, 2019</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Aixin.me</footer>
-  <a class="entry-link" aria-label="post link to Numpy学习笔记" href="https://aixin.me/post/numpy/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://aixin.me/page/3/">« 上一页</a>
+    <a class="next" href="https://aixin.me/page/5/">下一页 »</a>
   </nav>
 </footer>
     </main>
