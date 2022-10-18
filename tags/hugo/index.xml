@@ -5,8 +5,8 @@
     <link>https://aixin.me/tags/hugo/</link>
     <description>Recent content in Hugo on Aixin.me</description>
     <image>
-      <url>https://aixin.me/papermod-cover.png</url>
-      <link>https://aixin.me/papermod-cover.png</link>
+      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 05 Nov 2020 09:52:17 +0800</lastBuildDate><atom:link href="https://aixin.me/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
@@ -27,7 +27,7 @@ D:\Hugo\Sites
 3、配置环境 我的电脑→右键→高级→环境变量→系统变量→Path，增加D:\Hugo\bin
 也可以命令执行：set PATH=%PATH%;D:\Hugo\bin
 4、安装完成 验证
-hugo version //查看版本 hugo help //帮助文档 能正常输出即安装成功，如果输出错误，则需要重启电脑后再试
+hugo version //查看版本hugo help //帮助文档 能正常输出即安装成功，如果输出错误，则需要重启电脑后再试
 二、新建网站 在D:\Hugo\Sites下面打开cmd，或其他命令工具
 hugo new site simple.com 新建simple.com 网站名自定义
 回车创建成功！
@@ -42,7 +42,7 @@ config.toml 配置文件
 hugo new about.md 自动在当前网站下的content目录下生成about.md文件
 3、创建文章 hugo new post/hello-world.md 自动在content/post下面生成hello-world.md文件
 新生成的文件自动会有三个字段(这儿的模板可以在archetypes里面的文件修改)：
-title: &amp;#34;Hello world&amp;#34; //文件名称 date: 2020-11-03T16:58:08+08:00 //创建日期 draft: true //草稿，默认开启 4、安装主题 在官方主题库中找到喜欢主题，按照教程安装</description>
+title: &amp;#34;Hello world&amp;#34; //文件名称date: 2020-11-03T16:58:08+08:00 //创建日期draft: true //草稿，默认开启 4、安装主题 在官方主题库中找到喜欢主题，按照教程安装</description>
     </item>
     
   </channel>

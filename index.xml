@@ -5,11 +5,11 @@
     <link>https://aixin.me/</link>
     <description>Recent content on Aixin.me</description>
     <image>
-      <url>https://aixin.me/papermod-cover.png</url>
-      <link>https://aixin.me/papermod-cover.png</link>
+      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 09 Sep 2022 09:39:13 +0800</lastBuildDate><atom:link href="https://aixin.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Oct 2022 20:44:38 +0800</lastBuildDate><atom:link href="https://aixin.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://aixin.me/about/</link>
@@ -18,6 +18,15 @@
       <guid>https://aixin.me/about/</guid>
       <description>Aixin.me
 心中有爱，遇见更好的自己</description>
+    </item>
+    
+    <item>
+      <title>Where Am I Going</title>
+      <link>https://aixin.me/post/where-am-i-going/</link>
+      <pubDate>Tue, 18 Oct 2022 20:44:38 +0800</pubDate>
+      
+      <guid>https://aixin.me/post/where-am-i-going/</guid>
+      <description> Who am I? What am I doing? What should I do? </description>
     </item>
     
     <item>
@@ -30,7 +39,7 @@
     </item>
     
     <item>
-      <title>Opportunity素质模型</title>
+      <title>Opportunity Competency Model</title>
       <link>https://aixin.me/post/opportunity-model/</link>
       <pubDate>Wed, 13 Jul 2022 13:28:52 +0800</pubDate>
       
@@ -39,7 +48,7 @@
     </item>
     
     <item>
-      <title>自我觉醒</title>
+      <title>Self Awareness</title>
       <link>https://aixin.me/post/self-awakening/</link>
       <pubDate>Tue, 03 May 2022 17:25:03 +0800</pubDate>
       
@@ -118,7 +127,7 @@ let name: string = `Gene`; let age: number = 37; let sentence: string = `Hello, 
       
       <guid>https://aixin.me/post/eggjs-basic-tutorial/</guid>
       <description>官网：https://eggjs.org/zh-cn/
-安装 // 1、创建并进入项目目录mkdir egg-example &amp;amp;&amp;amp; cd egg-example// 2、初始化npm init egg --type=simple// 3、安装项目npm i// 4、启动项目npm run dev// http://localhost:7001 type的类型
+安装 // 1、创建并进入项目目录 mkdir egg-example &amp;amp;&amp;amp; cd egg-example // 2、初始化 npm init egg --type=simple // 3、安装项目 npm i // 4、启动项目 npm run dev // http://localhost:7001 type的类型
 simple - 基础应用模板
 microservice - 基于egg的微服务模板
 sequelize - 带有sequelize的egg应用
@@ -126,7 +135,7 @@ ts - typescript的基础应用模板
 empty - 空模板
 plugin - egg 插件模板
 framework - 框架模板
-核心功能 1、控制器 Controller // app/controller/home.jsconst Controller = require(&amp;#39;egg&amp;#39;).Controller;class HomeController extends Controller {async index() {this.ctx.body = &amp;#39;Hello world&amp;#39;;}}module.</description>
+核心功能 1、控制器 Controller // app/controller/home.js const Controller = require(&amp;#39;egg&amp;#39;).Controller; class HomeController extends Controller { async index() { this.ctx.body = &amp;#39;Hello world&amp;#39;; } } module.</description>
     </item>
     
     <item>
@@ -170,7 +179,7 @@ framework - 框架模板
 一、产品原型 参考 Windows todo设计一个简单的移动端todo页面原型
 二、开发教程 1、新建Todolist.vue 先通过脚手架配置好vue项目：@vue/cli
 在项目src\views下面新建Todo.vue
-&amp;lt;template&amp;gt; &amp;lt;div class=&amp;#34;todo&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Todolist&amp;lt;/h1&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;content&amp;#34; @keypress=&amp;#34;add&amp;#34;&amp;gt;&amp;lt;button @click=&amp;#34;add&amp;#34;&amp;gt;Add&amp;lt;/button&amp;gt; &amp;lt;p&amp;gt;{{content}}&amp;lt;/p&amp;gt; &amp;lt;div class=&amp;#34;section-title&amp;#34;&amp;gt;待办&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;#34;todolist underway&amp;#34;&amp;gt; &amp;lt;TodoItem :=&amp;#34;todo&amp;#34; v-for=&amp;#34;todo in underway&amp;#34; :key=&amp;#34;todo.id&amp;#34; :class=&amp;#34;{done:todo.status}&amp;#34; v-model=&amp;#34;todo.status&amp;#34; /&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;div class=&amp;#34;section-title&amp;#34;&amp;gt;已完成&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;#34;todolist completed&amp;#34;&amp;gt; &amp;lt;TodoItem :=&amp;#34;todo&amp;#34; v-for=&amp;#34;todo in completed&amp;#34; :key=&amp;#34;todo.id&amp;#34; :class=&amp;#34;{done:todo.status}&amp;#34; v-model=&amp;#34;todo.status&amp;#34; /&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; import TodoItem from &amp;#39;../components/TodoItem&amp;#39;; export default { name: &amp;#34;Todo&amp;#34;, components:{ TodoItem }, data(){ return{ content:&amp;#39;hello world!&amp;#39;, checked:&amp;#39;&amp;#39;, todos:[ { id:1, content:&amp;#39;这是内容1&amp;#39;, status:false }, { id:2, content:&amp;#39;这是内容2&amp;#39;, status:true }, { id:3, content:&amp;#39;这是内容3&amp;#39;, status:true }, { id:4, content:&amp;#39;这是内容4&amp;#39;, status:false }, { id:5, content:&amp;#39;这是内容5&amp;#39;, status:true } ], } }, methods:{ add(){ this.</description>
+&amp;lt;template&amp;gt;&amp;lt;div class=&amp;#34;todo&amp;#34;&amp;gt;&amp;lt;h1&amp;gt;Todolist&amp;lt;/h1&amp;gt;&amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;content&amp;#34; @keypress=&amp;#34;add&amp;#34;&amp;gt;&amp;lt;button @click=&amp;#34;add&amp;#34;&amp;gt;Add&amp;lt;/button&amp;gt;&amp;lt;p&amp;gt;{{content}}&amp;lt;/p&amp;gt;&amp;lt;div class=&amp;#34;section-title&amp;#34;&amp;gt;待办&amp;lt;/div&amp;gt;&amp;lt;ul class=&amp;#34;todolist underway&amp;#34;&amp;gt;&amp;lt;TodoItem :=&amp;#34;todo&amp;#34; v-for=&amp;#34;todo in underway&amp;#34; :key=&amp;#34;todo.id&amp;#34; :class=&amp;#34;{done:todo.status}&amp;#34; v-model=&amp;#34;todo.status&amp;#34; /&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;div class=&amp;#34;section-title&amp;#34;&amp;gt;已完成&amp;lt;/div&amp;gt;&amp;lt;ul class=&amp;#34;todolist completed&amp;#34;&amp;gt;&amp;lt;TodoItem :=&amp;#34;todo&amp;#34; v-for=&amp;#34;todo in completed&amp;#34; :key=&amp;#34;todo.id&amp;#34; :class=&amp;#34;{done:todo.status}&amp;#34; v-model=&amp;#34;todo.status&amp;#34; /&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/template&amp;gt;&amp;lt;script&amp;gt;import TodoItem from &amp;#39;../components/TodoItem&amp;#39;;export default {name: &amp;#34;Todo&amp;#34;,components:{TodoItem},data(){return{content:&amp;#39;hello world!&amp;#39;,checked:&amp;#39;&amp;#39;,todos:[{id:1,content:&amp;#39;这是内容1&amp;#39;,status:false},{id:2,content:&amp;#39;这是内容2&amp;#39;,status:true},{id:3,content:&amp;#39;这是内容3&amp;#39;,status:true},{id:4,content:&amp;#39;这是内容4&amp;#39;,status:false},{id:5,content:&amp;#39;这是内容5&amp;#39;,status:true}],}},methods:{add(){this.</description>
     </item>
     
     <item>
@@ -182,7 +191,7 @@ framework - 框架模板
       <description>本页内容基于VUE3.2版本，且以组合式API模式编写&amp;lt;script setup&amp;gt;
 推荐的 IDE 配置是 Visual Studio Code + Volar 扩展
 中文文档：https://staging-cn.vuejs.org/
-使用Vite安装Vue npm init vite@latest &amp;lt;project-name&amp;gt; -- --template vue # 或者 npm create vite@latest &amp;lt;project-name&amp;gt; -- --template vue cd &amp;lt;project-name&amp;gt; npm install npm run dev 模板语法 // 显示文本 &amp;lt;span&amp;gt;Message: {{ msg }}&amp;lt;/span&amp;gt; // 显示原始HTML &amp;lt;p&amp;gt;Using v-html directive: &amp;lt;span v-html=&amp;#34;rawHtml&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; // 绑定HTML属性 &amp;lt;div v-bind:id=&amp;#34;dynamicId&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; // 绑定多个HTML属性 &amp;lt;div v-bind=&amp;#34;objectOfAttrs&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; // 调用函数 &amp;lt;span :title=&amp;#34;toTitleDate(date)&amp;#34;&amp;gt; {{ formatDate(date) }} &amp;lt;/span&amp;gt; // 绑定动态参数 &amp;lt;a v-bind:[attributeName]=&amp;#34;url&amp;#34;&amp;gt; .</description>
+使用Vite安装Vue npm init vite@latest &amp;lt;project-name&amp;gt; -- --template vue# 或者npm create vite@latest &amp;lt;project-name&amp;gt; -- --template vuecd &amp;lt;project-name&amp;gt;npm installnpm run dev 模板语法 // 显示文本 &amp;lt;span&amp;gt;Message: {{ msg }}&amp;lt;/span&amp;gt; // 显示原始HTML &amp;lt;p&amp;gt;Using v-html directive: &amp;lt;span v-html=&amp;#34;rawHtml&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; // 绑定HTML属性 &amp;lt;div v-bind:id=&amp;#34;dynamicId&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; // 绑定多个HTML属性 &amp;lt;div v-bind=&amp;#34;objectOfAttrs&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; // 调用函数 &amp;lt;span :title=&amp;#34;toTitleDate(date)&amp;#34;&amp;gt; {{ formatDate(date) }} &amp;lt;/span&amp;gt; // 绑定动态参数 &amp;lt;a v-bind:[attributeName]=&amp;#34;url&amp;#34;&amp;gt; .</description>
     </item>
     
     <item>
@@ -202,7 +211,7 @@ D:\Hugo\Sites
 3、配置环境 我的电脑→右键→高级→环境变量→系统变量→Path，增加D:\Hugo\bin
 也可以命令执行：set PATH=%PATH%;D:\Hugo\bin
 4、安装完成 验证
-hugo version //查看版本 hugo help //帮助文档 能正常输出即安装成功，如果输出错误，则需要重启电脑后再试
+hugo version //查看版本hugo help //帮助文档 能正常输出即安装成功，如果输出错误，则需要重启电脑后再试
 二、新建网站 在D:\Hugo\Sites下面打开cmd，或其他命令工具
 hugo new site simple.com 新建simple.com 网站名自定义
 回车创建成功！
@@ -217,7 +226,7 @@ config.toml 配置文件
 hugo new about.md 自动在当前网站下的content目录下生成about.md文件
 3、创建文章 hugo new post/hello-world.md 自动在content/post下面生成hello-world.md文件
 新生成的文件自动会有三个字段(这儿的模板可以在archetypes里面的文件修改)：
-title: &amp;#34;Hello world&amp;#34; //文件名称 date: 2020-11-03T16:58:08+08:00 //创建日期 draft: true //草稿，默认开启 4、安装主题 在官方主题库中找到喜欢主题，按照教程安装</description>
+title: &amp;#34;Hello world&amp;#34; //文件名称date: 2020-11-03T16:58:08+08:00 //创建日期draft: true //草稿，默认开启 4、安装主题 在官方主题库中找到喜欢主题，按照教程安装</description>
     </item>
     
     <item>
@@ -358,13 +367,13 @@ Name Servlet版本 Tomcat 9.0 4.0 Jetty 9.4 3.1 Undertow 2.0 4.0 3、Spring Boot
       <description>生成数组
 numpy.arange([start, ]stop, [step, ]dtype=None)
 示例
-np.arange(3) array([0, 1, 2]) np.arange(3.0) array([ 0., 1., 2.]) np.arange(3,7) array([3, 4, 5, 6]) np.arange(3,7,2) array([3, 5]) 生成随机整数
+np.arange(3)array([0, 1, 2])np.arange(3.0)array([ 0., 1., 2.])np.arange(3,7)array([3, 4, 5, 6])np.arange(3,7,2)array([3, 5]) 生成随机整数
 numpy.random.randint(low, high=None, size=None, dtype=&amp;lsquo;l&amp;rsquo;)
 示例
-np.random.randint(2, size=10) array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0]) np.random.randint(1, size=10) array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]) 随机排列
+np.random.randint(2, size=10)array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])np.random.randint(1, size=10)array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]) 随机排列
 np.random.shuffle(x)
 示例
-arr = np.arange(10) np.random.shuffle(arr) arr [1 7 5 2 9 4 3 6 0 8] 随机采样</description>
+arr = np.arange(10)np.random.shuffle(arr)arr[1 7 5 2 9 4 3 6 0 8] 随机采样</description>
     </item>
     
     
