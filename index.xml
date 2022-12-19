@@ -9,7 +9,7 @@
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Dec 2022 11:03:20 +0800</lastBuildDate><atom:link href="https://aixin.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Oct 2022 10:42:00 +0800</lastBuildDate><atom:link href="https://aixin.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://aixin.me/about/</link>
@@ -18,24 +18,6 @@
       <guid>https://aixin.me/about/</guid>
       <description>Aixin.me
 心中有爱，遇见更好的自己</description>
-    </item>
-    
-    <item>
-      <title>Regexp Tutorial</title>
-      <link>https://aixin.me/post/regexp-tutorial/</link>
-      <pubDate>Mon, 19 Dec 2022 11:03:20 +0800</pubDate>
-      
-      <guid>https://aixin.me/post/regexp-tutorial/</guid>
-      <description>匹配符 符号 意思 ? 0个或1个 + 1个或多个 * 0个或多个 . 除换行符\n之外的任何单字符 ^ 开始符，在方括号内容使用是取反的意思 $ 结束符 () 子表达式，匹配整体：123 [] 子表达式，逐个匹配：1、2、3 \ 转义字符 {} 限定表达式 {n,m} 满足条件且长度为n~m的字符串，{n}匹配n次，{n,}匹配至少n次 [^abc] 取反，匹配除了a、b、c之外的其它内容 [a-z] 区间，匹配a~z的所有字母，还有[0-9]、[A-Z]等 . 匹配除了换行之外的所有字符，等同于[^\n\r] | 多个选择一个 [\s\S] 匹配所有但不包括换行，\s所有空白符，等价于[\f\n\r\t\v]。\S所有非空白符，等价于[^\f\n\r\t\v]。 \w 匹配字母、数字、下划线。等价于 [A-Za-z0-9_] \f 换页符，等价于\x0c和\cL \n 换行符，等价于\x0a和\cJ \r 回车符，等价于\x0d和\cM \t 制表符，等价于\x09和\cI \v 垂直制表符，等价于\x0b和\cK 修饰符 修饰符 含义 g global - 全局匹配 i ignore - 不区分大小写 m multi line - 多行匹配，尤其是有^和$边界符时 s 特殊字符圆点 . 中包含换行符 \n 不同语言 语言 .</description>
-    </item>
-    
-    <item>
-      <title>How to match emoji with regex</title>
-      <link>https://aixin.me/post/match-emoji-with-regex/</link>
-      <pubDate>Sun, 18 Dec 2022 09:39:13 +0800</pubDate>
-      
-      <guid>https://aixin.me/post/match-emoji-with-regex/</guid>
-      <description>// Match almost all emoji const str = &amp;#34;Hello 😃 😄&amp;#34;; const regexExp = /(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/gi; regexExp.test(str);// true </description>
     </item>
     
     <item>
@@ -194,7 +176,7 @@ let name: string = `Gene`; let age: number = 37; let sentence: string = `Hello, 
       
       <guid>https://aixin.me/post/eggjs-basic-tutorial/</guid>
       <description>官网：https://eggjs.org/zh-cn/
-安装 // 1、创建并进入项目目录 mkdir egg-example &amp;amp;&amp;amp; cd egg-example // 2、初始化 npm init egg --type=simple // 3、安装项目 npm i // 4、启动项目 npm run dev // http://localhost:7001 type的类型
+安装 // 1、创建并进入项目目录mkdir egg-example &amp;amp;&amp;amp; cd egg-example// 2、初始化npm init egg --type=simple// 3、安装项目npm i// 4、启动项目npm run dev// http://localhost:7001 type的类型
 simple - 基础应用模板
 microservice - 基于egg的微服务模板
 sequelize - 带有sequelize的egg应用
@@ -202,7 +184,7 @@ ts - typescript的基础应用模板
 empty - 空模板
 plugin - egg 插件模板
 framework - 框架模板
-核心功能 1、控制器 Controller // app/controller/home.js const Controller = require(&amp;#39;egg&amp;#39;).Controller; class HomeController extends Controller { async index() { this.ctx.body = &amp;#39;Hello world&amp;#39;; } } module.</description>
+核心功能 1、控制器 Controller // app/controller/home.jsconst Controller = require(&amp;#39;egg&amp;#39;).Controller;class HomeController extends Controller {async index() {this.ctx.body = &amp;#39;Hello world&amp;#39;;}}module.</description>
     </item>
     
     <item>
