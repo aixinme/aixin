@@ -1,137 +1,0 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Egg.js Basic Tutorial | Aixin.me</title><meta name=keywords content="Nodejs,Eggjs"><meta name=description content="官网：https://eggjs.org/zh-cn/
-安装 // 1、创建并进入项目目录mkdir egg-example && cd egg-example// 2、初始化npm init egg --type=simple// 3、安装项目npm i// 4、启动项目npm run dev// http://localhost:7001 type的类型
-simple - 基础应用模板
-microservice - 基于egg的微服务模板
-sequelize - 带有sequelize的egg应用
-ts - typescript的基础应用模板
-empty - 空模板
-plugin - egg 插件模板
-framework - 框架模板
-核心功能 1、控制器 Controller // app/controller/home.jsconst Controller = require('egg').Controller;class HomeController extends Controller {async index() {this.ctx.body = 'Hello world';}}module."><meta name=author content="Aixin.me"><link rel=canonical href=https://aixin.me/post/eggjs-basic-tutorial/><link crossorigin=anonymous href=/assets/css/stylesheet.e8fab9d492d3d8cee2a3c305d7f5a27e3e084f5343abad4d296ec6d753aacfad.css integrity="sha256-6Pq51JLT2M7io8MF1/Wifj4IT1NDq61NKW7G11Oqz60=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://aixin.me/images/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://aixin.me/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://aixin.me/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://aixin.me/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://aixin.me/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css integrity=sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0 crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js integrity=sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4 crossorigin=anonymous></script>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script>
-<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1})})</script><meta property="og:title" content="Egg.js Basic Tutorial"><meta property="og:description" content="官网：https://eggjs.org/zh-cn/
-安装 // 1、创建并进入项目目录mkdir egg-example && cd egg-example// 2、初始化npm init egg --type=simple// 3、安装项目npm i// 4、启动项目npm run dev// http://localhost:7001 type的类型
-simple - 基础应用模板
-microservice - 基于egg的微服务模板
-sequelize - 带有sequelize的egg应用
-ts - typescript的基础应用模板
-empty - 空模板
-plugin - egg 插件模板
-framework - 框架模板
-核心功能 1、控制器 Controller // app/controller/home.jsconst Controller = require('egg').Controller;class HomeController extends Controller {async index() {this.ctx.body = 'Hello world';}}module."><meta property="og:type" content="article"><meta property="og:url" content="https://aixin.me/post/eggjs-basic-tutorial/"><meta property="og:image" content="https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-08-07T20:37:27+08:00"><meta property="article:modified_time" content="2021-08-07T20:37:27+08:00"><meta property="og:site_name" content="Aixin.me"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="Egg.js Basic Tutorial"><meta name=twitter:description content="官网：https://eggjs.org/zh-cn/
-安装 // 1、创建并进入项目目录mkdir egg-example && cd egg-example// 2、初始化npm init egg --type=simple// 3、安装项目npm i// 4、启动项目npm run dev// http://localhost:7001 type的类型
-simple - 基础应用模板
-microservice - 基于egg的微服务模板
-sequelize - 带有sequelize的egg应用
-ts - typescript的基础应用模板
-empty - 空模板
-plugin - egg 插件模板
-framework - 框架模板
-核心功能 1、控制器 Controller // app/controller/home.jsconst Controller = require('egg').Controller;class HomeController extends Controller {async index() {this.ctx.body = 'Hello world';}}module."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://aixin.me/post/"},{"@type":"ListItem","position":3,"name":"Egg.js Basic Tutorial","item":"https://aixin.me/post/eggjs-basic-tutorial/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Egg.js Basic Tutorial","name":"Egg.js Basic Tutorial","description":"官网：https://eggjs.org/zh-cn/\n安装 // 1、创建并进入项目目录\rmkdir egg-example \u0026amp;\u0026amp; cd egg-example\r// 2、初始化\rnpm init egg --type=simple\r// 3、安装项目\rnpm i\r// 4、启动项目\rnpm run dev\r// http://localhost:7001 type的类型\nsimple - 基础应用模板\nmicroservice - 基于egg的微服务模板\nsequelize - 带有sequelize的egg应用\nts - typescript的基础应用模板\nempty - 空模板\nplugin - egg 插件模板\nframework - 框架模板\n核心功能 1、控制器 Controller // app/controller/home.js\rconst Controller = require(\u0026#39;egg\u0026#39;).Controller;\rclass HomeController extends Controller {\rasync index() {\rthis.ctx.body = \u0026#39;Hello world\u0026#39;;\r}\r}\rmodule.","keywords":["Nodejs","Eggjs"],"articleBody":"官网：https://eggjs.org/zh-cn/\n安装 // 1、创建并进入项目目录\rmkdir egg-example \u0026\u0026 cd egg-example\r// 2、初始化\rnpm init egg --type=simple\r// 3、安装项目\rnpm i\r// 4、启动项目\rnpm run dev\r// http://localhost:7001 type的类型\nsimple - 基础应用模板\nmicroservice - 基于egg的微服务模板\nsequelize - 带有sequelize的egg应用\nts - typescript的基础应用模板\nempty - 空模板\nplugin - egg 插件模板\nframework - 框架模板\n核心功能 1、控制器 Controller // app/controller/home.js\rconst Controller = require('egg').Controller;\rclass HomeController extends Controller {\rasync index() {\rthis.ctx.body = 'Hello world';\r}\r}\rmodule.exports = HomeController; 2、路由 Router // app/router.js\rmodule.exports = app =\u003e {\rconst { router, controller } = app;\rrouter.get('/', controller.home.index);\r}; 3、服务 service // app/service/news.js\rconst Service = require('egg').Service;\rclass NewsService extends Service {\rasync list(page = 1) {\r// read config\rconst { serverUrl, pageSize } = this.config.news;\r// use build-in http client to GET hacker-news api\rconst { data: idList } = await this.ctx.curl(`${serverUrl}/topstories.json`, {\rdata: {\rorderBy: '\"$key\"',\rstartAt: `\"${pageSize * (page - 1)}\"`,\rendAt: `\"${pageSize * page - 1}\"`,\r},\rdataType: 'json',\r});\r// parallel GET detail\rconst newsList = await Promise.all(\rObject.keys(idList).map(key =\u003e {\rconst url = `${serverUrl}/item/${idList[key]}.json`;\rreturn this.ctx.curl(url, { dataType: 'json' });\r})\r);\rreturn newsList.map(res =\u003e res.data);\r}\r}\rmodule.exports = NewsService; 4、模板渲染 view 需要单独安装视图插件，比如egg-view-nunjucks等\n5、配置文件 // config/config.default.js\rexports.keys = \u003c此处改为你自己的 Cookie 安全字符串\u003e; 6、静态资源 app/public\r├── css\r│ └── news.css\r└── js\r├── lib.js\r└── news.js 7、 编写扩展 // app/extend/helper.js\rconst moment = require('moment');\rexports.relativeTime = time =\u003e moment(new Date(time * 1000)).fromNow(); 8、编写 Middleware // app/middleware/robot.js\r// options === app.config.robot\rmodule.exports = (options, app) =\u003e {\rreturn async function robotMiddleware(ctx, next) {\rconst source = ctx.get('user-agent') || '';\rconst match = options.ua.some(ua =\u003e ua.test(source));\rif (match) {\rctx.status = 403;\rctx.message = 'Go away, robot.';\r} else {\rawait next();\r}\r}\r};\r// config/config.default.js\r// add middleware robot\rexports.middleware = [\r'robot'\r];\r// robot's configurations\rexports.robot = {\rua: [\r/Baiduspider/i,\r]\r}; 9、单元测试 // test/app/middleware/robot.test.js\rconst { app, mock, assert } = require('egg-mock/bootstrap');\rdescribe('test/app/middleware/robot.test.js', () =\u003e {\rit('should block robot', () =\u003e {\rreturn app.httpRequest()\r.get('/')\r.set('User-Agent', \"Baiduspider\")\r.expect(403);\r});\r}); ","wordCount":"335","inLanguage":"en","datePublished":"2021-08-07T20:37:27+08:00","dateModified":"2021-08-07T20:37:27+08:00","author":{"@type":"Person","name":"Aixin.me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aixin.me/post/eggjs-basic-tutorial/"},"publisher":{"@type":"Organization","name":"Aixin.me","logo":{"@type":"ImageObject","url":"https://aixin.me/images/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://aixin.me accesskey=h title="Aixin.me (Alt + H)">Aixin.me</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://aixin.me/about/ title=About><span>About</span></a></li><li><a href=https://aixin.me/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://aixin.me/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://aixin.me/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://aixin.me>Home</a>&nbsp;»&nbsp;<a href=https://aixin.me/post/>Posts</a></div><h1 class=post-title>Egg.js Basic Tutorial</h1><div class=post-meta><span title='2021-08-07 20:37:27 +0800 CST'>August 7, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;335 words&nbsp;·&nbsp;Aixin.me</div></header><div class=post-content><p>官网：https://eggjs.org/zh-cn/</p><h2 id=安装>安装<a hidden class=anchor aria-hidden=true href=#安装>#</a></h2><pre tabindex=0><code>// 1、创建并进入项目目录
-mkdir egg-example &amp;&amp; cd egg-example
-// 2、初始化
-npm init egg --type=simple
-// 3、安装项目
-npm i
-// 4、启动项目
-npm run dev
-// http://localhost:7001
-</code></pre><blockquote><p>type的类型</p><p>simple - 基础应用模板</p><p>microservice - 基于egg的微服务模板</p><p>sequelize - 带有sequelize的egg应用</p><p>ts - typescript的基础应用模板</p><p>empty - 空模板</p><p>plugin - egg 插件模板</p><p>framework - 框架模板</p></blockquote><h2 id=核心功能>核心功能<a hidden class=anchor aria-hidden=true href=#核心功能>#</a></h2><h4 id=1控制器-controller>1、控制器 Controller<a hidden class=anchor aria-hidden=true href=#1控制器-controller>#</a></h4><pre tabindex=0><code>// app/controller/home.js
-const Controller = require(&#39;egg&#39;).Controller;
-
-class HomeController extends Controller {
-  async index() {
-    this.ctx.body = &#39;Hello world&#39;;
-  }
-}
-
-module.exports = HomeController;
-</code></pre><h4 id=2路由-router>2、路由 Router<a hidden class=anchor aria-hidden=true href=#2路由-router>#</a></h4><pre tabindex=0><code>// app/router.js
-module.exports = app =&gt; {
-  const { router, controller } = app;
-  router.get(&#39;/&#39;, controller.home.index);
-};
-</code></pre><h4 id=3服务-service>3、服务 service<a hidden class=anchor aria-hidden=true href=#3服务-service>#</a></h4><pre tabindex=0><code>// app/service/news.js
-const Service = require(&#39;egg&#39;).Service;
-
-class NewsService extends Service {
-  async list(page = 1) {
-    // read config
-    const { serverUrl, pageSize } = this.config.news;
-
-    // use build-in http client to GET hacker-news api
-    const { data: idList } = await this.ctx.curl(`${serverUrl}/topstories.json`, {
-      data: {
-        orderBy: &#39;&#34;$key&#34;&#39;,
-        startAt: `&#34;${pageSize * (page - 1)}&#34;`,
-        endAt: `&#34;${pageSize * page - 1}&#34;`,
-      },
-      dataType: &#39;json&#39;,
-    });
-
-    // parallel GET detail
-    const newsList = await Promise.all(
-      Object.keys(idList).map(key =&gt; {
-        const url = `${serverUrl}/item/${idList[key]}.json`;
-        return this.ctx.curl(url, { dataType: &#39;json&#39; });
-      })
-    );
-    return newsList.map(res =&gt; res.data);
-  }
-}
-
-module.exports = NewsService;
-</code></pre><h4 id=4模板渲染-view>4、模板渲染 view<a hidden class=anchor aria-hidden=true href=#4模板渲染-view>#</a></h4><p>需要单独安装视图插件，比如<code>egg-view-nunjucks</code>等</p><h4 id=5配置文件>5、配置文件<a hidden class=anchor aria-hidden=true href=#5配置文件>#</a></h4><pre tabindex=0><code>// config/config.default.js
-exports.keys = &lt;此处改为你自己的 Cookie 安全字符串&gt;;
-</code></pre><h4 id=6静态资源>6、静态资源<a hidden class=anchor aria-hidden=true href=#6静态资源>#</a></h4><pre tabindex=0><code>app/public
-├── css
-│   └── news.css
-└── js
-    ├── lib.js
-    └── news.js
-</code></pre><h4 id=7-编写扩展>7、 编写扩展<a hidden class=anchor aria-hidden=true href=#7-编写扩展>#</a></h4><pre tabindex=0><code>// app/extend/helper.js
-const moment = require(&#39;moment&#39;);
-exports.relativeTime = time =&gt; moment(new Date(time * 1000)).fromNow();
-</code></pre><h4 id=8编写-middleware>8、编写 Middleware<a hidden class=anchor aria-hidden=true href=#8编写-middleware>#</a></h4><pre tabindex=0><code>// app/middleware/robot.js
-// options === app.config.robot
-module.exports = (options, app) =&gt; {
-  return async function robotMiddleware(ctx, next) {
-    const source = ctx.get(&#39;user-agent&#39;) || &#39;&#39;;
-    const match = options.ua.some(ua =&gt; ua.test(source));
-    if (match) {
-      ctx.status = 403;
-      ctx.message = &#39;Go away, robot.&#39;;
-    } else {
-      await next();
-    }
-  }
-};
-
-// config/config.default.js
-// add middleware robot
-exports.middleware = [
-  &#39;robot&#39;
-];
-// robot&#39;s configurations
-exports.robot = {
-  ua: [
-    /Baiduspider/i,
-  ]
-};
-</code></pre><h4 id=9单元测试>9、单元测试<a hidden class=anchor aria-hidden=true href=#9单元测试>#</a></h4><pre tabindex=0><code>// test/app/middleware/robot.test.js
-const { app, mock, assert } = require(&#39;egg-mock/bootstrap&#39;);
-
-describe(&#39;test/app/middleware/robot.test.js&#39;, () =&gt; {
-  it(&#39;should block robot&#39;, () =&gt; {
-    return app.httpRequest()
-      .get(&#39;/&#39;)
-      .set(&#39;User-Agent&#39;, &#34;Baiduspider&#34;)
-      .expect(403);
-  });
-});
-</code></pre></div><footer class=post-footer><ul class=post-tags><li><a href=https://aixin.me/tags/nodejs/>Nodejs</a></li><li><a href=https://aixin.me/tags/eggjs/>Eggjs</a></li></ul><nav class=paginav><a class=prev href=https://aixin.me/post/typescript-basic-types/><span class=title>« Prev</span><br><span>Typescript Basic Types</span></a>
-<a class=next href=https://aixin.me/post/axure-advanced-tutorial/><span class=title>Next »</span><br><span>Axure Advanced Tutorial</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2023 <a href=https://aixin.me>Aixin.me</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
