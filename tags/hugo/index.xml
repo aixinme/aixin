@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on Aixin.me</title>
+    <link>https://aixin.me/tags/hugo/</link>
+    <description>Recent content in Hugo on Aixin.me</description>
+    <image>
+      <title>Aixin.me</title>
+      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Nov 2020 09:52:17 +0800</lastBuildDate><atom:link href="https://aixin.me/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>静态博客Hugo安装及使用教程</title>
+      <link>https://aixin.me/post/how-to-hugo/</link>
+      <pubDate>Thu, 05 Nov 2020 09:52:17 +0800</pubDate>
+      
+      <guid>https://aixin.me/post/how-to-hugo/</guid>
+      <description>一、安装 下面时windows10的安装教程，Linux和MAC去看官方教程
+1、下载 最新版下载地址：https://github.com/gohugoio/hugo/releases
+下载 Windows-64bit.zip
+2、新建本地目录 D:\Hugo
+D:\Hugo\bin
+D:\Hugo\Sites
+盘符和目录都可以自定义，但bin和Sites要固定
+将下载的安装包里面的hugo.exe解压到D:\Hugo\bin下面
+3、配置环境 我的电脑→右键→高级→环境变量→系统变量→Path，增加D:\Hugo\bin
+也可以命令执行：set PATH=%PATH%;D:\Hugo\bin
+4、安装完成 验证
+hugo version //查看版本hugo help //帮助文档 能正常输出即安装成功，如果输出错误，则需要重启电脑后再试
+二、新建网站 在D:\Hugo\Sites下面打开cmd，或其他命令工具
+hugo new site simple.com 新建simple.com 网站名自定义
+回车创建成功！
+然后在D:\Hugo\Sites下面就会新建一个simple文件夹
+三、编写内容 1、目录说明 archetypes/ 创建页面的原型文件，比如标题时间等，可以自定义
+content/ markdown原文件存储目录
+layouts/ 样式自定义时需要
+static/ 静态文件
+themes/ 主题会安装在这儿
+config.toml 配置文件
+2、创建页面 在网站目录下面执行命令
+hugo new about.md 自动在当前网站下的content目录下生成about.md文件
+3、创建文章 hugo new post/hello-world.md 自动在content/post下面生成hello-world.md文件
+新生成的文件自动会有三个字段(这儿的模板可以在archetypes里面的文件修改)：
+title: &amp;#34;Hello world&amp;#34; //文件名称date: 2020-11-03T16:58:08+08:00 //创建日期draft: true //草稿，默认开启 4、安装主题 在官方主题库中找到喜欢主题，按照教程安装</description>
+    </item>
+    
+  </channel>
+</rss>
