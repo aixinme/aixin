@@ -9,13 +9,14 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Dec 2019 15:44:55 +0000</lastBuildDate><atom:link href="https://aixin.me/tags/springboot/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.124.1</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Dec 2019 15:44:55 +0000</lastBuildDate>
+    <atom:link href="https://aixin.me/tags/springboot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Boot 入门指南</title>
       <link>https://aixin.me/post/spring-boot-getting-started/</link>
       <pubDate>Thu, 05 Dec 2019 15:44:55 +0000</pubDate>
-      
       <guid>https://aixin.me/post/spring-boot-getting-started/</guid>
       <description>官方教程 https://docs.spring.io/spring-boot/docs/2.2.1.RELEASE/reference/html/
 1、Spring Boot介绍 Spring Boot可以轻松创建可以运行的独立的，生产级的基于Spring的应用程序。我们对Spring平台和第三方库采取自己的看法，以便您尽可能轻松地使用本教程。大多数Spring Boot应用程序只需要很少的Spring配置。
@@ -29,6 +30,5 @@ Name Servlet版本 Tomcat 9.0 4.0 Jetty 9.4 3.1 Undertow 2.0 4.0 3、Spring Boot
 安装方法二、使用Maven安装（推荐） Maven版本最低要求3.3+，前提是先要安装Maven（https://maven.apache.org/）。 或者通过IDE安装Maven插件 Spring Boot依赖关系使用org.springframework.bootgroupId。通常，您的Maven POM文件从spring-boot-starter-parent项目中继承并向一个或多个“Starter”声明依赖关系。Spring Boot还提供了一个可选的 Maven插件来创建可执行的jar。 以下清单显示了一个典型的pom.xml文件：
 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&amp;lt;project xmlns=&amp;#34;http://maven.apache.org/POM/4.0.0&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;xsi:schemaLocation=&amp;#34;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&amp;#34;&amp;gt;&amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;&amp;lt;groupId&amp;gt;com.</description>
     </item>
-    
   </channel>
 </rss>

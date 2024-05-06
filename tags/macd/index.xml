@@ -9,13 +9,14 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Dec 2019 15:46:45 +0000</lastBuildDate><atom:link href="https://aixin.me/tags/macd/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.124.1</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Dec 2019 15:46:45 +0000</lastBuildDate>
+    <atom:link href="https://aixin.me/tags/macd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MACD 平滑异同移动平均指标</title>
       <link>https://aixin.me/post/macd/</link>
       <pubDate>Fri, 20 Dec 2019 15:46:45 +0000</pubDate>
-      
       <guid>https://aixin.me/post/macd/</guid>
       <description>MACD原理介绍 MACD(Moving Average Convergence Divergence),是根据均线的构造原理，对股票价格的收盘价进行平滑处理，求出算术平均值以后再进行计算，是一种趋向类指标。
 MACD指标是运用快速（短期）和慢速（长期）移动平均线及其聚合与分离的征兆，加以双重平滑运算。而根据移动平均线原理发展出来的MACD，一则去除了移动平均线频繁发出假信号的缺陷，二则保留了移动平均线的效果，因此，MACD指标具有均线趋势性、稳重性、安定性等特点，是用来研判买卖股票的时机，预测股票价格涨跌的技术分析指标 。
@@ -25,6 +26,5 @@ MACD指标主要是通过EMA、DIF和DEA（或叫MACD、DEM）这三值之间关
 RSI相对强度指标（振荡器），范围是0到100，超过70时，是为超买或高估，可能引发趋势翻转或价格回调，小于30时，视为超卖或低估。
 MACD计算方式 DMA:平行线差指标</description>
     </item>
-    
   </channel>
 </rss>

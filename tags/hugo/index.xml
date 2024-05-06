@@ -9,13 +9,14 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Nov 2020 09:52:17 +0800</lastBuildDate><atom:link href="https://aixin.me/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.124.1</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Nov 2020 09:52:17 +0800</lastBuildDate>
+    <atom:link href="https://aixin.me/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>静态博客Hugo安装及使用教程</title>
       <link>https://aixin.me/post/how-to-hugo/</link>
       <pubDate>Thu, 05 Nov 2020 09:52:17 +0800</pubDate>
-      
       <guid>https://aixin.me/post/how-to-hugo/</guid>
       <description>一、安装 下面时windows10的安装教程，Linux和MAC去看官方教程
 1、下载 最新版下载地址：https://github.com/gohugoio/hugo/releases
@@ -45,6 +46,5 @@ hugo new about.md 自动在当前网站下的content目录下生成about.md文�
 新生成的文件自动会有三个字段(这儿的模板可以在archetypes里面的文件修改)：
 title: &amp;#34;Hello world&amp;#34; //文件名称date: 2020-11-03T16:58:08+08:00 //创建日期draft: true //草稿，默认开启 4、安装主题 在官方主题库中找到喜欢主题，按照教程安装</description>
     </item>
-    
   </channel>
 </rss>
