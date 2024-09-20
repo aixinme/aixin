@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Aixin.me</title>
-    <link>https://aixin.me/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Aixin.me</description>
     <image>
       <title>Aixin.me</title>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.133.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 24 Jan 2023 19:13:54 +0800</lastBuildDate>
-    <atom:link href="https://aixin.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chendanqing Quotations</title>
-      <link>https://aixin.me/post/chendanqing-quotations/</link>
+      <link>http://localhost:1313/post/chendanqing-quotations/</link>
       <pubDate>Tue, 24 Jan 2023 19:13:54 +0800</pubDate>
-      <guid>https://aixin.me/post/chendanqing-quotations/</guid>
+      <guid>http://localhost:1313/post/chendanqing-quotations/</guid>
       <description>没有背景别轻易做好人
 如果你没有背景还要选择做一个好人，几乎肯定会落入社会底层，哪怕你才华横溢，哪怕你有真知灼见，社会的筛子会把你筛落掉。越是循规蹈矩、刚正不阿、天性善良的人，越容易被淘汰，你所有的优点会成为竞争中的劣势。因为价值混乱，钱就会变成尺度
 陈丹青语录 篇1
@@ -90,16 +90,16 @@
     </item>
     <item>
       <title>Regexp Tutorial</title>
-      <link>https://aixin.me/post/regexp-tutorial/</link>
+      <link>http://localhost:1313/post/regexp-tutorial/</link>
       <pubDate>Mon, 19 Dec 2022 11:03:20 +0800</pubDate>
-      <guid>https://aixin.me/post/regexp-tutorial/</guid>
+      <guid>http://localhost:1313/post/regexp-tutorial/</guid>
       <description>匹配符 符号 意思 ? 0个或1个 + 1个或多个 * 0个或多个 . 除换行符\n之外的任何单字符 ^ 开始符，在方括号内容使用是取反的意思 $ 结束符 () 子表达式，匹配整体：123 [] 子表达式，逐个匹配：1、2、3 \ 转义字符 {} 限定表达式 {n,m} 满足条件且长度为n~m的字符串，{n}匹配n次，{n,}匹配至少n次 [^abc] 取反，匹配除了a、b、c之外的其它内容 [a-z] 区间，匹配a~z的所有字母，还有[0-9]、[A-Z]等 . 匹配除了换行之外的所有字符，等同于[^\n\r] | 多个选择一个 [\s\S] 匹配所有但不包括换行，\s所有空白符，等价于[\f\n\r\t\v]。\S所有非空白符，等价于[^\f\n\r\t\v]。 \w 匹配字母、数字、下划线。等价于 [A-Za-z0-9_] \f 换页符，等价于\x0c和\cL \n 换行符，等价于\x0a和\cJ \r 回车符，等价于\x0d和\cM \t 制表符，等价于\x09和\cI \v 垂直制表符，等价于\x0b和\cK 修饰符 修饰符 含义 g global - 全局匹配 i ignore - 不区分大小写 m multi line - 多行匹配，尤其是有^和$边界符时 s 特殊字符圆点 . 中包含换行符 \n u Unicode,匹配Unicode字符 不同语言 语言 .</description>
     </item>
     <item>
       <title>Three Elements Of Project Management</title>
-      <link>https://aixin.me/post/three-elements-of-project-management/</link>
+      <link>http://localhost:1313/post/three-elements-of-project-management/</link>
       <pubDate>Fri, 28 Oct 2022 10:42:00 +0800</pubDate>
-      <guid>https://aixin.me/post/three-elements-of-project-management/</guid>
+      <guid>http://localhost:1313/post/three-elements-of-project-management/</guid>
       <description>项目管理的三要素分别是:
 时间 成本 质量 项目启动时三要素维持的是一个等边三角形，随着项目的推进这个三角形的夹角肯定会变形，因为每一个要素的变化都会影响其他两个元素，导致夹角的变化。
 做为项目经理的职责就是掌控这个三角形维持着一个合理的角度。在一个项目中，客户往往关心的是质量；而老板掌控着资源，也就是决定着成本；只有时间才是项目经理唯一可以完全掌控的要素。
@@ -108,9 +108,9 @@
     </item>
     <item>
       <title>Major Depressive Disorder</title>
-      <link>https://aixin.me/post/major-depressive-disorder/</link>
+      <link>http://localhost:1313/post/major-depressive-disorder/</link>
       <pubDate>Mon, 24 Oct 2022 09:38:25 +0800</pubDate>
-      <guid>https://aixin.me/post/major-depressive-disorder/</guid>
+      <guid>http://localhost:1313/post/major-depressive-disorder/</guid>
       <description>抑郁症，是一种常见的精神疾病。单词缩写为MajorDepressiveDisorder，简称为：MDD。主要表现为情绪低落，兴趣减低、悲观、思维迟缓、缺乏主动性、饮食和睡眠差等等。担心自己患有各种疾病，感到全身多处不适，严重者可出现自杀念头和行为。多数病例有反复发作的倾向，每次发作大多数可以缓解，部分可有残留症状或转为慢性。抑郁症至少有10%的患者可出现躁狂发作，此时应诊断为双向障碍，另外我们常说的抑郁症，其实是指临床上的重症抑郁症(MajorDepressiveDisorder)，人群中有16%的人在一生的某个时期会受其影响。
 喜伤心，怒伤肝，思伤脾，忧伤肺，恐伤肾，情绪体验能够激活生理感觉影响生理功能。这里的情绪不是暂时的，应该是指易喜伤心，易怒伤肝，易思伤脾，易忧伤肺，易恐伤肾，指一种持久之后的影。中医认为这五种情志，分属五脏，太过就伤相应的脏器。临床上也能见到一些这样的案例，例如被人吓得尿裤子就可以解释为恐伤肾，因为中医的肾管泌尿生殖系统。
 还有心里太纠结，吃不下饭，思伤脾，因为中医的脾管消化系统。临床上一些身体疾病，就是说心理情绪影响身体而导致疾病，具体机理还不是太清楚，比如糖尿病就是身心疾病，所以用生理性，心理学想把这些情绪和身体机能的关系解释一下，可能不是一句话就能说清楚。
@@ -125,9 +125,9 @@
     </item>
     <item>
       <title>The Fight of Life</title>
-      <link>https://aixin.me/post/the-fight-of-life/</link>
+      <link>http://localhost:1313/post/the-fight-of-life/</link>
       <pubDate>Fri, 21 Oct 2022 09:23:17 +0800</pubDate>
-      <guid>https://aixin.me/post/the-fight-of-life/</guid>
+      <guid>http://localhost:1313/post/the-fight-of-life/</guid>
       <description>第一：练脸皮，放下面子才有面子。
 第二：练自信，自己不自信，谁会相信你呢。
 第三：练气场，要昂首挺胸，腰板挺直。
@@ -140,23 +140,23 @@
     </item>
     <item>
       <title>How to Win the Game</title>
-      <link>https://aixin.me/post/how-to-win-the-game/</link>
+      <link>http://localhost:1313/post/how-to-win-the-game/</link>
       <pubDate>Fri, 09 Sep 2022 09:39:13 +0800</pubDate>
-      <guid>https://aixin.me/post/how-to-win-the-game/</guid>
+      <guid>http://localhost:1313/post/how-to-win-the-game/</guid>
       <description>一、活着 正确站位，不要让自己处在危险境地 不单独靠近比自己强且无法击败的敌人 低血状态尽快回城或回血 交战时不进塔 经济低时，要跟团 除非以小换大，否则不要以命换命 二、发育 前期重在发育搞经济，不主动交战，尽量保证经济排名靠前 三、奇袭 任何时候都得靠配合和偷袭，尽量不要硬刚 This is the truth of life.</description>
     </item>
     <item>
       <title>Opportunity Competency Model</title>
-      <link>https://aixin.me/post/opportunity-model/</link>
+      <link>http://localhost:1313/post/opportunity-model/</link>
       <pubDate>Wed, 13 Jul 2022 13:28:52 +0800</pubDate>
-      <guid>https://aixin.me/post/opportunity-model/</guid>
+      <guid>http://localhost:1313/post/opportunity-model/</guid>
       <description>职场优秀素质： Ownership(主人翁精神) Proactive(主动积极) Passion(工作热情) Optimism(乐观自信) Result-Driven(结果导向) Thoughtful(思维缜密) Sense of Urgency(紧迫感) Negotiator(谈判专家) Inspiring(煽动力) Taste(个人品位) Yes, I Can(我能) 顶级素质 Negotiator(谈判专家) Inspiring(煽动力) Taste(个人品位) 领先素质 Result-Driven(结果导向) Thoughtful(思维缜密) Sense of Urgency(紧迫感) Yes, I Can(我能) 底层素质 Ownership(主人翁精神) Proactive(主动积极) Passion(工作热情) </description>
     </item>
     <item>
       <title>Self Awareness</title>
-      <link>https://aixin.me/post/self-awakening/</link>
+      <link>http://localhost:1313/post/self-awakening/</link>
       <pubDate>Tue, 03 May 2022 17:25:03 +0800</pubDate>
-      <guid>https://aixin.me/post/self-awakening/</guid>
+      <guid>http://localhost:1313/post/self-awakening/</guid>
       <description>自我觉醒的过程其实就是心智提升的过程，心智才是拉开人与人之间距离的关键。
 第一阶段，动物本能 你对自己的言行毫无觉察，一切行为完全依托本能，对自己完全不自知。
 第二阶段，自我反思 你开始关注自己行为背后的原因了，会思考自己为什么会这么说，为什么会这么做，凡事懂得思考，处在这个阶段的人，他不会再抱怨外在的人和事，开始全方位的反思他自己。
@@ -202,16 +202,16 @@
     </item>
     <item>
       <title>JavaScript validation method</title>
-      <link>https://aixin.me/post/javascript-validation-method/</link>
+      <link>http://localhost:1313/post/javascript-validation-method/</link>
       <pubDate>Mon, 15 Nov 2021 12:33:04 +0800</pubDate>
-      <guid>https://aixin.me/post/javascript-validation-method/</guid>
+      <guid>http://localhost:1313/post/javascript-validation-method/</guid>
       <description>// 是否为空 vernull = function(value){ if(value.trim(value).length == 0){ return false; }else{ return true; } } // 身份证校验 veridc = function(value){ var ext = /(^\d{15}&amp;amp;)|(^\d{18})|(^\d{17}(\d|X|x)$)/; return ext.test(value); } // 英文校验 veren = function(value){ var ext = /(^[a-zA-Z]+$)/; return ext.test(value); } // 数字校验 vernum = function(value){ var ext = /^[0-9]*$/; return ext.test(value); } // 小数校验 verdou = function(value){ var ext = /^[0-9]+(.[0-9]{1,3})?$/; return ext.test(value); } // 邮箱校验 vermail = function(value){ var ext = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.</description>
     </item>
     <item>
       <title>Typescript Basic Types</title>
-      <link>https://aixin.me/post/typescript-basic-types/</link>
+      <link>http://localhost:1313/post/typescript-basic-types/</link>
       <pubDate>Tue, 24 Aug 2021 20:20:32 +0800</pubDate>
-      <guid>https://aixin.me/post/typescript-basic-types/</guid>
+      <guid>http://localhost:1313/post/typescript-basic-types/</guid>
       <description>基础类型 介绍 为了让程序有价值，我们需要能够处理最简单的数据单元：数字，字符串，结构体，布尔值等。 TypeScript支持与JavaScript几乎相同的数据类型，此外还提供了实用的枚举类型方便我们使用。
 Boolean 最基本的数据类型就是简单的true/false值，在JavaScript和TypeScript里叫做boolean（其它语言中也一样）。
 let isDone: boolean = false; Number 和JavaScript一样，TypeScript里的所有数字都是浮点数或者大整数 。 这些浮点数的类型是number， 而大整数的类型则是 bigint。 除了支持十进制和十六进制字面量，TypeScript还支持ECMAScript 2015中引入的二进制和八进制字面量。
@@ -221,9 +221,9 @@ let name: string = `Gene`; let age: number = 37; let sentence: string = `Hello, 
     </item>
     <item>
       <title>Egg.js Basic Tutorial</title>
-      <link>https://aixin.me/post/eggjs-basic-tutorial/</link>
+      <link>http://localhost:1313/post/eggjs-basic-tutorial/</link>
       <pubDate>Sat, 07 Aug 2021 20:37:27 +0800</pubDate>
-      <guid>https://aixin.me/post/eggjs-basic-tutorial/</guid>
+      <guid>http://localhost:1313/post/eggjs-basic-tutorial/</guid>
       <description>官网：https://eggjs.org/zh-cn/
 安装 // 1、创建并进入项目目录mkdir egg-example &amp;amp;&amp;amp; cd egg-example// 2、初始化npm init egg --type=simple// 3、安装项目npm i// 4、启动项目npm run dev// http://localhost:7001 type的类型
 simple - 基础应用模板
@@ -237,26 +237,26 @@ framework - 框架模板
     </item>
     <item>
       <title>Axure Advanced Tutorial</title>
-      <link>https://aixin.me/post/axure-advanced-tutorial/</link>
+      <link>http://localhost:1313/post/axure-advanced-tutorial/</link>
       <pubDate>Fri, 06 Aug 2021 16:09:52 +0800</pubDate>
-      <guid>https://aixin.me/post/axure-advanced-tutorial/</guid>
+      <guid>http://localhost:1313/post/axure-advanced-tutorial/</guid>
       <description>在axure交互设计时，函数可以用在条件公式和需要赋值的地方，其基本语法是用双方括号包含，变量值和函数用英文句号连接。
 例如：[[LVAR. Width]] 表示变量LVAR的宽度，[[This. Width]] 当前元件的宽度
 一、元件函数 名称 用途 This 获取当前元件对象。当前元件是指当前添加交互动作的元件 Target 获取目标元件对象。目标元件是指当前交互动作控制的元件。 x 获取元件对象的X轴坐标值。 y 获取元件对象的Y轴坐标值。 width 获取元件对象的宽度值 scrollX 获取元件对象的水平滚动距离（当前仅限动态面板） scrollY 获取元件对象的垂直滚动距离（当前仅限动态面板） text 获取元件对象的文本文字 name 获取元件对象的自定义名称。 top 获取元件对象的上边界坐标值。 left 获取元件对象的左边界坐标值。 right 获取元件对象的右边界坐标值。 bottom 获取元件对象的下边界坐标值。 opacity 获取元件对象的不透明比例。 rotation 获取元件对象的旋转角度。 二、鼠标指针函数 名称 用途 Cursor.x 鼠标指针在页面中位置的X轴坐标。 Cursor.y 鼠标指针在页面中位置的Y轴坐标。 DragX 鼠标指针沿X轴拖动元件时的瞬间(0.01秒)拖动距离。 DragY 鼠标指针沿Y轴拖动元件时的瞬间(0.01秒)拖动距离。 TotalDragX 鼠标指针拖动元件从开始到结束的X轴移动距离。 TotalDragY 鼠标指针拖动元件从开始到结束的Y轴移动距离。 DragTime 鼠标指针拖动元件从开始到结束的总时长。 三、窗口函数 名称 用途 Window.width 打开原型页面的浏览器当前宽度。 Window.height 打开原型页面的浏览器当前高度。 Window.scrollX 浏览器中页面水平滚动的距离。 Window.scrollY 浏览器中页面垂直滚动的距离。 四、页面函数 名称 用途 PageName 获取当前页面的名称。 五、数字函数 名称 用途 toExponential(decimalPoints) 用途：值转换为指数计数法。参数：decimalPoints为保留小数的位数。 toFixed(decimalPoints) 用途：将一个数字转为保留指定位数的小数，小数位数超出指定位数时进行四舍五入。参数：decimalPoints为保留小数的位数。 toPrecision(length) 用途：把数字格式化为指定的长度。参数：length为格式化后的数字长度，小数点不计入长度。 六、数学函数 名称 用途 Math.</description>
     </item>
     <item>
       <title>Visual Studio Code Tutorial</title>
-      <link>https://aixin.me/post/visual-studio-code-tutorial/</link>
+      <link>http://localhost:1313/post/visual-studio-code-tutorial/</link>
       <pubDate>Fri, 16 Jul 2021 13:06:08 +0800</pubDate>
-      <guid>https://aixin.me/post/visual-studio-code-tutorial/</guid>
+      <guid>http://localhost:1313/post/visual-studio-code-tutorial/</guid>
       <description>一、下载地址 https://code.visualstudio.com/
 二、插件推荐 插件名称 功能说明 Chinese (Simplified) Language Pack for Visual Studio Code 中文汉化包 Code Runner 运行代码 beautify 美化代码 Atuo Rename Tag 自动修改标签头尾 Atuo Close Tag 自动补全标签 Path Intellisense 路径提示器 Markdown PDF 将MD转化为PDF Document This 生成注释文档 Color Picker 拾色器 Prettify JSON 格式化JSON CodeSnap 代码截图工具(选中代码右键菜单CodeSnap后,点击相机图标下载图片) Vetur Vue代码工具 eggjs eggjs代码工具 Vscode NestJs Snippets NestJs代码工具 VSCode Great Icons 一套文件图标 Power Mode 打字效果 Bracket Pair Colorizer 给括号分别着色 Indent-Rainbow 多颜色交替缩进 三、主题推荐 主题名称 功能说明 Atom One Dark Theme Atom的样式 Dimmed 黑白灰 四、快捷键 1、通用 General</description>
     </item>
     <item>
       <title>Vue3 开发 Todolist 教程</title>
-      <link>https://aixin.me/post/vue-todo-tutorial/</link>
+      <link>http://localhost:1313/post/vue-todo-tutorial/</link>
       <pubDate>Tue, 10 Nov 2020 13:54:51 +0800</pubDate>
-      <guid>https://aixin.me/post/vue-todo-tutorial/</guid>
+      <guid>http://localhost:1313/post/vue-todo-tutorial/</guid>
       <description>本文状态：未完成
 一、产品原型 参考 Windows todo设计一个简单的移动端todo页面原型
 二、开发教程 1、新建Todolist.vue 先通过脚手架配置好vue项目：@vue/cli
@@ -265,9 +265,9 @@ framework - 框架模板
     </item>
     <item>
       <title>Vue3.2 组合式API基础知识点</title>
-      <link>https://aixin.me/post/vue3-base-tutorials/</link>
+      <link>http://localhost:1313/post/vue3-base-tutorials/</link>
       <pubDate>Thu, 05 Nov 2020 16:04:12 +0800</pubDate>
-      <guid>https://aixin.me/post/vue3-base-tutorials/</guid>
+      <guid>http://localhost:1313/post/vue3-base-tutorials/</guid>
       <description>本页内容基于VUE3.2版本，且以组合式API模式编写&amp;lt;script setup&amp;gt;
 推荐的 IDE 配置是 Visual Studio Code + Volar 扩展
 中文文档：https://staging-cn.vuejs.org/
@@ -275,9 +275,9 @@ framework - 框架模板
     </item>
     <item>
       <title>静态博客Hugo安装及使用教程</title>
-      <link>https://aixin.me/post/how-to-hugo/</link>
+      <link>http://localhost:1313/post/how-to-hugo/</link>
       <pubDate>Thu, 05 Nov 2020 09:52:17 +0800</pubDate>
-      <guid>https://aixin.me/post/how-to-hugo/</guid>
+      <guid>http://localhost:1313/post/how-to-hugo/</guid>
       <description>一、安装 下面时windows10的安装教程，Linux和MAC去看官方教程
 1、下载 最新版下载地址：https://github.com/gohugoio/hugo/releases
 下载 Windows-64bit.zip
@@ -308,9 +308,9 @@ title: &amp;#34;Hello world&amp;#34; //文件名称date: 2020-11-03T16:58:08+08
     </item>
     <item>
       <title>财会常用知识点</title>
-      <link>https://aixin.me/post/finance-accounting/</link>
+      <link>http://localhost:1313/post/finance-accounting/</link>
       <pubDate>Fri, 17 Jan 2020 15:06:55 +0000</pubDate>
-      <guid>https://aixin.me/post/finance-accounting/</guid>
+      <guid>http://localhost:1313/post/finance-accounting/</guid>
       <description>借贷记账法 借贷记账法下，所有账户的结构都是左方为借方，右方为贷方，但借方、贷方反映会计要素数量变化的增减性质则是不固定的。不同性质的账户，借贷方所登记的内容不同，下面分别说明各类账户的结构。
 有借必有贷，借贷必相等
 资产类账户的结构 在资产类账户中，它的借方记录资产的增加额，贷方记录资产的减少额。在同一会计期间（年、月），借方记录的合计数额称作本期借方发生额，贷方记录的合计数称作本期贷方发生额，在每一会计期间的期末将借贷方发生额相比较，其差额称作期末余额。资产类账户的期末余额一般在借方。
@@ -322,9 +322,9 @@ title: &amp;#34;Hello world&amp;#34; //文件名称date: 2020-11-03T16:58:08+08
     </item>
     <item>
       <title>ATR：均幅指标</title>
-      <link>https://aixin.me/post/average-true-range/</link>
+      <link>http://localhost:1313/post/average-true-range/</link>
       <pubDate>Fri, 27 Dec 2019 10:41:39 +0000</pubDate>
-      <guid>https://aixin.me/post/average-true-range/</guid>
+      <guid>http://localhost:1313/post/average-true-range/</guid>
       <description>Average True Range 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。
 由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。
 t：当日tody； p：上一个节点previous n：时间单元unit； Ci：第i日的收盘价close； Hi：第i日的最高价height； Li：第i日的最低价low。
@@ -339,9 +339,9 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
     </item>
     <item>
       <title>BackTrader学习笔记</title>
-      <link>https://aixin.me/post/backtrader/</link>
+      <link>http://localhost:1313/post/backtrader/</link>
       <pubDate>Mon, 23 Dec 2019 10:17:48 +0000</pubDate>
-      <guid>https://aixin.me/post/backtrader/</guid>
+      <guid>http://localhost:1313/post/backtrader/</guid>
       <description>一、BackTrader介绍 BackTrader是开源免费的量化交易策略回测系统， 运行流程：
 引入backtrader 加载和注入数据Feed（cerebro.adddata） 执行：cerebro.run() 可视化结果：cerebro.plot() 二、安装BackTrader 1、安装环境要求： Python 2.7 Python 3.2 / 3.3/ 3.4 / 3.5 pypy/pypy3 Matplotlib&amp;gt; = 1.4.1（如果需要绘图的话需要配置） 2、兼容Python2.x/3.x from __future__ import (absolute_import, division, print_function,unicode_literals) 3.1、通过pip安装: pip install backtrader
 如果想同时安装matplotlib： pip install backtrader[plotting]
@@ -354,9 +354,9 @@ ATR使用范围 1、利用ATR资金配比 通过ATR指标的具体数值我们�
     </item>
     <item>
       <title>MA/SMA/EMA</title>
-      <link>https://aixin.me/post/moving-average/</link>
+      <link>http://localhost:1313/post/moving-average/</link>
       <pubDate>Fri, 20 Dec 2019 18:13:57 +0000</pubDate>
-      <guid>https://aixin.me/post/moving-average/</guid>
+      <guid>http://localhost:1313/post/moving-average/</guid>
       <description>MA(Moving Average):移动平均线 可以过滤随机价格波动中的噪音来帮助平滑价格走势，基于过去的价格，因此时趋势跟踪。包括简单移动平均线(SMA)和指数移动平均线(EMA)，常见应用为确定趋势方向并确定支撑位和阻力位
 简单移动平均线(SMA)： $$SMA = \frac{A_1 + A_2 + \cdots + A_n}{n}$$ A:n期的平均值 n：周期数
 指数移动平均线(EMA): $$EMA_t = [V_t \times \big(\frac{s}{1+d}\big)] + EMA_y \times [1 - \big(\frac{s}{1+d}\big)]$$
@@ -366,9 +366,9 @@ EMA:指数移动平均（考虑了当天收盘价），快EMA（短时期，通�
     </item>
     <item>
       <title>常用平均数</title>
-      <link>https://aixin.me/post/average/</link>
+      <link>http://localhost:1313/post/average/</link>
       <pubDate>Fri, 20 Dec 2019 16:10:56 +0000</pubDate>
-      <guid>https://aixin.me/post/average/</guid>
+      <guid>http://localhost:1313/post/average/</guid>
       <description>算数平均数 一组数据的所有数据之和除以数据个数，反映数据集中的趋势 $$ A_n = \frac{a_1+a_2+a_3+\cdots+a_n}{n} $$
 几何平均数 n数连续乘积，然后开n次方根 $$ G_n = \sqrt[n]{a_1 \times a_2 \times a_3 \times \cdots \times a_n} $$
 调和平均数（数学，非统计） 每一个数值取倒数，然后将所有倒数求平均，然后将得到的平均数取到数 $$ H_n = \frac{n}{\frac{1}{a_1} + \frac{1}{a_2} \frac{1}{a_3} + \cdots + \frac{1}{a_n}} $$
@@ -376,9 +376,9 @@ EMA:指数移动平均（考虑了当天收盘价），快EMA（短时期，通�
     </item>
     <item>
       <title>MACD 平滑异同移动平均指标</title>
-      <link>https://aixin.me/post/macd/</link>
+      <link>http://localhost:1313/post/macd/</link>
       <pubDate>Fri, 20 Dec 2019 15:46:45 +0000</pubDate>
-      <guid>https://aixin.me/post/macd/</guid>
+      <guid>http://localhost:1313/post/macd/</guid>
       <description>MACD原理介绍 MACD(Moving Average Convergence Divergence),是根据均线的构造原理，对股票价格的收盘价进行平滑处理，求出算术平均值以后再进行计算，是一种趋向类指标。
 MACD指标是运用快速（短期）和慢速（长期）移动平均线及其聚合与分离的征兆，加以双重平滑运算。而根据移动平均线原理发展出来的MACD，一则去除了移动平均线频繁发出假信号的缺陷，二则保留了移动平均线的效果，因此，MACD指标具有均线趋势性、稳重性、安定性等特点，是用来研判买卖股票的时机，预测股票价格涨跌的技术分析指标 。
 MACD指标主要是通过EMA、DIF和DEA（或叫MACD、DEM）这三值之间关系的研判，DIF和DEA连接起来的移动平均线的研判以及DIF减去DEM值而绘制成的柱状图（BAR）的研判等来分析判断行情，预测股价中短期趋势的主要的股市技术分析指标。其中，DIF是核心，DEA是辅助。DIF是快速平滑移动平均线（EMA1）和慢速平滑移动平均线（EMA2）的差。BAR柱状图在股市技术软件上是用红柱和绿柱的收缩来研判行情。 价格数据：收盘价close EMA：指数移动平均线 DIF（差离值） = EMA12日线 - EMA26日线 EMA9：是“信号线”，又称DEA DIF线与EMA9日线比较，DIF穿越到EMA9上方是买入或做多信号，DIF穿越到EMA9的下方为卖出或做空信号， DIF值越大，上涨趋势越大，DIF值越小，下跌趋势越大
@@ -389,9 +389,9 @@ MACD计算方式 DMA:平行线差指标</description>
     </item>
     <item>
       <title>量化交易相关名词解释</title>
-      <link>https://aixin.me/post/quantitative-trading-learning/</link>
+      <link>http://localhost:1313/post/quantitative-trading-learning/</link>
       <pubDate>Tue, 17 Dec 2019 14:49:55 +0000</pubDate>
-      <guid>https://aixin.me/post/quantitative-trading-learning/</guid>
+      <guid>http://localhost:1313/post/quantitative-trading-learning/</guid>
       <description>一、凯利公式 英文：The Kelly Criterion
 在概率论中，凯利公式（也称 “凯利方程式”）是一个在期望净收益为正的独立重复赌局中，使本金的长期增长率最大化的投注策略。该公式于 1956 年由约翰·拉里·凯利（John Larry Kelly）在《贝尔系统技术期刊》中发表，可以用来计算每次游戏中应投注的资金比例。若赌局的期望净收益为零或为负，凯利公式给出的结论是不赌为赢。
 公式： $$ f^* = \frac {bp-q}{b} = \frac {p(b+1)-1}{b} $$
@@ -404,9 +404,9 @@ $$ edge = bp - q $$</description>
     </item>
     <item>
       <title>Spring Boot 入门指南</title>
-      <link>https://aixin.me/post/spring-boot-getting-started/</link>
+      <link>http://localhost:1313/post/spring-boot-getting-started/</link>
       <pubDate>Thu, 05 Dec 2019 15:44:55 +0000</pubDate>
-      <guid>https://aixin.me/post/spring-boot-getting-started/</guid>
+      <guid>http://localhost:1313/post/spring-boot-getting-started/</guid>
       <description>官方教程 https://docs.spring.io/spring-boot/docs/2.2.1.RELEASE/reference/html/
 1、Spring Boot介绍 Spring Boot可以轻松创建可以运行的独立的，生产级的基于Spring的应用程序。我们对Spring平台和第三方库采取自己的看法，以便您尽可能轻松地使用本教程。大多数Spring Boot应用程序只需要很少的Spring配置。
 您可以使用Spring Boot来创建可以使用java -jar或更传统的war部署来启动的Java应用程序 。我们还提供了一个运行“spring script”的命令行工具。
@@ -421,9 +421,9 @@ Name Servlet版本 Tomcat 9.0 4.0 Jetty 9.4 3.1 Undertow 2.0 4.0 3、Spring Boot
     </item>
     <item>
       <title>Numpy学习笔记</title>
-      <link>https://aixin.me/post/numpy/</link>
+      <link>http://localhost:1313/post/numpy/</link>
       <pubDate>Wed, 06 Nov 2019 19:02:30 +0000</pubDate>
-      <guid>https://aixin.me/post/numpy/</guid>
+      <guid>http://localhost:1313/post/numpy/</guid>
       <description>生成数组
 numpy.arange([start, ]stop, [step, ]dtype=None)
 示例

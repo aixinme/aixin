@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>财会知识 on Aixin.me</title>
-    <link>https://aixin.me/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/</link>
+    <link>http://localhost:1313/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/</link>
     <description>Recent content in 财会知识 on Aixin.me</description>
     <image>
       <title>Aixin.me</title>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.133.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 17 Jan 2020 15:06:55 +0000</lastBuildDate>
-    <atom:link href="https://aixin.me/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>财会常用知识点</title>
-      <link>https://aixin.me/post/finance-accounting/</link>
+      <link>http://localhost:1313/post/finance-accounting/</link>
       <pubDate>Fri, 17 Jan 2020 15:06:55 +0000</pubDate>
-      <guid>https://aixin.me/post/finance-accounting/</guid>
+      <guid>http://localhost:1313/post/finance-accounting/</guid>
       <description>借贷记账法 借贷记账法下，所有账户的结构都是左方为借方，右方为贷方，但借方、贷方反映会计要素数量变化的增减性质则是不固定的。不同性质的账户，借贷方所登记的内容不同，下面分别说明各类账户的结构。
 有借必有贷，借贷必相等
 资产类账户的结构 在资产类账户中，它的借方记录资产的增加额，贷方记录资产的减少额。在同一会计期间（年、月），借方记录的合计数额称作本期借方发生额，贷方记录的合计数称作本期贷方发生额，在每一会计期间的期末将借贷方发生额相比较，其差额称作期末余额。资产类账户的期末余额一般在借方。
