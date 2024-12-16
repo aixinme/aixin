@@ -1,33 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Numpy on Aixin.me</title>
-    <link>https://aixin.me/tags/numpy/</link>
-    <description>Recent content in Numpy on Aixin.me</description>
-    <image>
-      <title>Aixin.me</title>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- 0.133.0</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 06 Nov 2019 19:02:30 +0000</lastBuildDate>
-    <atom:link href="https://aixin.me/tags/numpy/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Numpy学习笔记</title>
-      <link>https://aixin.me/post/numpy/</link>
-      <pubDate>Wed, 06 Nov 2019 19:02:30 +0000</pubDate>
-      <guid>https://aixin.me/post/numpy/</guid>
-      <description>生成数组
-numpy.arange([start, ]stop, [step, ]dtype=None)
-示例
-np.arange(3)array([0, 1, 2])np.arange(3.0)array([ 0., 1., 2.])np.arange(3,7)array([3, 4, 5, 6])np.arange(3,7,2)array([3, 5]) 生成随机整数
-numpy.random.randint(low, high=None, size=None, dtype=&amp;lsquo;l&amp;rsquo;)
-示例
-np.random.randint(2, size=10)array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])np.random.randint(1, size=10)array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]) 随机排列
-np.random.shuffle(x)
-示例
-arr = np.arange(10)np.random.shuffle(arr)arr[1 7 5 2 9 4 3 6 0 8] 随机采样</description>
-    </item>
-  </channel>
-</rss>
