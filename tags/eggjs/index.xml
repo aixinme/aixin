@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Eggjs on Aixin.me</title>
+    <link>https://aixin.me/tags/eggjs/</link>
+    <description>Recent content in Eggjs on Aixin.me</description>
+    <image>
+      <title>Aixin.me</title>
+      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.133.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Aug 2021 20:37:27 +0800</lastBuildDate>
+    <atom:link href="https://aixin.me/tags/eggjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Egg.js Basic Tutorial</title>
+      <link>https://aixin.me/post/eggjs-basic-tutorial/</link>
+      <pubDate>Sat, 07 Aug 2021 20:37:27 +0800</pubDate>
+      <guid>https://aixin.me/post/eggjs-basic-tutorial/</guid>
+      <description>官网：https://eggjs.org/zh-cn/
+安装 // 1、创建并进入项目目录mkdir egg-example &amp;amp;&amp;amp; cd egg-example// 2、初始化npm init egg --type=simple// 3、安装项目npm i// 4、启动项目npm run dev// http://localhost:7001 type的类型
+simple - 基础应用模板
+microservice - 基于egg的微服务模板
+sequelize - 带有sequelize的egg应用
+ts - typescript的基础应用模板
+empty - 空模板
+plugin - egg 插件模板
+framework - 框架模板
+核心功能 1、控制器 Controller // app/controller/home.jsconst Controller = require(&amp;#39;egg&amp;#39;).Controller;class HomeController extends Controller {async index() {this.ctx.body = &amp;#39;Hello world&amp;#39;;}}module.</description>
+    </item>
+  </channel>
+</rss>
