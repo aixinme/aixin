@@ -9,7 +9,7 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 05 Nov 2020 09:52:17 +0800</lastBuildDate>
     <atom:link href="https://aixin.me/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
@@ -18,33 +18,68 @@
       <link>https://aixin.me/post/how-to-hugo/</link>
       <pubDate>Thu, 05 Nov 2020 09:52:17 +0800</pubDate>
       <guid>https://aixin.me/post/how-to-hugo/</guid>
-      <description>一、安装 下面时windows10的安装教程，Linux和MAC去看官方教程
-1、下载 最新版下载地址：https://github.com/gohugoio/hugo/releases
-下载 Windows-64bit.zip
-2、新建本地目录 D:\Hugo
-D:\Hugo\bin
-D:\Hugo\Sites
-盘符和目录都可以自定义，但bin和Sites要固定
-将下载的安装包里面的hugo.exe解压到D:\Hugo\bin下面
-3、配置环境 我的电脑→右键→高级→环境变量→系统变量→Path，增加D:\Hugo\bin
-也可以命令执行：set PATH=%PATH%;D:\Hugo\bin
-4、安装完成 验证
-hugo version //查看版本hugo help //帮助文档 能正常输出即安装成功，如果输出错误，则需要重启电脑后再试
-二、新建网站 在D:\Hugo\Sites下面打开cmd，或其他命令工具
-hugo new site simple.com 新建simple.com 网站名自定义
-回车创建成功！
-然后在D:\Hugo\Sites下面就会新建一个simple文件夹
-三、编写内容 1、目录说明 archetypes/ 创建页面的原型文件，比如标题时间等，可以自定义
-content/ markdown原文件存储目录
-layouts/ 样式自定义时需要
-static/ 静态文件
-themes/ 主题会安装在这儿
-config.toml 配置文件
-2、创建页面 在网站目录下面执行命令
-hugo new about.md 自动在当前网站下的content目录下生成about.md文件
-3、创建文章 hugo new post/hello-world.md 自动在content/post下面生成hello-world.md文件
-新生成的文件自动会有三个字段(这儿的模板可以在archetypes里面的文件修改)：
-title: &amp;#34;Hello world&amp;#34; //文件名称date: 2020-11-03T16:58:08+08:00 //创建日期draft: true //草稿，默认开启 4、安装主题 在官方主题库中找到喜欢主题，按照教程安装</description>
+      <description>&lt;h2 id=&#34;一安装&#34;&gt;一、安装&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下面时windows10的安装教程，Linux和MAC去看官方教程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;1下载&#34;&gt;1、下载&lt;/h4&gt;
+&lt;p&gt;最新版下载地址：https://github.com/gohugoio/hugo/releases&lt;/p&gt;
+&lt;p&gt;下载 Windows-64bit.zip&lt;/p&gt;
+&lt;h4 id=&#34;2新建本地目录&#34;&gt;2、新建本地目录&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;D:\Hugo&lt;/p&gt;
+&lt;p&gt;D:\Hugo\bin&lt;/p&gt;
+&lt;p&gt;D:\Hugo\Sites&lt;/p&gt;
+&lt;p&gt;盘符和目录都可以自定义，但bin和Sites要固定&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;将下载的安装包里面的hugo.exe解压到D:\Hugo\bin下面&lt;/p&gt;
+&lt;h4 id=&#34;3配置环境&#34;&gt;3、配置环境&lt;/h4&gt;
+&lt;p&gt;我的电脑→右键→高级→环境变量→系统变量→Path，增加&lt;code&gt;D:\Hugo\bin&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也可以命令执行：&lt;code&gt;set PATH=%PATH%;D:\Hugo\bin&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;4安装完成&#34;&gt;4、安装完成&lt;/h4&gt;
+&lt;p&gt;验证&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo version //查看版本
+hugo help //帮助文档
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;能正常输出即安装成功，如果输出错误，则需要重启电脑后再试&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二新建网站&#34;&gt;二、新建网站&lt;/h2&gt;
+&lt;p&gt;在D:\Hugo\Sites下面打开cmd，或其他命令工具&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new site simple.com
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;新建simple.com 网站名自定义&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;回车创建成功！&lt;/p&gt;
+&lt;p&gt;然后在D:\Hugo\Sites下面就会新建一个simple文件夹&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三编写内容&#34;&gt;三、编写内容&lt;/h2&gt;
+&lt;h4 id=&#34;1目录说明&#34;&gt;1、目录说明&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;archetypes/ 创建页面的原型文件，比如标题时间等，可以自定义&lt;/p&gt;
+&lt;p&gt;content/ markdown原文件存储目录&lt;/p&gt;
+&lt;p&gt;layouts/ 样式自定义时需要&lt;/p&gt;
+&lt;p&gt;static/ 静态文件&lt;/p&gt;
+&lt;p&gt;themes/ 主题会安装在这儿&lt;/p&gt;
+&lt;p&gt;config.toml 配置文件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;2创建页面&#34;&gt;2、创建页面&lt;/h4&gt;
+&lt;p&gt;在网站目录下面执行命令&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new about.md
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;自动在当前网站下的content目录下生成about.md文件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;3创建文章&#34;&gt;3、创建文章&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new post/hello-world.md
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;自动在content/post下面生成hello-world.md文件&lt;/p&gt;
+&lt;p&gt;新生成的文件自动会有三个字段(这儿的模板可以在archetypes里面的文件修改)：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;title: &amp;#34;Hello world&amp;#34; //文件名称
+date: 2020-11-03T16:58:08+08:00  //创建日期
+draft: true   //草稿，默认开启
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;4安装主题&#34;&gt;4、安装主题&lt;/h4&gt;
+&lt;p&gt;在官方主题库中找到喜欢主题，按照教程安装&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

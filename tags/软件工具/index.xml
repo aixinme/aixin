@@ -9,7 +9,7 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 16 Jul 2021 13:06:08 +0800</lastBuildDate>
     <atom:link href="https://aixin.me/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,120 @@
       <link>https://aixin.me/post/visual-studio-code-tutorial/</link>
       <pubDate>Fri, 16 Jul 2021 13:06:08 +0800</pubDate>
       <guid>https://aixin.me/post/visual-studio-code-tutorial/</guid>
-      <description>一、下载地址 https://code.visualstudio.com/
-二、插件推荐 插件名称 功能说明 Chinese (Simplified) Language Pack for Visual Studio Code 中文汉化包 Code Runner 运行代码 beautify 美化代码 Atuo Rename Tag 自动修改标签头尾 Atuo Close Tag 自动补全标签 Path Intellisense 路径提示器 Markdown PDF 将MD转化为PDF Document This 生成注释文档 Color Picker 拾色器 Prettify JSON 格式化JSON CodeSnap 代码截图工具(选中代码右键菜单CodeSnap后,点击相机图标下载图片) Vetur Vue代码工具 eggjs eggjs代码工具 Vscode NestJs Snippets NestJs代码工具 VSCode Great Icons 一套文件图标 Power Mode 打字效果 Bracket Pair Colorizer 给括号分别着色 Indent-Rainbow 多颜色交替缩进 三、主题推荐 主题名称 功能说明 Atom One Dark Theme Atom的样式 Dimmed 黑白灰 四、快捷键 1、通用 General</description>
+      <description>&lt;h4 id=&#34;一下载地址&#34;&gt;一、下载地址&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;https://code.visualstudio.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;二插件推荐&#34;&gt;二、插件推荐&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;插件名称&lt;/th&gt;
+          &lt;th&gt;功能说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Chinese (Simplified) Language Pack for Visual Studio Code&lt;/td&gt;
+          &lt;td&gt;中文汉化包&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Code Runner&lt;/td&gt;
+          &lt;td&gt;运行代码&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;beautify&lt;/td&gt;
+          &lt;td&gt;美化代码&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Atuo Rename Tag&lt;/td&gt;
+          &lt;td&gt;自动修改标签头尾&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Atuo Close Tag&lt;/td&gt;
+          &lt;td&gt;自动补全标签&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Path Intellisense&lt;/td&gt;
+          &lt;td&gt;路径提示器&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Markdown PDF&lt;/td&gt;
+          &lt;td&gt;将MD转化为PDF&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Document This&lt;/td&gt;
+          &lt;td&gt;生成注释文档&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Color Picker&lt;/td&gt;
+          &lt;td&gt;拾色器&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Prettify JSON&lt;/td&gt;
+          &lt;td&gt;格式化JSON&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CodeSnap&lt;/td&gt;
+          &lt;td&gt;代码截图工具(选中代码右键菜单CodeSnap后,点击相机图标下载图片)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Vetur&lt;/td&gt;
+          &lt;td&gt;Vue代码工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;eggjs&lt;/td&gt;
+          &lt;td&gt;eggjs代码工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Vscode NestJs Snippets&lt;/td&gt;
+          &lt;td&gt;NestJs代码工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;VSCode Great Icons&lt;/td&gt;
+          &lt;td&gt;一套文件图标&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Power Mode&lt;/td&gt;
+          &lt;td&gt;打字效果&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Bracket Pair Colorizer&lt;/td&gt;
+          &lt;td&gt;给括号分别着色&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Indent-Rainbow&lt;/td&gt;
+          &lt;td&gt;多颜色交替缩进&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;三主题推荐&#34;&gt;三、主题推荐&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;主题名称&lt;/th&gt;
+          &lt;th&gt;功能说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Atom One Dark Theme&lt;/td&gt;
+          &lt;td&gt;Atom的样式&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Dimmed&lt;/td&gt;
+          &lt;td&gt;黑白灰&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;四快捷键&#34;&gt;四、快捷键&lt;/h4&gt;
+&lt;p&gt;1、通用 General&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

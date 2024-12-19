@@ -9,7 +9,7 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 10 Nov 2020 13:54:51 +0800</lastBuildDate>
     <atom:link href="https://aixin.me/tags/vue3/index.xml" rel="self" type="application/rss+xml" />
@@ -18,21 +18,184 @@
       <link>https://aixin.me/post/vue-todo-tutorial/</link>
       <pubDate>Tue, 10 Nov 2020 13:54:51 +0800</pubDate>
       <guid>https://aixin.me/post/vue-todo-tutorial/</guid>
-      <description>本文状态：未完成
-一、产品原型 参考 Windows todo设计一个简单的移动端todo页面原型
-二、开发教程 1、新建Todolist.vue 先通过脚手架配置好vue项目：@vue/cli
-在项目src\views下面新建Todo.vue
-&amp;lt;template&amp;gt;&amp;lt;div class=&amp;#34;todo&amp;#34;&amp;gt;&amp;lt;h1&amp;gt;Todolist&amp;lt;/h1&amp;gt;&amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;content&amp;#34; @keypress=&amp;#34;add&amp;#34;&amp;gt;&amp;lt;button @click=&amp;#34;add&amp;#34;&amp;gt;Add&amp;lt;/button&amp;gt;&amp;lt;p&amp;gt;{{content}}&amp;lt;/p&amp;gt;&amp;lt;div class=&amp;#34;section-title&amp;#34;&amp;gt;待办&amp;lt;/div&amp;gt;&amp;lt;ul class=&amp;#34;todolist underway&amp;#34;&amp;gt;&amp;lt;TodoItem :=&amp;#34;todo&amp;#34; v-for=&amp;#34;todo in underway&amp;#34; :key=&amp;#34;todo.id&amp;#34; :class=&amp;#34;{done:todo.status}&amp;#34; v-model=&amp;#34;todo.status&amp;#34; /&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;div class=&amp;#34;section-title&amp;#34;&amp;gt;已完成&amp;lt;/div&amp;gt;&amp;lt;ul class=&amp;#34;todolist completed&amp;#34;&amp;gt;&amp;lt;TodoItem :=&amp;#34;todo&amp;#34; v-for=&amp;#34;todo in completed&amp;#34; :key=&amp;#34;todo.id&amp;#34; :class=&amp;#34;{done:todo.status}&amp;#34; v-model=&amp;#34;todo.status&amp;#34; /&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/template&amp;gt;&amp;lt;script&amp;gt;import TodoItem from &amp;#39;../components/TodoItem&amp;#39;;export default {name: &amp;#34;Todo&amp;#34;,components:{TodoItem},data(){return{content:&amp;#39;hello world!&amp;#39;,checked:&amp;#39;&amp;#39;,todos:[{id:1,content:&amp;#39;这是内容1&amp;#39;,status:false},{id:2,content:&amp;#39;这是内容2&amp;#39;,status:true},{id:3,content:&amp;#39;这是内容3&amp;#39;,status:true},{id:4,content:&amp;#39;这是内容4&amp;#39;,status:false},{id:5,content:&amp;#39;这是内容5&amp;#39;,status:true}],}},methods:{add(){this.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文状态：未完成&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;一产品原型&#34;&gt;一、产品原型&lt;/h1&gt;
+&lt;p&gt;&lt;img alt=&#34;todo&#34; loading=&#34;lazy&#34; src=&#34;https://s1.ax1x.com/2020/11/10/Bq56dH.png&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考 Windows todo设计一个简单的移动端todo页面原型&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;二开发教程&#34;&gt;二、开发教程&lt;/h1&gt;
+&lt;h4 id=&#34;1新建todolistvue&#34;&gt;1、新建Todolist.vue&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;先通过脚手架配置好vue项目：@vue/cli&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在项目src\views下面新建Todo.vue&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div class=&amp;#34;todo&amp;#34;&amp;gt;
+    &amp;lt;h1&amp;gt;Todolist&amp;lt;/h1&amp;gt;
+    &amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;content&amp;#34; @keypress=&amp;#34;add&amp;#34;&amp;gt;&amp;lt;button @click=&amp;#34;add&amp;#34;&amp;gt;Add&amp;lt;/button&amp;gt;
+    &amp;lt;p&amp;gt;{{content}}&amp;lt;/p&amp;gt;
+    &amp;lt;div class=&amp;#34;section-title&amp;#34;&amp;gt;待办&amp;lt;/div&amp;gt;
+    &amp;lt;ul class=&amp;#34;todolist underway&amp;#34;&amp;gt;
+      &amp;lt;TodoItem :=&amp;#34;todo&amp;#34; v-for=&amp;#34;todo in underway&amp;#34; :key=&amp;#34;todo.id&amp;#34; :class=&amp;#34;{done:todo.status}&amp;#34; v-model=&amp;#34;todo.status&amp;#34; /&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;div class=&amp;#34;section-title&amp;#34;&amp;gt;已完成&amp;lt;/div&amp;gt;
+    &amp;lt;ul class=&amp;#34;todolist completed&amp;#34;&amp;gt;
+      &amp;lt;TodoItem :=&amp;#34;todo&amp;#34; v-for=&amp;#34;todo in completed&amp;#34; :key=&amp;#34;todo.id&amp;#34; :class=&amp;#34;{done:todo.status}&amp;#34; v-model=&amp;#34;todo.status&amp;#34; /&amp;gt;
+    &amp;lt;/ul&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+import TodoItem from &amp;#39;../components/TodoItem&amp;#39;;
+export default {
+  name: &amp;#34;Todo&amp;#34;,
+  components:{
+    TodoItem
+  },
+  data(){
+    return{
+      content:&amp;#39;hello world!&amp;#39;,
+      checked:&amp;#39;&amp;#39;,
+      todos:[
+        {
+          id:1,
+          content:&amp;#39;这是内容1&amp;#39;,
+          status:false
+        },
+        {
+          id:2,
+          content:&amp;#39;这是内容2&amp;#39;,
+          status:true
+        },
+        {
+          id:3,
+          content:&amp;#39;这是内容3&amp;#39;,
+          status:true
+        },
+        {
+          id:4,
+          content:&amp;#39;这是内容4&amp;#39;,
+          status:false
+        },
+        {
+          id:5,
+          content:&amp;#39;这是内容5&amp;#39;,
+          status:true
+        }
+      ],
+    }
+  },
+  methods:{
+    add(){
+      this.todos.push({
+        id:this.todos.length+1,
+        content:this.content,
+        status:false
+      })
+    }
+  },
+  computed:{
+    underway(){
+      return this.todos.filter(todos=&amp;gt;!todos.status);
+    },
+    completed(){
+      return this.todos.filter(todos=&amp;gt;todos.status);
+    }
+  }
+}
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+.section-title{font-weight: bold;font-size: 18px;}
+.todolist li{list-style: none;}
+.todolist li.done{text-decoration:line-through; }
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2添加组件&#34;&gt;2、添加组件&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;input type=&amp;#34;checkbox&amp;#34; :name=&amp;#34;id&amp;#34; :id=&amp;#34;id&amp;#34; :value=&amp;#34;content&amp;#34; :checked=&amp;#34;modelValue&amp;#34; @input=&amp;#34;onInput&amp;#34;/&amp;gt;
+    &amp;lt;label :for=&amp;#34;id&amp;#34;&amp;gt;{{content}}&amp;lt;/label&amp;gt;
+  &amp;lt;/li&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+export default {
+  name: &amp;#34;TodoItem&amp;#34;,
+  data(){
+    return{
+
+    }
+  },
+  props:{
+    id:Number,
+    content:String,
+    modelValue:Boolean
+  },
+  methods:{
+    onInput(e){
+      this.$emit(&amp;#39;update:modelValue&amp;#39;,e.target.checked);
+    }
+  }
+}
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2添加路由&#34;&gt;2、添加路由&lt;/h4&gt;
+&lt;p&gt;router\index.js中添加&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vue3.2 组合式API基础知识点</title>
       <link>https://aixin.me/post/vue3-base-tutorials/</link>
       <pubDate>Thu, 05 Nov 2020 16:04:12 +0800</pubDate>
       <guid>https://aixin.me/post/vue3-base-tutorials/</guid>
-      <description>本页内容基于VUE3.2版本，且以组合式API模式编写&amp;lt;script setup&amp;gt;
-推荐的 IDE 配置是 Visual Studio Code + Volar 扩展
-中文文档：https://staging-cn.vuejs.org/
-使用Vite安装Vue npm init vite@latest &amp;lt;project-name&amp;gt; -- --template vue# 或者npm create vite@latest &amp;lt;project-name&amp;gt; -- --template vuecd &amp;lt;project-name&amp;gt;npm installnpm run dev 模板语法 // 显示文本 &amp;lt;span&amp;gt;Message: {{ msg }}&amp;lt;/span&amp;gt; // 显示原始HTML &amp;lt;p&amp;gt;Using v-html directive: &amp;lt;span v-html=&amp;#34;rawHtml&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; // 绑定HTML属性 &amp;lt;div v-bind:id=&amp;#34;dynamicId&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; // 绑定多个HTML属性 &amp;lt;div v-bind=&amp;#34;objectOfAttrs&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; // 调用函数 &amp;lt;span :title=&amp;#34;toTitleDate(date)&amp;#34;&amp;gt; {{ formatDate(date) }} &amp;lt;/span&amp;gt; // 绑定动态参数 &amp;lt;a v-bind:[attributeName]=&amp;#34;url&amp;#34;&amp;gt; .</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本页内容基于VUE3.2版本，且以组合式API模式编写&lt;code&gt;&amp;lt;script setup&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;推荐的 IDE 配置是 Visual Studio Code + Volar 扩展&lt;/p&gt;
+&lt;p&gt;中文文档：https://staging-cn.vuejs.org/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;使用vite安装vue&#34;&gt;使用Vite安装Vue&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;npm init vite@latest &amp;lt;project-name&amp;gt; -- --template vue
+# 或者
+npm create vite@latest &amp;lt;project-name&amp;gt; -- --template vue
+
+cd &amp;lt;project-name&amp;gt;
+npm install
+npm run dev
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;模板语法&#34;&gt;模板语法&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 显示文本
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Message: {{ msg }}&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 显示原始HTML
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Using v-html directive: &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;v-html&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;rawHtml&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 绑定HTML属性
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;v-bind:id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dynamicId&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 绑定多个HTML属性
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;v-bind&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;objectOfAttrs&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 调用函数
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;:title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;toTitleDate(date)&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{ formatDate(date) }}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 绑定动态参数
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;v-bind:&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;attributeName&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;]=&amp;#34;&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; ... &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;v-on:&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;eventName&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;]=&amp;#34;&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;doSomething&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; ... &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 如果需要操作[&amp;#39;foo&amp;#39; + bar]，建议使用计算属性
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 修饰符
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;form&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;submit&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;prevent&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;onSubmit&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;...&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//  绑定多个HTML属性
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;objectOfAttrs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;container&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;kr&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;wrapper&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;简写：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

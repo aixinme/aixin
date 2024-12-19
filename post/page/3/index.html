@@ -24,10 +24,41 @@ async index() {
 this.ctx.body = 'Hello world';
 }
 }
-module....</p></div><footer class=entry-footer><span title='2021-08-07 20:37:27 +0800 CST'>August 7, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;335 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Egg.js Basic Tutorial" href=https://aixin.me/post/eggjs-basic-tutorial/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Axure Advanced Tutorial</h2></header><div class=entry-content><p>在axure交互设计时，函数可以用在条件公式和需要赋值的地方，其基本语法是用双方括号包含，变量值和函数用英文句号连接。
+module.exports = HomeController; 2、路由 Router // app/router.js
+module.exports = app => {
+const { router, controller } = app;
+router.get('/', controller.home.index);
+}; 3、服务 service // app/service/news.js
+const Service = require('egg').Service;
+class NewsService extends Service {
+async list(page = 1) {
+// read config
+const { serverUrl, pageSize } = this.config.news;
+// use build-in http client to GET hacker-news api
+const { data: idList } = await this.ctx.curl(`${serverUrl}/topstories.json`, {
+data: {
+orderBy: '"$key"',
+startAt: `"${pageSize * (page - 1)}"`,
+endAt: `"${pageSize * page - 1}"`,
+},
+dataType: 'json',
+});
+// parallel GET detail
+const newsList = await Promise.all(
+Object.keys(idList).map(key => {
+const url = `${serverUrl}/item/${idList[key]}.json`;
+return this.ctx.curl(url, { dataType: 'json' });
+})
+);
+return newsList.map(res => res.data);
+}
+}
+module.exports = NewsService; 4、模板渲染 view 需要单独安装视图插件，比如egg-view-nunjucks等
+...</p></div><footer class=entry-footer><span title='2021-08-07 20:37:27 +0800 CST'>August 7, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;335 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Egg.js Basic Tutorial" href=https://aixin.me/post/eggjs-basic-tutorial/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Axure Advanced Tutorial</h2></header><div class=entry-content><p>在axure交互设计时，函数可以用在条件公式和需要赋值的地方，其基本语法是用双方括号包含，变量值和函数用英文句号连接。
 例如：[[LVAR. Width]] 表示变量LVAR的宽度，[[This. Width]] 当前元件的宽度
-一、元件函数 名称 用途 This 获取当前元件对象。当前元件是指当前添加交互动作的元件 Target 获取目标元件对象。目标元件是指当前交互动作控制的元件。 x 获取元件对象的X轴坐标值。 y 获取元件对象的Y轴坐标值。 width 获取元件对象的宽度值 scrollX 获取元件对象的水平滚动距离（当前仅限动态面板） scrollY 获取元件对象的垂直滚动距离（当前仅限动态面板） text 获取元件对象的文本文字 name 获取元件对象的自定义名称。 top 获取元件对象的上边界坐标值。 left 获取元件对象的左边界坐标值。 right 获取元件对象的右边界坐标值。 bottom 获取元件对象的下边界坐标值。 opacity 获取元件对象的不透明比例。 rotation 获取元件对象的旋转角度。 二、鼠标指针函数 名称 用途 Cursor.x 鼠标指针在页面中位置的X轴坐标。 Cursor.y 鼠标指针在页面中位置的Y轴坐标。 DragX 鼠标指针沿X轴拖动元件时的瞬间(0.01秒)拖动距离。 DragY 鼠标指针沿Y轴拖动元件时的瞬间(0.01秒)拖动距离。 TotalDragX 鼠标指针拖动元件从开始到结束的X轴移动距离。 TotalDragY 鼠标指针拖动元件从开始到结束的Y轴移动距离。 DragTime 鼠标指针拖动元件从开始到结束的总时长。 三、窗口函数 名称 用途 Window.width 打开原型页面的浏览器当前宽度。 Window.height 打开原型页面的浏览器当前高度。 Window.scrollX 浏览器中页面水平滚动的距离。 Window.scrollY 浏览器中页面垂直滚动的距离。 四、页面函数 名称 用途 PageName 获取当前页面的名称。 五、数字函数 名称 用途 toExponential(decimalPoints) 用途：值转换为指数计数法。参数：decimalPoints为保留小数的位数。 toFixed(decimalPoints) 用途：将一个数字转为保留指定位数的小数，小数位数超出指定位数时进行四舍五入。参数：decimalPoints为保留小数的位数。 toPrecision(length) 用途：把数字格式化为指定的长度。参数：length为格式化后的数字长度，小数点不计入长度。 六、数学函数 名称 用途 Math....</p></div><footer class=entry-footer><span title='2021-08-06 16:09:52 +0800 CST'>August 6, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;364 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Axure Advanced Tutorial" href=https://aixin.me/post/axure-advanced-tutorial/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Visual Studio Code Tutorial</h2></header><div class=entry-content><p>一、下载地址 https://code.visualstudio.com/
-二、插件推荐 插件名称 功能说明 Chinese (Simplified) Language Pack for Visual Studio Code 中文汉化包 Code Runner 运行代码 beautify 美化代码 Atuo Rename Tag 自动修改标签头尾 Atuo Close Tag 自动补全标签 Path Intellisense 路径提示器 Markdown PDF 将MD转化为PDF Document This 生成注释文档 Color Picker 拾色器 Prettify JSON 格式化JSON CodeSnap 代码截图工具(选中代码右键菜单CodeSnap后,点击相机图标下载图片) Vetur Vue代码工具 eggjs eggjs代码工具 Vscode NestJs Snippets NestJs代码工具 VSCode Great Icons 一套文件图标 Power Mode 打字效果 Bracket Pair Colorizer 给括号分别着色 Indent-Rainbow 多颜色交替缩进 三、主题推荐 主题名称 功能说明 Atom One Dark Theme Atom的样式 Dimmed 黑白灰 四、快捷键 1、通用 General...</p></div><footer class=entry-footer><span title='2021-07-16 13:06:08 +0800 CST'>July 16, 2021</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;984 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Visual Studio Code Tutorial" href=https://aixin.me/post/visual-studio-code-tutorial/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Vue3 开发 Todolist 教程</h2></header><div class=entry-content><p>本文状态：未完成
+一、元件函数 名称 用途 This 获取当前元件对象。当前元件是指当前添加交互动作的元件 Target 获取目标元件对象。目标元件是指当前交互动作控制的元件。 x 获取元件对象的X轴坐标值。 y 获取元件对象的Y轴坐标值。 width 获取元件对象的宽度值 scrollX 获取元件对象的水平滚动距离（当前仅限动态面板） scrollY 获取元件对象的垂直滚动距离（当前仅限动态面板） text 获取元件对象的文本文字 name 获取元件对象的自定义名称。 top 获取元件对象的上边界坐标值。 left 获取元件对象的左边界坐标值。 right 获取元件对象的右边界坐标值。 bottom 获取元件对象的下边界坐标值。 opacity 获取元件对象的不透明比例。 rotation 获取元件对象的旋转角度。 二、鼠标指针函数 名称 用途 Cursor.x 鼠标指针在页面中位置的X轴坐标。 Cursor.y 鼠标指针在页面中位置的Y轴坐标。 DragX 鼠标指针沿X轴拖动元件时的瞬间(0.01秒)拖动距离。 DragY 鼠标指针沿Y轴拖动元件时的瞬间(0.01秒)拖动距离。 TotalDragX 鼠标指针拖动元件从开始到结束的X轴移动距离。 TotalDragY 鼠标指针拖动元件从开始到结束的Y轴移动距离。 DragTime 鼠标指针拖动元件从开始到结束的总时长。 三、窗口函数 名称 用途 Window.width 打开原型页面的浏览器当前宽度。 Window.height 打开原型页面的浏览器当前高度。 Window.scrollX 浏览器中页面水平滚动的距离。 Window.scrollY 浏览器中页面垂直滚动的距离。 四、页面函数 名称 用途 PageName 获取当前页面的名称。 五、数字函数 名称 用途 toExponential(decimalPoints) 用途：值转换为指数计数法。参数：decimalPoints为保留小数的位数。 toFixed(decimalPoints) 用途：将一个数字转为保留指定位数的小数，小数位数超出指定位数时进行四舍五入。参数：decimalPoints为保留小数的位数。 toPrecision(length) 用途：把数字格式化为指定的长度。参数：length为格式化后的数字长度，小数点不计入长度。 六、数学函数 名称 用途 Math.abs(x) 计算参数数值的绝对值。 参数：x为数值。 Math.acos(x) 获取一个数值的反余弦弧度值，其范围是 0~ pi 。 参数：x为数值，范围在 -1~1 之间。 Math.asin(x) 获取一个数值的反正弦值。 参数：x为数值，范围在 -1~1 之间。 Math.atan(x) 获取一个数值的反正切值。 参数：x为数值。 Math.atan2(y,x) 获取某一点(x,y)的角度值。 参数：“x,y”为点的坐标数值。 Math.ceil(x) 向上取整函数，获取大于或者等于指定数值的最小整数。 参数：x为数值 Math.cos(x) 余弦函数。 参数：x为弧度数值。 Math.exp(x) 指数函数，计算以e为底的指数。 参数：x为数值。 Math.floor(x) 向下取整函数，获取小于或者等于指定数值的最大整数。 参数：x为数值。 Math.log(x) 对数函数，计算以e为底的对数值。 参数：x为数值。 Math.max(x,y) 获取参数中的最大值。 参数：“x,y”表示多个数值，而非2个数值。 Math.min(x,y) 获取参数中的最小值。 参数：“x,y”表示多个数值，而非2个数值。 Math.pow(x,y) 幂函数，计算x的y次幂。 参数：x不能为负数且y为小数，或者x为0且y小于等于0。 Math.random() 随机数函数，返回一个0~1之间的随机数。 示例：获取10-15之间的随机小数，计算公式为Math.random()*5+10。 Math.sin(x) 正弦函数。 参数：x为弧度数值。 Math.sqrt(x) 平方根函数。 参数：x为数值。 Math.tan(x) 正切函数。 参数：x为弧度数值。 七、时间函数 名称 用途 Now 获取当前计算机系统日期对象。 GenDate 获取原型生成日期对象。 getDate() 获取日期对象“日期”部分数值(1 ~ 31)。 getDay() 获取日期对象“星期”部分的数值(0 ~ 6)。 getDayOfWeek() 获取日期对象“星期”部分的英文名称。 getFullYear() 获取日期对象“年份”部分四位数值。 getHours() 获取日期对象“小时”部分数值(0 ~ 23)。 getMilliseconds() 获取日期对象的毫秒数(0 ~ 999)。 getMinutes() 获取日期对象“分钟”部分数值(0 ~59)。 getMonth() 获取日期对象“月份”部分的数值(1 ~ 12)。 getMonthName() 获取日期对象“月份”部分的英文名称。 getSeconds() 获取日期对象“秒数”部分数值(0 ~59)。 getTime() 获取当前日期对象中的时间值。该时间值表示从1970年1月1日00:00:00开始，到当前日期对象时，所经过的毫秒数，以格林威治时间为准。 getTimezoneOffset() 获取世界标准时间(UTC)与当前主机时间之间的分钟差值。 getUTCDate() 使用世界标准时间获取当前日期对象“日期”部分数值(1 ~ 31)。 getUTCDay() 使用世界标准时间获取当前日期对象“星期”部分的数值(0 ~ 6)。 getUTCFullYear() 使用世界标准时间获取当前日期对象“年份”部分四位数值。 getUTCHours() 使用世界标准时间获取当前日期对象“小时”部分数值(0 ~ 23) getUTCMilliseconds() 使用世界标准时间获取当前日期对象的毫秒数(0 ~ 999)。 getUTCMinutes() 使用世界标准时间获取当前日期对象“分钟”部分数值(0 ~59)。 getUTCMonth() 使用世界标准时间获取当前日期对象“月份”部分的数值(1 ~ 12)。 getUTCSeconds() 使用世界标准时间获取当前日期对象“秒数”部分数值(0 ~59)。 Date.parse(datestring) 用于分析一个包含日期的字符串，并返回该日期与1970年1月1日00:00:00之间相差的毫秒数 参数：datestring为日期格式的字符串，格式为：yyyy/mm/dd hh:mm:ss。 toDateString() 以字符串的形式获取一个日期。 toISOString() 获取当前日期对象的IOS格式的日期字串，格式：YYYY-MM-DDTHH:mm:ss.sssZ。 toJSON() 获取当前日期对象的JSON格式的日期字串，格式： YYYY-MM-DDTHH:mm:ss.sssZ。 toLocaleDateString() 以字符串的形式获取本地化当前日期对象。并且只包含“年月日”部分的短日期信息。 toLocaleTimeString() 以字符串的形式获取本地化当前日期对象。并且只包含“时分秒”部分的短日期信息。 toUTCString() 以字符串的形式获取相对于当前日期对象的世界标准时间。 Date.UTC(year,month,day,hour,min,sec,millisec) 获取相对于1970 年 1 月 1 日 00:00:00的世界标准时间，与指定日期对象之间相差的毫秒数。 参数：组成指定日期对象的年、月、日、时、分、秒以及毫秒的数值。 valueOf() 获取当前日期对象的原始值。 addYears(years) 将指定的年份数加到当前日期对象上，获取一个新的日期对象。 参数：years为整数数值，正负均可。 addMonths(months) 将指定的月份数加到当前日期对象上，获取一个新的日期对象。 参数：months为整数数值，正负均可。 addDays(days) 将指定的天数加到当前日期对象上，获取一个新的日期对象。 参数：days为整数数值，正负均可。 addHours(hours) 将指定的小时数加到当前日期对象上，获取一个新的日期对象。 参数：hours为整数数值，正负均可。 addMinutes(minutes) 将指定的分钟数加到当前日期对象上，获取一个新的日期对象。 参数：minutes为整数数值，正负均可。 addSeconds(seconds) 将指定的秒数加到当前日期对象上，获取一个新的日期对象。 参数：seconds为整数数值，正负均可。 addMilliseconds(ms) 将指定的毫秒数加到当前日期对象上，获取一个新的日期对象。 参数：ms为整数数值，正负均可。 Year 获取系统日期对象“年份”部分的四位数值。 Month 获取系统日期对象“月份”部分数值(1 ~ 12)。 Day 获取系统日期对象“日期”部分数值(1 ~ 31)。 Hours 获取系统日期对象“小时”部分数值(0 ~ 23)。 Minutes 获取系统日期对象“分钟”部分数值(0 ~ 59)。 Seconds 获取系统日期对象“秒数”部分数值(0 ~ 59)。 八、字符串函数 名称 用途 length 获取当前文本对象的长度，即字符个数；1个汉字的长度按1计算。 charAt(index) 获取当前文本对象中指定位置的字符； 参数：index为大于等于0的整数。 charCodeAt(index) 获取当前文本对象中指定位置字符的Unicode编码（中文编码段19968 ~ 40622）；字符起始位置从0开始。 参数：index为大于等于0的整数。 concat(‘string’) 将当前文本对象与另一个字符串组合。 参数：string为组合在后方的字符串。 indexOf(‘searchValue’,start) 从左至右获取查询字符串在当前文本对象中首次出现的位置。未查询到时返回值为-1。 参数：searchValue为查询的字符串；start为查询的起始位置。该参数可省略，官方未给出此参数，经测试可用。 lastIndexOf(‘searchvalue’,start) 从右至左获取查询字符串在当前文本对象中首次出现的位置。未查询到时返回值为-1。 参数：searchValue为查询的字符串；start为查询的起始位置。该参数可省略，官方未给出此参数，经测试可用。 replace(‘searchvalue’,’newvalue’) 用新的字符串替换当前文本对象中指定的字符串。 参数：searchvalue为被替换的字符串；newvalue为新文本对象或字符串。 slice(start,end) 从当前文本对象中截取从指定起始位置开始到终止位置之前的字符串。 参数：start为被截取部分的起始位置，该数值可为负数；end为被截取部分的终止位置，该数值可为负数。该参数可省略，省略该参数则由起始位置截取至文本对象结尾。 split(‘separator’,limit) 将当前文本对象中与分隔字符相同的字符转为“,”，形成多组字符串，并返回从左开始的指定组数。 参数：separator为分隔字符，分隔字符可以为空，为空时将分隔每个字符为一组；limit为返回组数的数值，该参数可以省略，省略该参数则返回所有字符串组。 substr(start,length) 从当前文本对象中指定起始位置开始截取一定长度的字符串。 参数：start为被截取部分的起始位置；length为被截取部分的长度，该参数可省略，省略该参数则由起始位置截取至文本对象结尾。 substring(from,to) 从当前文本对象中截取从指定位置到另一指定位置区间的字符串。右侧位置不截取。 参数：from为指定区间的起始位置；to为指定区间的终止位置，该参数可省略，省略该参数则由起始位置截取至文本对象结尾。 toLowerCase() 将文本对象中所有的大写字母转换为小写字母。 toUpperCase() 将当前文本对象中所有的小写字母转换为大写字母。 trim() 去除当前文本对象两端的空格。 toString() 将一个逻辑值转换为字符串。 九、中继器函数 名称 用途 Repeater 中继器的对象。Item.Repeater即为Item所在的中继器对象。 visibleItemCount 中继器项目列表中可见项的数量。比如：项目列表共有15项，分页显示为每页6项。当项目列表在第1、2页时，可见项数量为6；当项目列表在第3页时，可见项数量为3。 itemCount 获取中继器项目列表的总数量，或者叫加载项数量。默认情况下项目列表的总数量会与中继器数据集中的数据行数量一致，但是，如果进行了筛选，项目列表的总数量则是筛选后的数量，这个数量不受分页影响。 dataCount 获取中继器数据集中数据行的总数量。 pageCount 获取中继器分页的总数量，即能够获取分页后共有多少页。 pageIndex 获取中继器项目列表当前显示内容的页码。 Item 获取数据集一行数据的集合，即数据行的对象。 TargetItem 目标数据行的对象。 Item.列名 获取数据行中指定列的值。 index 获取数据行的索引编号，编号起始为1，由上至下每行递增1。 isFirst 判断数据行是否为第1行；如果是第1行，返回值为“True”，否则为“False”。 isLast 判断数据行是否为最末行；如果是最末行，返回值为“True”，否则为“False”。 isEven 判断数据行是否为偶数行；如果是偶数行，返回值为“True”，否则为“False”。 isOdd 判断数据行是否为奇数行；如果是奇数行，返回值为“True”，否则为“False”。 isMarked 判断数据行是否为被标记；如果被标记，返回值为“True”，否则为“False”。 isVisible 判断数据行是否为可见行；如果是可见行，返回值为“True”，否则为“False”。</p></div><footer class=entry-footer><span title='2021-08-06 16:09:52 +0800 CST'>August 6, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;364 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Axure Advanced Tutorial" href=https://aixin.me/post/axure-advanced-tutorial/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Visual Studio Code Tutorial</h2></header><div class=entry-content><p>一、下载地址 https://code.visualstudio.com/
+二、插件推荐 插件名称 功能说明 Chinese (Simplified) Language Pack for Visual Studio Code 中文汉化包 Code Runner 运行代码 beautify 美化代码 Atuo Rename Tag 自动修改标签头尾 Atuo Close Tag 自动补全标签 Path Intellisense 路径提示器 Markdown PDF 将MD转化为PDF Document This 生成注释文档 Color Picker 拾色器 Prettify JSON 格式化JSON CodeSnap 代码截图工具(选中代码右键菜单CodeSnap后,点击相机图标下载图片) Vetur Vue代码工具 eggjs eggjs代码工具 Vscode NestJs Snippets NestJs代码工具 VSCode Great Icons 一套文件图标 Power Mode 打字效果 Bracket Pair Colorizer 给括号分别着色 Indent-Rainbow 多颜色交替缩进 三、主题推荐 主题名称 功能说明 Atom One Dark Theme Atom的样式 Dimmed 黑白灰 四、快捷键 1、通用 General
+...</p></div><footer class=entry-footer><span title='2021-07-16 13:06:08 +0800 CST'>July 16, 2021</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;984 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Visual Studio Code Tutorial" href=https://aixin.me/post/visual-studio-code-tutorial/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Vue3 开发 Todolist 教程</h2></header><div class=entry-content><p>本文状态：未完成
 一、产品原型 参考 Windows todo设计一个简单的移动端todo页面原型
 二、开发教程 1、新建Todolist.vue 先通过脚手架配置好vue项目：@vue/cli
 在项目src\views下面新建Todo.vue
@@ -88,7 +119,55 @@ status:true
 },
 methods:{
 add(){
-this....</p></div><footer class=entry-footer><span title='2020-11-10 13:54:51 +0800 CST'>November 10, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;332 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Vue3 开发 Todolist 教程" href=https://aixin.me/post/vue-todo-tutorial/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Vue3.2 组合式API基础知识点</h2></header><div class=entry-content><p>本页内容基于VUE3.2版本，且以组合式API模式编写&lt;script setup>
+this.todos.push({
+id:this.todos.length+1,
+content:this.content,
+status:false
+})
+}
+},
+computed:{
+underway(){
+return this.todos.filter(todos=>!todos.status);
+},
+completed(){
+return this.todos.filter(todos=>todos.status);
+}
+}
+}
+&lt;/script>
+&lt;style scoped>
+.section-title{font-weight: bold;font-size: 18px;}
+.todolist li{list-style: none;}
+.todolist li.done{text-decoration:line-through; }
+&lt;/style> 2、添加组件 &lt;template>
+&lt;li>
+&lt;input type="checkbox" :name="id" :id="id" :value="content" :checked="modelValue" @input="onInput"/>
+&lt;label :for="id">{{content}}&lt;/label>
+&lt;/li>
+&lt;/template>
+&lt;script>
+export default {
+name: "TodoItem",
+data(){
+return{
+}
+},
+props:{
+id:Number,
+content:String,
+modelValue:Boolean
+},
+methods:{
+onInput(e){
+this.$emit('update:modelValue',e.target.checked);
+}
+}
+}
+&lt;/script>
+&lt;style scoped>
+&lt;/style> 2、添加路由 router\index.js中添加
+...</p></div><footer class=entry-footer><span title='2020-11-10 13:54:51 +0800 CST'>November 10, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;332 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Vue3 开发 Todolist 教程" href=https://aixin.me/post/vue-todo-tutorial/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Vue3.2 组合式API基础知识点</h2></header><div class=entry-content><p>本页内容基于VUE3.2版本，且以组合式API模式编写&lt;script setup>
 推荐的 IDE 配置是 Visual Studio Code + Volar 扩展
 中文文档：https://staging-cn.vuejs.org/
 使用Vite安装Vue npm init vite@latest &lt;project-name> -- --template vue
@@ -96,6 +175,7 @@ this....</p></div><footer class=entry-footer><span title='2020-11-10 13:54:51 +0
 npm create vite@latest &lt;project-name> -- --template vue
 cd &lt;project-name>
 npm install
-npm run dev 模板语法 // 显示文本 &lt;span>Message: {{ msg }}&lt;/span> // 显示原始HTML &lt;p>Using v-html directive: &lt;span v-html="rawHtml">&lt;/span>&lt;/p> // 绑定HTML属性 &lt;div v-bind:id="dynamicId">&lt;/div> // 绑定多个HTML属性 &lt;div v-bind="objectOfAttrs">&lt;/div> // 调用函数 &lt;span :title="toTitleDate(date)"> {{ formatDate(date) }} &lt;/span> // 绑定动态参数 &lt;a v-bind:[attributeName]="url"> ....</p></div><footer class=entry-footer><span title='2020-11-05 16:04:12 +0800 CST'>November 5, 2020</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;620 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Vue3.2 组合式API基础知识点" href=https://aixin.me/post/vue3-base-tutorials/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://aixin.me/post/page/2/>«&nbsp;Prev&nbsp;
+npm run dev 模板语法 // 显示文本 &lt;span>Message: {{ msg }}&lt;/span> // 显示原始HTML &lt;p>Using v-html directive: &lt;span v-html="rawHtml">&lt;/span>&lt;/p> // 绑定HTML属性 &lt;div v-bind:id="dynamicId">&lt;/div> // 绑定多个HTML属性 &lt;div v-bind="objectOfAttrs">&lt;/div> // 调用函数 &lt;span :title="toTitleDate(date)"> {{ formatDate(date) }} &lt;/span> // 绑定动态参数 &lt;a v-bind:[attributeName]="url"> ... &lt;/a> &lt;a v-on:[eventName]="doSomething"> ... &lt;/a> // 如果需要操作['foo' + bar]，建议使用计算属性 // 修饰符 &lt;form @submit.prevent="onSubmit">...&lt;/form> // 绑定多个HTML属性 const objectOfAttrs = { id: 'container', class: 'wrapper' } 简写：
+...</p></div><footer class=entry-footer><span title='2020-11-05 16:04:12 +0800 CST'>November 5, 2020</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;620 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Vue3.2 组合式API基础知识点" href=https://aixin.me/post/vue3-base-tutorials/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://aixin.me/post/page/2/>«&nbsp;Prev&nbsp;
 </a><a class=next href=https://aixin.me/post/page/4/>Next&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2024 <a href=https://aixin.me/>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

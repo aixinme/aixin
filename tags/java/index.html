@@ -14,5 +14,43 @@ Name Servlet版本 Tomcat 9.0 4.0 Jetty 9.4 3.1 Undertow 2.0 4.0 3、Spring Boot
 &lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 &lt;modelVersion>4.0.0&lt;/modelVersion>
-&lt;groupId>com....</p></div><footer class=entry-footer><span title='2019-12-05 15:44:55 +0000 UTC'>December 5, 2019</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;124 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Spring Boot 入门指南" href=https://aixin.me/post/spring-boot-getting-started/></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://aixin.me/>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+&lt;groupId>com.example&lt;/groupId>
+&lt;artifactId>myproject&lt;/artifactId>
+&lt;version>0.0.1-SNAPSHOT&lt;/version>
+&lt;!-- Inherit defaults from Spring Boot -->
+&lt;parent>
+&lt;groupId>org.springframework.boot&lt;/groupId>
+&lt;artifactId>spring-boot-starter-parent&lt;/artifactId>
+&lt;version>2.2.1.RELEASE&lt;/version>
+&lt;/parent>
+&lt;!-- Override inherited settings -->
+&lt;description/>
+&lt;developers>
+&lt;developer/>
+&lt;/developers>
+&lt;licenses>
+&lt;license/>
+&lt;/licenses>
+&lt;scm>
+&lt;url/>
+&lt;/scm>
+&lt;url/>
+&lt;!-- 添加依赖关系-->
+&lt;dependencies>
+&lt;dependency>
+&lt;groupId>org.springframework.boot&lt;/groupId>
+&lt;artifactId>spring-boot-starter-web&lt;/artifactId>
+&lt;/dependency>
+&lt;/dependencies>
+&lt;!-- 引入将应用打包成可执行的jar包的插件 -->
+&lt;build>
+&lt;plugins>
+&lt;plugin>
+&lt;groupId>org.springframework.boot&lt;/groupId>
+&lt;artifactId>spring-boot-maven-plugin&lt;/artifactId>
+&lt;/plugin>
+&lt;/plugins>
+&lt;/build>
+&lt;/project> spring-boot-starter-parent方法虽然很好，但不是适合所有场景。
+...</p></div><footer class=entry-footer><span title='2019-12-05 15:44:55 +0000 UTC'>December 5, 2019</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;124 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Spring Boot 入门指南" href=https://aixin.me/post/spring-boot-getting-started/></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://aixin.me/>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

@@ -61,7 +61,55 @@ status:true
 },
 methods:{
 add(){
-this....</p></div><footer class=entry-footer><span title='2020-11-10 13:54:51 +0800 CST'>November 10, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;332 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Vue3 开发 Todolist 教程" href=https://aixin.me/post/vue-todo-tutorial/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Vue3.2 组合式API基础知识点</h2></header><div class=entry-content><p>本页内容基于VUE3.2版本，且以组合式API模式编写&lt;script setup>
+this.todos.push({
+id:this.todos.length+1,
+content:this.content,
+status:false
+})
+}
+},
+computed:{
+underway(){
+return this.todos.filter(todos=>!todos.status);
+},
+completed(){
+return this.todos.filter(todos=>todos.status);
+}
+}
+}
+&lt;/script>
+&lt;style scoped>
+.section-title{font-weight: bold;font-size: 18px;}
+.todolist li{list-style: none;}
+.todolist li.done{text-decoration:line-through; }
+&lt;/style> 2、添加组件 &lt;template>
+&lt;li>
+&lt;input type="checkbox" :name="id" :id="id" :value="content" :checked="modelValue" @input="onInput"/>
+&lt;label :for="id">{{content}}&lt;/label>
+&lt;/li>
+&lt;/template>
+&lt;script>
+export default {
+name: "TodoItem",
+data(){
+return{
+}
+},
+props:{
+id:Number,
+content:String,
+modelValue:Boolean
+},
+methods:{
+onInput(e){
+this.$emit('update:modelValue',e.target.checked);
+}
+}
+}
+&lt;/script>
+&lt;style scoped>
+&lt;/style> 2、添加路由 router\index.js中添加
+...</p></div><footer class=entry-footer><span title='2020-11-10 13:54:51 +0800 CST'>November 10, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;332 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Vue3 开发 Todolist 教程" href=https://aixin.me/post/vue-todo-tutorial/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Vue3.2 组合式API基础知识点</h2></header><div class=entry-content><p>本页内容基于VUE3.2版本，且以组合式API模式编写&lt;script setup>
 推荐的 IDE 配置是 Visual Studio Code + Volar 扩展
 中文文档：https://staging-cn.vuejs.org/
 使用Vite安装Vue npm init vite@latest &lt;project-name> -- --template vue
@@ -69,5 +117,6 @@ this....</p></div><footer class=entry-footer><span title='2020-11-10 13:54:51 +0
 npm create vite@latest &lt;project-name> -- --template vue
 cd &lt;project-name>
 npm install
-npm run dev 模板语法 // 显示文本 &lt;span>Message: {{ msg }}&lt;/span> // 显示原始HTML &lt;p>Using v-html directive: &lt;span v-html="rawHtml">&lt;/span>&lt;/p> // 绑定HTML属性 &lt;div v-bind:id="dynamicId">&lt;/div> // 绑定多个HTML属性 &lt;div v-bind="objectOfAttrs">&lt;/div> // 调用函数 &lt;span :title="toTitleDate(date)"> {{ formatDate(date) }} &lt;/span> // 绑定动态参数 &lt;a v-bind:[attributeName]="url"> ....</p></div><footer class=entry-footer><span title='2020-11-05 16:04:12 +0800 CST'>November 5, 2020</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;620 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Vue3.2 组合式API基础知识点" href=https://aixin.me/post/vue3-base-tutorials/></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://aixin.me/>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+npm run dev 模板语法 // 显示文本 &lt;span>Message: {{ msg }}&lt;/span> // 显示原始HTML &lt;p>Using v-html directive: &lt;span v-html="rawHtml">&lt;/span>&lt;/p> // 绑定HTML属性 &lt;div v-bind:id="dynamicId">&lt;/div> // 绑定多个HTML属性 &lt;div v-bind="objectOfAttrs">&lt;/div> // 调用函数 &lt;span :title="toTitleDate(date)"> {{ formatDate(date) }} &lt;/span> // 绑定动态参数 &lt;a v-bind:[attributeName]="url"> ... &lt;/a> &lt;a v-on:[eventName]="doSomething"> ... &lt;/a> // 如果需要操作['foo' + bar]，建议使用计算属性 // 修饰符 &lt;form @submit.prevent="onSubmit">...&lt;/form> // 绑定多个HTML属性 const objectOfAttrs = { id: 'container', class: 'wrapper' } 简写：
+...</p></div><footer class=entry-footer><span title='2020-11-05 16:04:12 +0800 CST'>November 5, 2020</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;620 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to Vue3.2 组合式API基础知识点" href=https://aixin.me/post/vue3-base-tutorials/></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://aixin.me/>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

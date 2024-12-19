@@ -9,7 +9,7 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 05 Dec 2019 15:44:55 +0000</lastBuildDate>
     <atom:link href="https://aixin.me/tags/java/index.xml" rel="self" type="application/rss+xml" />
@@ -18,17 +18,110 @@
       <link>https://aixin.me/post/spring-boot-getting-started/</link>
       <pubDate>Thu, 05 Dec 2019 15:44:55 +0000</pubDate>
       <guid>https://aixin.me/post/spring-boot-getting-started/</guid>
-      <description>官方教程 https://docs.spring.io/spring-boot/docs/2.2.1.RELEASE/reference/html/
-1、Spring Boot介绍 Spring Boot可以轻松创建可以运行的独立的，生产级的基于Spring的应用程序。我们对Spring平台和第三方库采取自己的看法，以便您尽可能轻松地使用本教程。大多数Spring Boot应用程序只需要很少的Spring配置。
-您可以使用Spring Boot来创建可以使用java -jar或更传统的war部署来启动的Java应用程序 。我们还提供了一个运行“spring script”的命令行工具。
-2、系统要求 Spring Boot 2.2.1需要Java 8 及以上版本，同时也兼容了Java 13
-支持以下构建程序：
-Maven 版本3.3+ Gradle 5.x Servlet容器：
-Name Servlet版本 Tomcat 9.0 4.0 Jetty 9.4 3.1 Undertow 2.0 4.0 3、Spring Boot安装 服务器SDK最低要求为：Java SDK v1.8 查看环境Java版本：java -version
-安装方法一 您可以像使用任何标准Java库一样使用Spring Boot。为此，请spring-boot-*.jar在类路径中包含相应的文件。Spring Boot不需要任何特殊的工具集成，因此您可以使用任何IDE或文本编辑器。此外，Spring Boot应用程序没有什么特别之处，因此您可以像运行其他任何Java程序一样运行和调试Spring Boot应用程序。
-虽然您可以复制Spring Boot jar，但我们通常建议您使用支持依赖管理的构建工具（如Maven或Gradle）。
-安装方法二、使用Maven安装（推荐） Maven版本最低要求3.3+，前提是先要安装Maven（https://maven.apache.org/）。 或者通过IDE安装Maven插件 Spring Boot依赖关系使用org.springframework.bootgroupId。通常，您的Maven POM文件从spring-boot-starter-parent项目中继承并向一个或多个“Starter”声明依赖关系。Spring Boot还提供了一个可选的 Maven插件来创建可执行的jar。 以下清单显示了一个典型的pom.xml文件：
-&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&amp;lt;project xmlns=&amp;#34;http://maven.apache.org/POM/4.0.0&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;xsi:schemaLocation=&amp;#34;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&amp;#34;&amp;gt;&amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;&amp;lt;groupId&amp;gt;com.</description>
+      <description>&lt;h4 id=&#34;官方教程&#34;&gt;官方教程&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.spring.io/spring-boot/docs/2.2.1.RELEASE/reference/html/&#34;&gt;https://docs.spring.io/spring-boot/docs/2.2.1.RELEASE/reference/html/&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1spring-boot介绍&#34;&gt;1、Spring Boot介绍&lt;/h4&gt;
+&lt;p&gt;Spring Boot可以轻松创建可以运行的独立的，生产级的基于Spring的应用程序。我们对Spring平台和第三方库采取自己的看法，以便您尽可能轻松地使用本教程。大多数Spring Boot应用程序只需要很少的Spring配置。&lt;/p&gt;
+&lt;p&gt;您可以使用Spring Boot来创建可以使用java -jar或更传统的war部署来启动的Java应用程序 。我们还提供了一个运行“spring script”的命令行工具。&lt;/p&gt;
+&lt;h4 id=&#34;2系统要求&#34;&gt;2、系统要求&lt;/h4&gt;
+&lt;p&gt;Spring Boot 2.2.1需要Java 8 及以上版本，同时也兼容了Java 13&lt;/p&gt;
+&lt;p&gt;支持以下构建程序：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maven 版本3.3+&lt;/li&gt;
+&lt;li&gt;Gradle 5.x&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Servlet容器：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Name&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Servlet版本&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Tomcat 9.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Jetty 9.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Undertow 2.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.0&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;3spring-boot安装&#34;&gt;3、Spring Boot安装&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;服务器SDK最低要求为：Java SDK v1.8
+查看环境Java版本：&lt;code&gt;java -version&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装方法一
+您可以像使用任何标准Java库一样使用Spring Boot。为此，请spring-boot-*.jar在类路径中包含相应的文件。Spring Boot不需要任何特殊的工具集成，因此您可以使用任何IDE或文本编辑器。此外，Spring Boot应用程序没有什么特别之处，因此您可以像运行其他任何Java程序一样运行和调试Spring Boot应用程序。&lt;/p&gt;
+&lt;p&gt;虽然您可以复制Spring Boot jar，但我们通常建议您使用支持依赖管理的构建工具（如Maven或Gradle）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装方法二、使用Maven安装（推荐）
+Maven版本最低要求3.3+，前提是先要安装Maven（https://maven.apache.org/）。
+或者通过IDE安装Maven插件
+Spring Boot依赖关系使用org.springframework.bootgroupId。通常，您的Maven POM文件从spring-boot-starter-parent项目中继承并向一个或多个“Starter”声明依赖关系。Spring Boot还提供了一个可选的 Maven插件来创建可执行的jar。
+以下清单显示了一个典型的pom.xml文件：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&amp;lt;project xmlns=&amp;#34;http://maven.apache.org/POM/4.0.0&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;
+    xsi:schemaLocation=&amp;#34;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&amp;#34;&amp;gt;
+    &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;
+
+    &amp;lt;groupId&amp;gt;com.example&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;myproject&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;0.0.1-SNAPSHOT&amp;lt;/version&amp;gt;
+
+    &amp;lt;!-- Inherit defaults from Spring Boot --&amp;gt;
+    &amp;lt;parent&amp;gt;
+        &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;2.2.1.RELEASE&amp;lt;/version&amp;gt;
+    &amp;lt;/parent&amp;gt;
+
+    &amp;lt;!-- Override inherited settings --&amp;gt;
+    &amp;lt;description/&amp;gt;
+    &amp;lt;developers&amp;gt;
+        &amp;lt;developer/&amp;gt;
+    &amp;lt;/developers&amp;gt;
+    &amp;lt;licenses&amp;gt;
+        &amp;lt;license/&amp;gt;
+    &amp;lt;/licenses&amp;gt;
+    &amp;lt;scm&amp;gt;
+        &amp;lt;url/&amp;gt;
+    &amp;lt;/scm&amp;gt;
+    &amp;lt;url/&amp;gt;
+
+    &amp;lt;!-- 添加依赖关系--&amp;gt;
+    &amp;lt;dependencies&amp;gt;
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;spring-boot-starter-web&amp;lt;/artifactId&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+    &amp;lt;/dependencies&amp;gt;
+
+    &amp;lt;!-- 引入将应用打包成可执行的jar包的插件 --&amp;gt;
+    &amp;lt;build&amp;gt;
+        &amp;lt;plugins&amp;gt;
+            &amp;lt;plugin&amp;gt;
+                &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+                &amp;lt;artifactId&amp;gt;spring-boot-maven-plugin&amp;lt;/artifactId&amp;gt;
+            &amp;lt;/plugin&amp;gt;
+        &amp;lt;/plugins&amp;gt;
+    &amp;lt;/build&amp;gt;
+
+&amp;lt;/project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;spring-boot-starter-parent&lt;/code&gt;方法虽然很好，但不是适合所有场景。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

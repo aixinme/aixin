@@ -9,7 +9,7 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Aug 2021 20:37:27 +0800</lastBuildDate>
     <atom:link href="https://aixin.me/tags/eggjs/index.xml" rel="self" type="application/rss+xml" />
@@ -18,16 +18,78 @@
       <link>https://aixin.me/post/eggjs-basic-tutorial/</link>
       <pubDate>Sat, 07 Aug 2021 20:37:27 +0800</pubDate>
       <guid>https://aixin.me/post/eggjs-basic-tutorial/</guid>
-      <description>官网：https://eggjs.org/zh-cn/
-安装 // 1、创建并进入项目目录mkdir egg-example &amp;amp;&amp;amp; cd egg-example// 2、初始化npm init egg --type=simple// 3、安装项目npm i// 4、启动项目npm run dev// http://localhost:7001 type的类型
-simple - 基础应用模板
-microservice - 基于egg的微服务模板
-sequelize - 带有sequelize的egg应用
-ts - typescript的基础应用模板
-empty - 空模板
-plugin - egg 插件模板
-framework - 框架模板
-核心功能 1、控制器 Controller // app/controller/home.jsconst Controller = require(&amp;#39;egg&amp;#39;).Controller;class HomeController extends Controller {async index() {this.ctx.body = &amp;#39;Hello world&amp;#39;;}}module.</description>
+      <description>&lt;p&gt;官网：https://eggjs.org/zh-cn/&lt;/p&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// 1、创建并进入项目目录
+mkdir egg-example &amp;amp;&amp;amp; cd egg-example
+// 2、初始化
+npm init egg --type=simple
+// 3、安装项目
+npm i
+// 4、启动项目
+npm run dev
+// http://localhost:7001
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;type的类型&lt;/p&gt;
+&lt;p&gt;simple - 基础应用模板&lt;/p&gt;
+&lt;p&gt;microservice - 基于egg的微服务模板&lt;/p&gt;
+&lt;p&gt;sequelize - 带有sequelize的egg应用&lt;/p&gt;
+&lt;p&gt;ts - typescript的基础应用模板&lt;/p&gt;
+&lt;p&gt;empty - 空模板&lt;/p&gt;
+&lt;p&gt;plugin - egg 插件模板&lt;/p&gt;
+&lt;p&gt;framework - 框架模板&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;核心功能&#34;&gt;核心功能&lt;/h2&gt;
+&lt;h4 id=&#34;1控制器-controller&#34;&gt;1、控制器 Controller&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// app/controller/home.js
+const Controller = require(&amp;#39;egg&amp;#39;).Controller;
+
+class HomeController extends Controller {
+  async index() {
+    this.ctx.body = &amp;#39;Hello world&amp;#39;;
+  }
+}
+
+module.exports = HomeController;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2路由-router&#34;&gt;2、路由 Router&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// app/router.js
+module.exports = app =&amp;gt; {
+  const { router, controller } = app;
+  router.get(&amp;#39;/&amp;#39;, controller.home.index);
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;3服务-service&#34;&gt;3、服务 service&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// app/service/news.js
+const Service = require(&amp;#39;egg&amp;#39;).Service;
+
+class NewsService extends Service {
+  async list(page = 1) {
+    // read config
+    const { serverUrl, pageSize } = this.config.news;
+
+    // use build-in http client to GET hacker-news api
+    const { data: idList } = await this.ctx.curl(`${serverUrl}/topstories.json`, {
+      data: {
+        orderBy: &amp;#39;&amp;#34;$key&amp;#34;&amp;#39;,
+        startAt: `&amp;#34;${pageSize * (page - 1)}&amp;#34;`,
+        endAt: `&amp;#34;${pageSize * page - 1}&amp;#34;`,
+      },
+      dataType: &amp;#39;json&amp;#39;,
+    });
+
+    // parallel GET detail
+    const newsList = await Promise.all(
+      Object.keys(idList).map(key =&amp;gt; {
+        const url = `${serverUrl}/item/${idList[key]}.json`;
+        return this.ctx.curl(url, { dataType: &amp;#39;json&amp;#39; });
+      })
+    );
+    return newsList.map(res =&amp;gt; res.data);
+  }
+}
+
+module.exports = NewsService;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;4模板渲染-view&#34;&gt;4、模板渲染 view&lt;/h4&gt;
+&lt;p&gt;需要单独安装视图插件，比如&lt;code&gt;egg-view-nunjucks&lt;/code&gt;等&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
