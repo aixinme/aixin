@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vue3 on Aixin.me</title>
-    <link>https://aixin.me/tags/vue3/</link>
+    <link>http://localhost:1313/tags/vue3/</link>
     <description>Recent content in Vue3 on Aixin.me</description>
     <image>
       <title>Aixin.me</title>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 10 Nov 2020 13:54:51 +0800</lastBuildDate>
-    <atom:link href="https://aixin.me/tags/vue3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/vue3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vue3 开发 Todolist 教程</title>
-      <link>https://aixin.me/post/vue-todo-tutorial/</link>
+      <link>http://localhost:1313/post/vue-todo-tutorial/</link>
       <pubDate>Tue, 10 Nov 2020 13:54:51 +0800</pubDate>
-      <guid>https://aixin.me/post/vue-todo-tutorial/</guid>
+      <guid>http://localhost:1313/post/vue-todo-tutorial/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;本文状态：未完成&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -150,9 +150,9 @@ export default {
     </item>
     <item>
       <title>Vue3.2 组合式API基础知识点</title>
-      <link>https://aixin.me/post/vue3-base-tutorials/</link>
+      <link>http://localhost:1313/post/vue3-base-tutorials/</link>
       <pubDate>Thu, 05 Nov 2020 16:04:12 +0800</pubDate>
-      <guid>https://aixin.me/post/vue3-base-tutorials/</guid>
+      <guid>http://localhost:1313/post/vue3-base-tutorials/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;本页内容基于VUE3.2版本，且以组合式API模式编写&lt;code&gt;&amp;lt;script setup&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;推荐的 IDE 配置是 Visual Studio Code + Volar 扩展&lt;/p&gt;
