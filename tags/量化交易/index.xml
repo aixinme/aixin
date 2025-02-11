@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>量化交易 on Aixin.me</title>
-    <link>http://localhost:1313/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</link>
+    <link>https://aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</link>
     <description>Recent content in 量化交易 on Aixin.me</description>
     <image>
       <title>Aixin.me</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 27 Dec 2019 10:41:39 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ATR：均幅指标</title>
-      <link>http://localhost:1313/post/average-true-range/</link>
+      <link>https://aixin.me/post/average-true-range/</link>
       <pubDate>Fri, 27 Dec 2019 10:41:39 +0000</pubDate>
-      <guid>http://localhost:1313/post/average-true-range/</guid>
+      <guid>https://aixin.me/post/average-true-range/</guid>
       <description>&lt;p&gt;Average True Range
 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。&lt;/p&gt;
 &lt;p&gt;由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。&lt;/p&gt;
@@ -53,9 +53,9 @@ ATR的使用通常用作退出方法，无论如何做出进入决定&lt;/p&gt;
     </item>
     <item>
       <title>BackTrader学习笔记</title>
-      <link>http://localhost:1313/post/backtrader/</link>
+      <link>https://aixin.me/post/backtrader/</link>
       <pubDate>Mon, 23 Dec 2019 10:17:48 +0000</pubDate>
-      <guid>http://localhost:1313/post/backtrader/</guid>
+      <guid>https://aixin.me/post/backtrader/</guid>
       <description>&lt;h2 id=&#34;一backtrader介绍&#34;&gt;一、BackTrader介绍&lt;/h2&gt;
 &lt;p&gt;BackTrader是开源免费的量化交易策略回测系统，
 运行流程：&lt;/p&gt;
@@ -116,9 +116,9 @@ python安装源文件，自己搜索&lt;/p&gt;
     </item>
     <item>
       <title>MA/SMA/EMA</title>
-      <link>http://localhost:1313/post/moving-average/</link>
+      <link>https://aixin.me/post/moving-average/</link>
       <pubDate>Fri, 20 Dec 2019 18:13:57 +0000</pubDate>
-      <guid>http://localhost:1313/post/moving-average/</guid>
+      <guid>https://aixin.me/post/moving-average/</guid>
       <description>&lt;h4 id=&#34;mamoving-average移动平均线&#34;&gt;MA(Moving Average):移动平均线&lt;/h4&gt;
 &lt;p&gt;可以过滤随机价格波动中的噪音来帮助平滑价格走势，基于过去的价格，因此时趋势跟踪。包括简单移动平均线(SMA)和指数移动平均线(EMA)，常见应用为确定趋势方向并确定支撑位和阻力位&lt;/p&gt;
 &lt;ul&gt;
@@ -144,9 +144,9 @@ d:天数或期数&lt;/p&gt;
     </item>
     <item>
       <title>MACD 平滑异同移动平均指标</title>
-      <link>http://localhost:1313/post/macd/</link>
+      <link>https://aixin.me/post/macd/</link>
       <pubDate>Fri, 20 Dec 2019 15:46:45 +0000</pubDate>
-      <guid>http://localhost:1313/post/macd/</guid>
+      <guid>https://aixin.me/post/macd/</guid>
       <description>&lt;h4 id=&#34;macd原理介绍&#34;&gt;MACD原理介绍&lt;/h4&gt;
 &lt;p&gt;MACD(Moving Average Convergence Divergence),是根据均线的构造原理，对股票价格的收盘价进行平滑处理，求出算术平均值以后再进行计算，是一种趋向类指标。&lt;/p&gt;
 &lt;p&gt;MACD指标是运用快速（短期）和慢速（长期）移动平均线及其聚合与分离的征兆，加以双重平滑运算。而根据移动平均线原理发展出来的MACD，一则去除了移动平均线频繁发出假信号的缺陷，二则保留了移动平均线的效果，因此，MACD指标具有均线趋势性、稳重性、安定性等特点，是用来研判买卖股票的时机，预测股票价格涨跌的技术分析指标 。&lt;/p&gt;
@@ -165,9 +165,9 @@ DIF值越大，上涨趋势越大，DIF值越小，下跌趋势越大&lt;/p&gt;
     </item>
     <item>
       <title>量化交易相关名词解释</title>
-      <link>http://localhost:1313/post/quantitative-trading-learning/</link>
+      <link>https://aixin.me/post/quantitative-trading-learning/</link>
       <pubDate>Tue, 17 Dec 2019 14:49:55 +0000</pubDate>
-      <guid>http://localhost:1313/post/quantitative-trading-learning/</guid>
+      <guid>https://aixin.me/post/quantitative-trading-learning/</guid>
       <description>&lt;h1 id=&#34;一凯利公式&#34;&gt;一、凯利公式&lt;/h1&gt;
 &lt;p&gt;英文：The Kelly Criterion&lt;/p&gt;
 &lt;blockquote&gt;
