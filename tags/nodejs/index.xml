@@ -9,7 +9,7 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.140.0</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Aug 2021 20:37:27 +0800</lastBuildDate>
     <atom:link href="https://aixin.me/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
@@ -37,8 +37,7 @@ npm run dev
 &lt;p&gt;ts - typescript的基础应用模板&lt;/p&gt;
 &lt;p&gt;empty - 空模板&lt;/p&gt;
 &lt;p&gt;plugin - egg 插件模板&lt;/p&gt;
-&lt;p&gt;framework - 框架模板&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;framework - 框架模板&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;核心功能&#34;&gt;核心功能&lt;/h2&gt;
 &lt;h4 id=&#34;1控制器-controller&#34;&gt;1、控制器 Controller&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// app/controller/home.js

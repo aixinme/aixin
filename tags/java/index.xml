@@ -9,7 +9,7 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.140.0</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
     <lastBuildDate>Thu, 05 Dec 2019 15:44:55 +0000</lastBuildDate>
     <atom:link href="https://aixin.me/tags/java/index.xml" rel="self" type="application/rss+xml" />
@@ -56,8 +56,7 @@
 &lt;h4 id=&#34;3spring-boot安装&#34;&gt;3、Spring Boot安装&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;服务器SDK最低要求为：Java SDK v1.8
-查看环境Java版本：&lt;code&gt;java -version&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+查看环境Java版本：&lt;code&gt;java -version&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;安装方法一

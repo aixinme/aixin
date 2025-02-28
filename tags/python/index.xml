@@ -9,7 +9,7 @@
       <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.140.0</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 23 Dec 2019 10:17:48 +0000</lastBuildDate>
     <atom:link href="https://aixin.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -56,8 +56,7 @@ python安装源文件，自己搜索&lt;/p&gt;
 前2个值：[-2]
 ……&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;说明：所有的数字都是历史值，所以只能往后推&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;说明：所有的数字都是历史值，所以只能往后推&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h5 id=&#34;1基本功能&#34;&gt;1、基本功能&lt;/h5&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;__future__&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;absolute_import&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;division&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;print_function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;unicode_literals&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#让python2兼容python3，python3环境下可以不用写&lt;/span&gt;
@@ -83,8 +82,7 @@ python安装源文件，自己搜索&lt;/p&gt;
       <guid>https://aixin.me/post/numpy/</guid>
       <description>&lt;p&gt;生成数组&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;numpy.arange([start, ]stop, [step, ]dtype=None)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;numpy.arange([start, ]stop, [step, ]dtype=None)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;示例&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;np.arange(3)
 array([0, 1, 2])
@@ -96,8 +94,7 @@ np.arange(3,7,2)
 array([3, 5])
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;生成随机整数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;numpy.random.randint(low, high=None, size=None, dtype=&amp;lsquo;l&amp;rsquo;)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;numpy.random.randint(low, high=None, size=None, dtype=&amp;lsquo;l&amp;rsquo;)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;示例&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;np.random.randint(2, size=10)
 array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])
@@ -105,16 +102,13 @@ np.random.randint(1, size=10)
 array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;随机排列&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;np.random.shuffle(x)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;np.random.shuffle(x)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;示例&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;arr = np.arange(10)
 np.random.shuffle(arr)
 arr
 [1 7 5 2 9 4 3 6 0 8]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;随机采样&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;numpy.random.choice(a, size=None, replace=True, p=None)&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;随机采样&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
