@@ -122,6 +122,9 @@
     <loc>https://aixin.me/post/quantitative-trading-learning/</loc>
     <lastmod>2019-12-17T14:49:55+00:00</lastmod>
   </url><url>
+    <loc>https://aixin.me/categories/</loc>
+    <lastmod>2019-12-05T15:44:55+00:00</lastmod>
+  </url><url>
     <loc>https://aixin.me/tags/java/</loc>
     <lastmod>2019-12-05T15:44:55+00:00</lastmod>
   </url><url>
@@ -131,6 +134,9 @@
     <loc>https://aixin.me/tags/springboot/</loc>
     <lastmod>2019-12-05T15:44:55+00:00</lastmod>
   </url><url>
+    <loc>https://aixin.me/categories/springboot%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2019-12-05T15:44:55+00:00</lastmod>
+  </url><url>
     <loc>https://aixin.me/tags/numpy/</loc>
     <lastmod>2019-11-06T19:02:30+00:00</lastmod>
   </url><url>
@@ -138,8 +144,6 @@
     <lastmod>2019-11-06T19:02:30+00:00</lastmod>
   </url><url>
     <loc>https://aixin.me/archives/</loc>
-  </url><url>
-    <loc>https://aixin.me/categories/</loc>
   </url><url>
     <loc>https://aixin.me/search/</loc>
   </url>
