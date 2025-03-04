@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MACD on Aixin.me</title>
-    <link>https://aixin.me/tags/macd/</link>
+    <link>http://localhost:1313/tags/macd/</link>
     <description>Recent content in MACD on Aixin.me</description>
     <image>
       <title>Aixin.me</title>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Dec 2019 15:46:45 +0000</lastBuildDate>
-    <atom:link href="https://aixin.me/tags/macd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/macd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MACD 平滑异同移动平均指标</title>
-      <link>https://aixin.me/post/macd/</link>
+      <link>http://localhost:1313/post/macd/</link>
       <pubDate>Fri, 20 Dec 2019 15:46:45 +0000</pubDate>
-      <guid>https://aixin.me/post/macd/</guid>
+      <guid>http://localhost:1313/post/macd/</guid>
       <description>&lt;h4 id=&#34;macd原理介绍&#34;&gt;MACD原理介绍&lt;/h4&gt;
 &lt;p&gt;MACD(Moving Average Convergence Divergence),是根据均线的构造原理，对股票价格的收盘价进行平滑处理，求出算术平均值以后再进行计算，是一种趋向类指标。&lt;/p&gt;
 &lt;p&gt;MACD指标是运用快速（短期）和慢速（长期）移动平均线及其聚合与分离的征兆，加以双重平滑运算。而根据移动平均线原理发展出来的MACD，一则去除了移动平均线频繁发出假信号的缺陷，二则保留了移动平均线的效果，因此，MACD指标具有均线趋势性、稳重性、安定性等特点，是用来研判买卖股票的时机，预测股票价格涨跌的技术分析指标 。&lt;/p&gt;

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>统计学 on Aixin.me</title>
-    <link>https://aixin.me/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</link>
+    <link>http://localhost:1313/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</link>
     <description>Recent content in 统计学 on Aixin.me</description>
     <image>
       <title>Aixin.me</title>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Dec 2019 18:13:57 +0000</lastBuildDate>
-    <atom:link href="https://aixin.me/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MA/SMA/EMA</title>
-      <link>https://aixin.me/post/moving-average/</link>
+      <link>http://localhost:1313/post/moving-average/</link>
       <pubDate>Fri, 20 Dec 2019 18:13:57 +0000</pubDate>
-      <guid>https://aixin.me/post/moving-average/</guid>
+      <guid>http://localhost:1313/post/moving-average/</guid>
       <description>&lt;h4 id=&#34;mamoving-average移动平均线&#34;&gt;MA(Moving Average):移动平均线&lt;/h4&gt;
 &lt;p&gt;可以过滤随机价格波动中的噪音来帮助平滑价格走势，基于过去的价格，因此时趋势跟踪。包括简单移动平均线(SMA)和指数移动平均线(EMA)，常见应用为确定趋势方向并确定支撑位和阻力位&lt;/p&gt;
 &lt;ul&gt;
@@ -43,9 +43,9 @@ d:天数或期数&lt;/p&gt;
     </item>
     <item>
       <title>常用平均数</title>
-      <link>https://aixin.me/post/average/</link>
+      <link>http://localhost:1313/post/average/</link>
       <pubDate>Fri, 20 Dec 2019 16:10:56 +0000</pubDate>
-      <guid>https://aixin.me/post/average/</guid>
+      <guid>http://localhost:1313/post/average/</guid>
       <description>&lt;h4 id=&#34;算数平均数&#34;&gt;算数平均数&lt;/h4&gt;
 &lt;p&gt;一组数据的所有数据之和除以数据个数，反映数据集中的趋势
 $$

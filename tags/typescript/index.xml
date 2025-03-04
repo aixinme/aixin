@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>TypeScript on Aixin.me</title>
-    <link>https://aixin.me/tags/typescript/</link>
+    <link>http://localhost:1313/tags/typescript/</link>
     <description>Recent content in TypeScript on Aixin.me</description>
     <image>
       <title>Aixin.me</title>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
     <lastBuildDate>Tue, 24 Aug 2021 20:20:32 +0800</lastBuildDate>
-    <atom:link href="https://aixin.me/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Typescript Basic Types</title>
-      <link>https://aixin.me/post/typescript-basic-types/</link>
+      <link>http://localhost:1313/post/typescript-basic-types/</link>
       <pubDate>Tue, 24 Aug 2021 20:20:32 +0800</pubDate>
-      <guid>https://aixin.me/post/typescript-basic-types/</guid>
+      <guid>http://localhost:1313/post/typescript-basic-types/</guid>
       <description>&lt;h3 id=&#34;基础类型&#34;&gt;基础类型&lt;/h3&gt;
 &lt;h4 id=&#34;介绍&#34;&gt;介绍&lt;/h4&gt;
 &lt;p&gt;为了让程序有价值，我们需要能够处理最简单的数据单元：数字，字符串，结构体，布尔值等。 TypeScript支持与JavaScript几乎相同的数据类型，此外还提供了实用的枚举类型方便我们使用。&lt;/p&gt;
