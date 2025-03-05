@@ -2,30 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Aixin.me</title>
-    <link>https://aixin.me/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Aixin.me</description>
     <image>
       <title>Aixin.me</title>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Dec 2022 11:03:20 +0800</lastBuildDate>
-    <atom:link href="https://aixin.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Mar 2025 12:16:02 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://aixin.me/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 03 Nov 2020 16:54:38 +0800</pubDate>
-      <guid>https://aixin.me/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;Aixin.me&lt;/p&gt;
 &lt;p&gt;Love in your heart, meet a better self&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Springboot 拦截器</title>
+      <link>http://localhost:1313/post/springboot-interceptor/</link>
+      <pubDate>Wed, 05 Mar 2025 12:16:02 +0800</pubDate>
+      <guid>http://localhost:1313/post/springboot-interceptor/</guid>
+      <description>Springboot的拦截器Interceptor，主要用户Cors跨域处理,权限校验等</description>
+    </item>
+    <item>
+      <title>Springboot 项目配置</title>
+      <link>http://localhost:1313/post/springboot-config/</link>
+      <pubDate>Wed, 05 Mar 2025 12:02:26 +0800</pubDate>
+      <guid>http://localhost:1313/post/springboot-config/</guid>
+      <description>Springboot项目配置,Maven配置,热部署等</description>
+    </item>
+    <item>
+      <title>Springboot HelloWorld</title>
+      <link>http://localhost:1313/post/springboot-helloworld/</link>
+      <pubDate>Wed, 05 Mar 2025 11:27:57 +0800</pubDate>
+      <guid>http://localhost:1313/post/springboot-helloworld/</guid>
+      <description>&lt;h2 id=&#34;1创建springboot项目&#34;&gt;1、创建Springboot项目&lt;/h2&gt;
+&lt;h3 id=&#34;使用idea创建springboot项目&#34;&gt;使用IDEA创建Springboot项目:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;生成器：选择Spring Initializr&lt;/li&gt;
+&lt;li&gt;名称自定义，位置选择合适的位置，语言选择&lt;code&gt;Java&lt;/code&gt;，类型选择&lt;code&gt;Maven&lt;/code&gt;，组、工作、包按需填写&lt;/li&gt;
+&lt;li&gt;JDK选择17以上，建议21（需要先安装），Java选择JDK对应的版本，打包选择&lt;code&gt;Jar&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点击下一步
+选择Spring Web，点击Next，填写项目名称和路径，点击Next，选择Java版本，点击Next，选择依赖，点击Next，选择项目结构，点击Next，点击Finish。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;选择依赖&#34;&gt;选择依赖：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring Web：用于构建Web应用程序（必选）&lt;/li&gt;
+&lt;li&gt;Spring Boot DevTools：用于开发时的自动重启（可选）&lt;/li&gt;
+&lt;li&gt;Lombok：用于简化Java代码（可选）&lt;/li&gt;
+&lt;li&gt;Spring Boot Starter Test：用于测试Spring Boot应用程序（可选）&lt;/li&gt;
+&lt;li&gt;点击创建&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2启动项目&#34;&gt;2、启动项目&lt;/h2&gt;
+&lt;p&gt;等Maven安装完全部依赖后，就可以启动项目了（建议先查看项目配置方法，将Maven仓库切换到阿里云镜像）&lt;/p&gt;
+&lt;p&gt;打开项目中src/main/java/com/example/demo目录下的DemoApplication.java文件，点击class左侧的绿色箭头，就可以启动项目了，也可以使用快捷键&lt;code&gt;Shift+F10&lt;/code&gt;启动项目，或者点击IDEA上方的绿色箭头启动项目。&lt;/p&gt;
+&lt;p&gt;打开浏览器：http://localhost:8080/ 看到如下结果，说明项目创建成功。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Whitelabel Error Page
+This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+Thu Aug 08 12:08:16 CST 2024
+There was an unexpected error (type=Not Found, status=404).
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;3创建controller&#34;&gt;3、创建Controller&lt;/h2&gt;
+&lt;p&gt;在项目目录下，创建controller目录，创建HelloController.java文件，代码如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;com.example.demo.controller&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;org.springframework.web.bind.annotation.GetMapping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;org.springframework.web.bind.annotation.RestController&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@RestController&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;HelloWorldController&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@GetMapping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/hello&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;打开浏览器：http://localhost:8080/hello 就可以看到：&lt;code&gt;Hello World!&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>正则表达式教程</title>
-      <link>https://aixin.me/post/regexp-tutorial/</link>
+      <link>http://localhost:1313/post/regexp-tutorial/</link>
       <pubDate>Mon, 19 Dec 2022 11:03:20 +0800</pubDate>
-      <guid>https://aixin.me/post/regexp-tutorial/</guid>
+      <guid>http://localhost:1313/post/regexp-tutorial/</guid>
       <description>&lt;h4 id=&#34;匹配符&#34;&gt;匹配符&lt;/h4&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -233,9 +294,9 @@
     </item>
     <item>
       <title>项目管理三要素</title>
-      <link>https://aixin.me/post/three-elements-of-project-management/</link>
+      <link>http://localhost:1313/post/three-elements-of-project-management/</link>
       <pubDate>Fri, 28 Oct 2022 10:42:00 +0800</pubDate>
-      <guid>https://aixin.me/post/three-elements-of-project-management/</guid>
+      <guid>http://localhost:1313/post/three-elements-of-project-management/</guid>
       <description>&lt;p&gt;项目管理的三要素分别是:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间&lt;/li&gt;
@@ -256,9 +317,9 @@
     </item>
     <item>
       <title>胜任力模型</title>
-      <link>https://aixin.me/post/opportunity-model/</link>
+      <link>http://localhost:1313/post/opportunity-model/</link>
       <pubDate>Wed, 13 Jul 2022 13:28:52 +0800</pubDate>
-      <guid>https://aixin.me/post/opportunity-model/</guid>
+      <guid>http://localhost:1313/post/opportunity-model/</guid>
       <description>&lt;h4 id=&#34;职场优秀素质&#34;&gt;职场优秀素质：&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;Ownership(主人翁精神)&lt;/li&gt;
@@ -295,9 +356,9 @@
     </item>
     <item>
       <title>JavaScript常用校验方法</title>
-      <link>https://aixin.me/post/javascript-validation-method/</link>
+      <link>http://localhost:1313/post/javascript-validation-method/</link>
       <pubDate>Mon, 15 Nov 2021 12:33:04 +0800</pubDate>
-      <guid>https://aixin.me/post/javascript-validation-method/</guid>
+      <guid>http://localhost:1313/post/javascript-validation-method/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 是否为空
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;vernull&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;　　&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;trim&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;length&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
@@ -349,9 +410,9 @@
     </item>
     <item>
       <title>Axure高级教程</title>
-      <link>https://aixin.me/post/axure-advanced-tutorial/</link>
+      <link>http://localhost:1313/post/axure-advanced-tutorial/</link>
       <pubDate>Fri, 06 Aug 2021 16:09:52 +0800</pubDate>
-      <guid>https://aixin.me/post/axure-advanced-tutorial/</guid>
+      <guid>http://localhost:1313/post/axure-advanced-tutorial/</guid>
       <description>&lt;p&gt;在axure交互设计时，函数可以用在条件公式和需要赋值的地方，其基本语法是用双方括号包含，变量值和函数用英文句号连接。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;例如：[[LVAR. Width]] 表示变量LVAR的宽度，[[This. Width]] 当前元件的宽度&lt;/p&gt;&lt;/blockquote&gt;
@@ -953,9 +1014,9 @@
     </item>
     <item>
       <title>财会常用知识点</title>
-      <link>https://aixin.me/post/finance-accounting/</link>
+      <link>http://localhost:1313/post/finance-accounting/</link>
       <pubDate>Fri, 17 Jan 2020 15:06:55 +0000</pubDate>
-      <guid>https://aixin.me/post/finance-accounting/</guid>
+      <guid>http://localhost:1313/post/finance-accounting/</guid>
       <description>&lt;h2 id=&#34;借贷记账法&#34;&gt;借贷记账法&lt;/h2&gt;
 &lt;p&gt;借贷记账法下，所有账户的结构都是左方为借方，右方为贷方，但借方、贷方反映会计要素数量变化的增减性质则是不固定的。不同性质的账户，借贷方所登记的内容不同，下面分别说明各类账户的结构。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;有借必有贷，借贷必相等&lt;/strong&gt;&lt;/p&gt;
@@ -984,9 +1045,9 @@
     </item>
     <item>
       <title>ATR：均幅指标</title>
-      <link>https://aixin.me/post/average-true-range/</link>
+      <link>http://localhost:1313/post/average-true-range/</link>
       <pubDate>Fri, 27 Dec 2019 10:41:39 +0000</pubDate>
-      <guid>https://aixin.me/post/average-true-range/</guid>
+      <guid>http://localhost:1313/post/average-true-range/</guid>
       <description>&lt;p&gt;Average True Range
 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。&lt;/p&gt;
 &lt;p&gt;由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。&lt;/p&gt;
@@ -1020,9 +1081,9 @@ ATR的使用通常用作退出方法，无论如何做出进入决定&lt;/p&gt;
     </item>
     <item>
       <title>BackTrader学习笔记</title>
-      <link>https://aixin.me/post/backtrader/</link>
+      <link>http://localhost:1313/post/backtrader/</link>
       <pubDate>Mon, 23 Dec 2019 10:17:48 +0000</pubDate>
-      <guid>https://aixin.me/post/backtrader/</guid>
+      <guid>http://localhost:1313/post/backtrader/</guid>
       <description>&lt;h2 id=&#34;一backtrader介绍&#34;&gt;一、BackTrader介绍&lt;/h2&gt;
 &lt;p&gt;BackTrader是开源免费的量化交易策略回测系统，
 运行流程：&lt;/p&gt;
@@ -1082,9 +1143,9 @@ python安装源文件，自己搜索&lt;/p&gt;
     </item>
     <item>
       <title>MA/SMA/EMA</title>
-      <link>https://aixin.me/post/moving-average/</link>
+      <link>http://localhost:1313/post/moving-average/</link>
       <pubDate>Fri, 20 Dec 2019 18:13:57 +0000</pubDate>
-      <guid>https://aixin.me/post/moving-average/</guid>
+      <guid>http://localhost:1313/post/moving-average/</guid>
       <description>&lt;h4 id=&#34;mamoving-average移动平均线&#34;&gt;MA(Moving Average):移动平均线&lt;/h4&gt;
 &lt;p&gt;可以过滤随机价格波动中的噪音来帮助平滑价格走势，基于过去的价格，因此时趋势跟踪。包括简单移动平均线(SMA)和指数移动平均线(EMA)，常见应用为确定趋势方向并确定支撑位和阻力位&lt;/p&gt;
 &lt;ul&gt;
@@ -1110,9 +1171,9 @@ d:天数或期数&lt;/p&gt;
     </item>
     <item>
       <title>常用平均数</title>
-      <link>https://aixin.me/post/average/</link>
+      <link>http://localhost:1313/post/average/</link>
       <pubDate>Fri, 20 Dec 2019 16:10:56 +0000</pubDate>
-      <guid>https://aixin.me/post/average/</guid>
+      <guid>http://localhost:1313/post/average/</guid>
       <description>&lt;h4 id=&#34;算数平均数&#34;&gt;算数平均数&lt;/h4&gt;
 &lt;p&gt;一组数据的所有数据之和除以数据个数，反映数据集中的趋势
 $$
@@ -1140,9 +1201,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>MACD 平滑异同移动平均指标</title>
-      <link>https://aixin.me/post/macd/</link>
+      <link>http://localhost:1313/post/macd/</link>
       <pubDate>Fri, 20 Dec 2019 15:46:45 +0000</pubDate>
-      <guid>https://aixin.me/post/macd/</guid>
+      <guid>http://localhost:1313/post/macd/</guid>
       <description>&lt;h4 id=&#34;macd原理介绍&#34;&gt;MACD原理介绍&lt;/h4&gt;
 &lt;p&gt;MACD(Moving Average Convergence Divergence),是根据均线的构造原理，对股票价格的收盘价进行平滑处理，求出算术平均值以后再进行计算，是一种趋向类指标。&lt;/p&gt;
 &lt;p&gt;MACD指标是运用快速（短期）和慢速（长期）移动平均线及其聚合与分离的征兆，加以双重平滑运算。而根据移动平均线原理发展出来的MACD，一则去除了移动平均线频繁发出假信号的缺陷，二则保留了移动平均线的效果，因此，MACD指标具有均线趋势性、稳重性、安定性等特点，是用来研判买卖股票的时机，预测股票价格涨跌的技术分析指标 。&lt;/p&gt;
@@ -1161,9 +1222,9 @@ DIF值越大，上涨趋势越大，DIF值越小，下跌趋势越大&lt;/p&gt;
     </item>
     <item>
       <title>量化交易相关名词解释</title>
-      <link>https://aixin.me/post/quantitative-trading-learning/</link>
+      <link>http://localhost:1313/post/quantitative-trading-learning/</link>
       <pubDate>Tue, 17 Dec 2019 14:49:55 +0000</pubDate>
-      <guid>https://aixin.me/post/quantitative-trading-learning/</guid>
+      <guid>http://localhost:1313/post/quantitative-trading-learning/</guid>
       <description>&lt;h1 id=&#34;一凯利公式&#34;&gt;一、凯利公式&lt;/h1&gt;
 &lt;p&gt;英文：The Kelly Criterion&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1193,9 +1254,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>静态博客Hugo安装及使用教程</title>
-      <link>https://aixin.me/post/how-to-hugo/</link>
+      <link>http://localhost:1313/post/how-to-hugo/</link>
       <pubDate>Sat, 05 Jan 2019 09:52:17 +0800</pubDate>
-      <guid>https://aixin.me/post/how-to-hugo/</guid>
+      <guid>http://localhost:1313/post/how-to-hugo/</guid>
       <description>&lt;h2 id=&#34;一安装&#34;&gt;一、安装&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;下面时windows10的安装教程，Linux和MAC去看官方教程&lt;/p&gt;&lt;/blockquote&gt;

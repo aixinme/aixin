@@ -11,8 +11,69 @@
     </image>
     <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Dec 2022 11:03:20 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Mar 2025 12:16:02 +0800</lastBuildDate>
     <atom:link href="https://aixin.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Springboot 拦截器</title>
+      <link>https://aixin.me/post/springboot-interceptor/</link>
+      <pubDate>Wed, 05 Mar 2025 12:16:02 +0800</pubDate>
+      <guid>https://aixin.me/post/springboot-interceptor/</guid>
+      <description>Springboot的拦截器Interceptor，主要用户Cors跨域处理,权限校验等</description>
+    </item>
+    <item>
+      <title>Springboot 项目配置</title>
+      <link>https://aixin.me/post/springboot-config/</link>
+      <pubDate>Wed, 05 Mar 2025 12:02:26 +0800</pubDate>
+      <guid>https://aixin.me/post/springboot-config/</guid>
+      <description>Springboot项目配置,Maven配置,热部署等</description>
+    </item>
+    <item>
+      <title>Springboot HelloWorld</title>
+      <link>https://aixin.me/post/springboot-helloworld/</link>
+      <pubDate>Wed, 05 Mar 2025 11:27:57 +0800</pubDate>
+      <guid>https://aixin.me/post/springboot-helloworld/</guid>
+      <description>&lt;h2 id=&#34;1创建springboot项目&#34;&gt;1、创建Springboot项目&lt;/h2&gt;
+&lt;h3 id=&#34;使用idea创建springboot项目&#34;&gt;使用IDEA创建Springboot项目:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;生成器：选择Spring Initializr&lt;/li&gt;
+&lt;li&gt;名称自定义，位置选择合适的位置，语言选择&lt;code&gt;Java&lt;/code&gt;，类型选择&lt;code&gt;Maven&lt;/code&gt;，组、工作、包按需填写&lt;/li&gt;
+&lt;li&gt;JDK选择17以上，建议21（需要先安装），Java选择JDK对应的版本，打包选择&lt;code&gt;Jar&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点击下一步
+选择Spring Web，点击Next，填写项目名称和路径，点击Next，选择Java版本，点击Next，选择依赖，点击Next，选择项目结构，点击Next，点击Finish。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;选择依赖&#34;&gt;选择依赖：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring Web：用于构建Web应用程序（必选）&lt;/li&gt;
+&lt;li&gt;Spring Boot DevTools：用于开发时的自动重启（可选）&lt;/li&gt;
+&lt;li&gt;Lombok：用于简化Java代码（可选）&lt;/li&gt;
+&lt;li&gt;Spring Boot Starter Test：用于测试Spring Boot应用程序（可选）&lt;/li&gt;
+&lt;li&gt;点击创建&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2启动项目&#34;&gt;2、启动项目&lt;/h2&gt;
+&lt;p&gt;等Maven安装完全部依赖后，就可以启动项目了（建议先查看项目配置方法，将Maven仓库切换到阿里云镜像）&lt;/p&gt;
+&lt;p&gt;打开项目中src/main/java/com/example/demo目录下的DemoApplication.java文件，点击class左侧的绿色箭头，就可以启动项目了，也可以使用快捷键&lt;code&gt;Shift+F10&lt;/code&gt;启动项目，或者点击IDEA上方的绿色箭头启动项目。&lt;/p&gt;
+&lt;p&gt;打开浏览器：http://localhost:8080/ 看到如下结果，说明项目创建成功。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Whitelabel Error Page
+This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+Thu Aug 08 12:08:16 CST 2024
+There was an unexpected error (type=Not Found, status=404).
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;3创建controller&#34;&gt;3、创建Controller&lt;/h2&gt;
+&lt;p&gt;在项目目录下，创建controller目录，创建HelloController.java文件，代码如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;com.example.demo.controller&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;org.springframework.web.bind.annotation.GetMapping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;org.springframework.web.bind.annotation.RestController&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@RestController&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;HelloWorldController&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@GetMapping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/hello&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;打开浏览器：http://localhost:8080/hello 就可以看到：&lt;code&gt;Hello World!&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>正则表达式教程</title>
       <link>https://aixin.me/post/regexp-tutorial/</link>
