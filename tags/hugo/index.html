@@ -11,10 +11,9 @@ D:\Hugo\Sites
 3、配置环境 我的电脑→右键→高级→环境变量→系统变量→Path，增加D:\Hugo\bin
 也可以命令执行：set PATH=%PATH%;D:\Hugo\bin
 4、安装完成 验证
-hugo version //查看版本
-hugo help //帮助文档 能正常输出即安装成功，如果输出错误，则需要重启电脑后再试
+1 2 hugo version //查看版本 hugo help //帮助文档 能正常输出即安装成功，如果输出错误，则需要重启电脑后再试
 二、新建网站 在D:\Hugo\Sites下面打开cmd，或其他命令工具
-hugo new site simple.com 新建simple.com 网站名自定义
+1 hugo new site simple.com 新建simple.com 网站名自定义
 回车创建成功！
 然后在D:\Hugo\Sites下面就会新建一个simple文件夹
 三、编写内容 1、目录说明 archetypes/ 创建页面的原型文件，比如标题时间等，可以自定义
@@ -24,11 +23,6 @@ static/ 静态文件
 themes/ 主题会安装在这儿
 config.toml 配置文件
 2、创建页面 在网站目录下面执行命令
-hugo new about.md 自动在当前网站下的content目录下生成about.md文件
-3、创建文章 hugo new post/hello-world.md 自动在content/post下面生成hello-world.md文件
-新生成的文件自动会有三个字段(这儿的模板可以在archetypes里面的文件修改)：
-title: "Hello world" //文件名称
-date: 2020-11-03T16:58:08+08:00 //创建日期
-draft: true //草稿，默认开启 4、安装主题 在官方主题库中找到喜欢主题，按照教程安装
-...</p></div><footer class=entry-footer><span title='2019-01-05 09:52:17 +0800 CST'>January 5, 2019</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;759 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to 静态博客Hugo安装及使用教程" href=https://aixin.me/post/how-to-hugo/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://aixin.me/>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+1 hugo new about.md 自动在当前网站下的content目录下生成about.md文件
+...</p></div><footer class=entry-footer><span title='2019-01-05 09:52:17 +0800 CST'>January 5, 2019</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;1028 words&nbsp;·&nbsp;Aixin.me</footer><a class=entry-link aria-label="post link to 静态博客Hugo安装及使用教程" href=https://aixin.me/post/how-to-hugo/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://aixin.me/>Aixin.me</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
