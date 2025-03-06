@@ -4,11 +4,6 @@
     <title>Categories on Aixin.me</title>
     <link>https://aixin.me/categories/</link>
     <description>Recent content in Categories on Aixin.me</description>
-    <image>
-      <title>Aixin.me</title>
-      <url>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://aixin.me/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
     <atom:link href="https://aixin.me/categories/index.xml" rel="self" type="application/rss+xml" />
