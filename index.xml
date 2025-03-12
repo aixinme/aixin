@@ -6,7 +6,7 @@
     <description>Recent content on Aixin.me</description>
     <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Mar 2025 17:12:03 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Mar 2025 14:16:07 +0800</lastBuildDate>
     <atom:link href="https://aixin.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
@@ -17,6 +17,13 @@
 &lt;p&gt;Love in your heart, meet a better self&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Springboot：Lombok</title>
+      <link>https://aixin.me/post/springboot-lombok/</link>
+      <pubDate>Wed, 12 Mar 2025 14:16:07 +0800</pubDate>
+      <guid>https://aixin.me/post/springboot-lombok/</guid>
+      <description>Springboot集成Lombok，简化代码</description>
+    </item>
+    <item>
       <title>Springboot：输出嵌套数据</title>
       <link>https://aixin.me/post/springboot-nested-data/</link>
       <pubDate>Tue, 11 Mar 2025 17:12:03 +0800</pubDate>
@@ -25,9 +32,9 @@
     </item>
     <item>
       <title>Spring Data JPA</title>
-      <link>https://aixin.me/post/springdatajpa/</link>
+      <link>https://aixin.me/post/spring-data-jpa/</link>
       <pubDate>Mon, 10 Mar 2025 23:02:18 +0800</pubDate>
-      <guid>https://aixin.me/post/springdatajpa/</guid>
+      <guid>https://aixin.me/post/spring-data-jpa/</guid>
       <description>Springboot集成SpringDataJPA</description>
     </item>
     <item>
