@@ -4,22 +4,29 @@
     <title>Tags on Aixin.me</title>
     <link>https://aixin.me/tags/</link>
     <description>Recent content in Tags on Aixin.me</description>
-    <generator>Hugo -- 0.144.2</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Mar 2025 21:06:33 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 Apr 2025 15:17:56 +0800</lastBuildDate>
     <atom:link href="https://aixin.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Vue</title>
-      <link>https://aixin.me/tags/vue/</link>
-      <pubDate>Wed, 19 Mar 2025 21:06:33 +0800</pubDate>
-      <guid>https://aixin.me/tags/vue/</guid>
+      <title>Mysql</title>
+      <link>https://aixin.me/tags/mysql/</link>
+      <pubDate>Fri, 25 Apr 2025 15:17:56 +0800</pubDate>
+      <guid>https://aixin.me/tags/mysql/</guid>
       <description></description>
     </item>
     <item>
       <title>Springboot</title>
       <link>https://aixin.me/tags/springboot/</link>
-      <pubDate>Wed, 12 Mar 2025 14:16:07 +0800</pubDate>
+      <pubDate>Fri, 25 Apr 2025 14:52:45 +0800</pubDate>
       <guid>https://aixin.me/tags/springboot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vue</title>
+      <link>https://aixin.me/tags/vue/</link>
+      <pubDate>Wed, 19 Mar 2025 21:06:33 +0800</pubDate>
+      <guid>https://aixin.me/tags/vue/</guid>
       <description></description>
     </item>
     <item>
