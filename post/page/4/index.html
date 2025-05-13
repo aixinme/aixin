@@ -15,7 +15,9 @@ $f^*$ = 应投注的资本比值 p = 获胜的概率 q = 失败的概率 b = 赔
 真正应该关心的是长期累积的收入，对于累积的收益来说，最后的结果只和输赢的局数有关，而和输赢的顺序无关。所以凯利公式推出了一个最佳的投入仓位比，来最大化长期的累积收益： $$ bet = edge / odds $$
 最佳仓位bet = 预期获益 / 获益回报 edge：赢面 odds：赔率
 $$ edge = bp - q $$
-...</p></div><footer class=entry-footer><span title='2019-12-17 14:49:55 +0000 UTC'>2019-12-17</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;123 words</footer><a class=entry-link aria-label="post link to 量化交易相关名词解释" href=https://aixin.me/post/quantitative-trading-learning/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>静态博客Hugo安装及使用教程</h2></header><div class=entry-content><p>一、安装 1、下载 最新版下载地址：https://github.com/gohugoio/hugo/releases
+...</p></div><footer class=entry-footer><span title='2019-12-17 14:49:55 +0000 UTC'>2019-12-17</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;123 words</footer><a class=entry-link aria-label="post link to 量化交易相关名词解释" href=https://aixin.me/post/quantitative-trading-learning/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>静态博客Hugo安装及使用教程</h2></header><div class=entry-content><p>常用命令：
+1 2 3 4 // 本地运行 hugo server --ignoreCache --watch // 发布网站 hugo --baseURL=https://aixin.me/ Github Pages：发布网站内容，必须包含文件CNAME，内容为网站域名（不要https）：aixin.me
+一、安装 1、下载 最新版下载地址：https://github.com/gohugoio/hugo/releases
 下载 Windows-64bit.zip
 2、新建本地目录 D:\Hugo\bin
 D:\Hugo\Sites
@@ -31,12 +33,5 @@ D:\Hugo\Sites
 然后在D:\Hugo\Sites下面就会新建一个simple文件夹
 三、内容管理 1、目录说明 archetypes/ 创建页面的原型文件，比如标题时间等，可以自定义
 content/ markdown原文件存储目录
-layouts/ 样式自定义时需要
-static/ 静态文件
-themes/ 主题会安装在这儿
-config.toml 配置文件
-2、创建页面 在网站目录下面执行命令
-1 hugo new about.md 自动在当前网站下的content目录下生成about.md文件
-3、创建文章 1 hugo new post/hello-world.md 自动在content/post下面生成hello-world.md文件
-...</p></div><footer class=entry-footer><span title='2019-01-05 09:52:17 +0800 CST'>2019-01-05</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;813 words</footer><a class=entry-link aria-label="post link to 静态博客Hugo安装及使用教程" href=https://aixin.me/post/how-to-hugo/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://aixin.me/post/page/3/>«&nbsp;Prev&nbsp;</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://aixin.me/>Aixin.me</a></span> ·</footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+...</p></div><footer class=entry-footer><span title='2019-01-05 09:52:17 +0800 CST'>2019-01-05</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;830 words</footer><a class=entry-link aria-label="post link to 静态博客Hugo安装及使用教程" href=https://aixin.me/post/how-to-hugo/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://aixin.me/post/page/3/>«&nbsp;Prev&nbsp;</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://aixin.me/>Aixin.me</a></span> ·</footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
