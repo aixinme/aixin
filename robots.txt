@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://aixin.me/sitemap.xml
+Sitemap: https://blog.aixin.me/sitemap.xml

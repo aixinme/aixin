@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>量化交易 on Aixin.me</title>
-    <link>https://aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</link>
+    <link>https://blog.aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</link>
     <description>Recent content in 量化交易 on Aixin.me</description>
-    <generator>Hugo -- 0.144.2</generator>
+    <generator>Hugo -- 0.153.2</generator>
     <language>en</language>
     <lastBuildDate>Fri, 27 Dec 2019 10:41:39 +0000</lastBuildDate>
-    <atom:link href="https://aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ATR：均幅指标</title>
-      <link>https://aixin.me/post/average-true-range/</link>
+      <link>https://blog.aixin.me/post/average-true-range/</link>
       <pubDate>Fri, 27 Dec 2019 10:41:39 +0000</pubDate>
-      <guid>https://aixin.me/post/average-true-range/</guid>
+      <guid>https://blog.aixin.me/post/average-true-range/</guid>
       <description>&lt;p&gt;Average True Range
 取一定时间周期内的股价波动幅度的移动平均值，通常使用14天。&lt;/p&gt;
 &lt;p&gt;由于惊恐抛售所驱使的价格的剧烈下跌，这一指标在市场底部通常可以达到一个较高的价值。这一指标对于长期持续边幅移动的时段是非常典型的，这一情况通常发生在市场的顶部，或者是在价格巩固期间。平均波幅通道技术指标依据同样的原则，可以被解释成为其他一些易变指数。根据这个指标来进行预测的原则可以表达为：该指标价值越高，趋势改变的可能性就越高；该指标的价值越低，趋势的移动性就越弱。&lt;/p&gt;
@@ -22,13 +22,15 @@ p：上一个节点previous
 n：时间单元unit；
 Ci：第i日的收盘价close；
 Hi：第i日的最高价height；
-Li：第i日的最低价low。&lt;/p&gt;&lt;/blockquote&gt;
+Li：第i日的最低价low。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;$$
 TR = Max[(H-L),Abs(H-C_p),Abs(L-C_p)]
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Max 取最大值
-Abs 取绝对值absolute&lt;/p&gt;&lt;/blockquote&gt;
+Abs 取绝对值absolute&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;$$
 ATR = \Big( \frac{1}{n}\Big) \sum^{(n)}_{(i=1)} TR_i
 $$&lt;/p&gt;
@@ -46,9 +48,9 @@ ATR的使用通常用作退出方法，无论如何做出进入决定&lt;/p&gt;
     </item>
     <item>
       <title>BackTrader学习笔记</title>
-      <link>https://aixin.me/post/backtrader/</link>
+      <link>https://blog.aixin.me/post/backtrader/</link>
       <pubDate>Mon, 23 Dec 2019 10:17:48 +0000</pubDate>
-      <guid>https://aixin.me/post/backtrader/</guid>
+      <guid>https://blog.aixin.me/post/backtrader/</guid>
       <description>&lt;h2 id=&#34;一backtrader介绍&#34;&gt;一、BackTrader介绍&lt;/h2&gt;
 &lt;p&gt;BackTrader是开源免费的量化交易策略回测系统，
 运行流程：&lt;/p&gt;
@@ -94,7 +96,8 @@ python安装源文件，自己搜索&lt;/p&gt;
 前2个值：[-2]
 ……&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;说明：所有的数字都是历史值，所以只能往后推&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;说明：所有的数字都是历史值，所以只能往后推&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h5 id=&#34;1基本功能&#34;&gt;1、基本功能&lt;/h5&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -136,9 +139,9 @@ python安装源文件，自己搜索&lt;/p&gt;
     </item>
     <item>
       <title>MA/SMA/EMA</title>
-      <link>https://aixin.me/post/moving-average/</link>
+      <link>https://blog.aixin.me/post/moving-average/</link>
       <pubDate>Fri, 20 Dec 2019 18:13:57 +0000</pubDate>
-      <guid>https://aixin.me/post/moving-average/</guid>
+      <guid>https://blog.aixin.me/post/moving-average/</guid>
       <description>&lt;h4 id=&#34;mamoving-average移动平均线&#34;&gt;MA(Moving Average):移动平均线&lt;/h4&gt;
 &lt;p&gt;可以过滤随机价格波动中的噪音来帮助平滑价格走势，基于过去的价格，因此时趋势跟踪。包括简单移动平均线(SMA)和指数移动平均线(EMA)，常见应用为确定趋势方向并确定支撑位和阻力位&lt;/p&gt;
 &lt;ul&gt;
@@ -164,9 +167,9 @@ d:天数或期数&lt;/p&gt;
     </item>
     <item>
       <title>常用平均数</title>
-      <link>https://aixin.me/post/average/</link>
+      <link>https://blog.aixin.me/post/average/</link>
       <pubDate>Fri, 20 Dec 2019 16:10:56 +0000</pubDate>
-      <guid>https://aixin.me/post/average/</guid>
+      <guid>https://blog.aixin.me/post/average/</guid>
       <description>&lt;h4 id=&#34;算数平均数&#34;&gt;算数平均数&lt;/h4&gt;
 &lt;p&gt;一组数据的所有数据之和除以数据个数，反映数据集中的趋势
 $$
@@ -194,9 +197,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>MACD 平滑异同移动平均指标</title>
-      <link>https://aixin.me/post/macd/</link>
+      <link>https://blog.aixin.me/post/macd/</link>
       <pubDate>Fri, 20 Dec 2019 15:46:45 +0000</pubDate>
-      <guid>https://aixin.me/post/macd/</guid>
+      <guid>https://blog.aixin.me/post/macd/</guid>
       <description>&lt;h4 id=&#34;macd原理介绍&#34;&gt;MACD原理介绍&lt;/h4&gt;
 &lt;p&gt;MACD(Moving Average Convergence Divergence),是根据均线的构造原理，对股票价格的收盘价进行平滑处理，求出算术平均值以后再进行计算，是一种趋向类指标。&lt;/p&gt;
 &lt;p&gt;MACD指标是运用快速（短期）和慢速（长期）移动平均线及其聚合与分离的征兆，加以双重平滑运算。而根据移动平均线原理发展出来的MACD，一则去除了移动平均线频繁发出假信号的缺陷，二则保留了移动平均线的效果，因此，MACD指标具有均线趋势性、稳重性、安定性等特点，是用来研判买卖股票的时机，预测股票价格涨跌的技术分析指标 。&lt;/p&gt;
@@ -215,13 +218,14 @@ DIF值越大，上涨趋势越大，DIF值越小，下跌趋势越大&lt;/p&gt;
     </item>
     <item>
       <title>量化交易相关名词解释</title>
-      <link>https://aixin.me/post/quantitative-trading-learning/</link>
+      <link>https://blog.aixin.me/post/quantitative-trading-learning/</link>
       <pubDate>Tue, 17 Dec 2019 14:49:55 +0000</pubDate>
-      <guid>https://aixin.me/post/quantitative-trading-learning/</guid>
+      <guid>https://blog.aixin.me/post/quantitative-trading-learning/</guid>
       <description>&lt;h1 id=&#34;一凯利公式&#34;&gt;一、凯利公式&lt;/h1&gt;
 &lt;p&gt;英文：The Kelly Criterion&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;在概率论中，凯利公式（也称 “凯利方程式”）是一个在期望净收益为正的独立重复赌局中，使本金的长期增长率最大化的投注策略。该公式于 1956 年由约翰·拉里·凯利（John Larry Kelly）在《贝尔系统技术期刊》中发表，可以用来计算每次游戏中应投注的资金比例。若赌局的期望净收益为零或为负，凯利公式给出的结论是不赌为赢。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;在概率论中，凯利公式（也称 “凯利方程式”）是一个在期望净收益为正的独立重复赌局中，使本金的长期增长率最大化的投注策略。该公式于 1956 年由约翰·拉里·凯利（John Larry Kelly）在《贝尔系统技术期刊》中发表，可以用来计算每次游戏中应投注的资金比例。若赌局的期望净收益为零或为负，凯利公式给出的结论是不赌为赢。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;公式：&lt;/strong&gt;
 $$
 f^* = \frac {bp-q}{b} = \frac {p(b+1)-1}{b}
@@ -230,7 +234,8 @@ $$&lt;/p&gt;
 &lt;p&gt;$f^*$ = 应投注的资本比值
 p = 获胜的概率
 q = 失败的概率
-b = 赔率&lt;/p&gt;&lt;/blockquote&gt;
+b = 赔率&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;例子：有一个简单2赔1的赌局，扔硬币下注，硬币为正面则得2元，如果为反面则输掉1元，你的总资产为100元，每一次的押注都可投入任意金额。你会怎么赌呢？&lt;/p&gt;
 &lt;p&gt;硬币抛出正反面的概率都是50%，所以p、q获胜失败的概率都为0.5，而赔率＝期望盈利÷可能亏损=2元盈利÷1元亏损，赔率就是2，我们要求的答案是f，也就是(bp - q) ÷ b = (2 * 50% - 50%) ÷ 2 = 25%。&lt;strong&gt;拿出资金的25%来进行下注，才能使赌局收益最大化&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;真正应该关心的是长期累积的收入，对于累积的收益来说，最后的结果只和输赢的局数有关，而和输赢的顺序无关。所以凯利公式推出了一个最佳的投入仓位比，来最大化长期的累积收益：
@@ -240,7 +245,8 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;最佳仓位bet = 预期获益 / 获益回报
 edge：赢面
-odds：赔率&lt;/p&gt;&lt;/blockquote&gt;
+odds：赔率&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;$$
 edge = bp - q
 $$&lt;/p&gt;</description>
