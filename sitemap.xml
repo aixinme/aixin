@@ -2,148 +2,148 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aixin.me/about/</loc>
+    <loc>https://blog.aixin.me/about/</loc>
     <lastmod>2020-11-03T16:54:38+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/</loc>
+    <loc>https://blog.aixin.me/</loc>
     <lastmod>2025-06-12T14:58:22+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/</loc>
+    <loc>https://blog.aixin.me/post/</loc>
     <lastmod>2025-06-12T14:58:22+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/tags/springboot/</loc>
+    <loc>https://blog.aixin.me/tags/springboot/</loc>
     <lastmod>2025-06-12T14:58:22+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-async/</loc>
+    <loc>https://blog.aixin.me/post/springboot-async/</loc>
     <lastmod>2025-06-12T14:58:22+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/tags/</loc>
+    <loc>https://blog.aixin.me/tags/</loc>
     <lastmod>2025-06-12T14:58:22+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/validatorjs/</loc>
+    <loc>https://blog.aixin.me/post/validatorjs/</loc>
     <lastmod>2025-05-13T11:33:42+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-jwt/</loc>
+    <loc>https://blog.aixin.me/post/springboot-jwt/</loc>
     <lastmod>2025-04-30T17:06:13+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-response/</loc>
+    <loc>https://blog.aixin.me/post/springboot-response/</loc>
     <lastmod>2025-04-30T17:05:59+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-sentinel/</loc>
+    <loc>https://blog.aixin.me/post/springboot-sentinel/</loc>
     <lastmod>2025-04-30T13:51:57+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/tags/mysql/</loc>
+    <loc>https://blog.aixin.me/tags/mysql/</loc>
     <lastmod>2025-04-25T15:17:56+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/mysql-json-contains/</loc>
+    <loc>https://blog.aixin.me/post/mysql-json-contains/</loc>
     <lastmod>2025-04-25T15:17:56+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-upload-images/</loc>
+    <loc>https://blog.aixin.me/post/springboot-upload-images/</loc>
     <lastmod>2025-04-25T14:52:45+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-redisson/</loc>
+    <loc>https://blog.aixin.me/post/springboot-redisson/</loc>
     <lastmod>2025-04-25T14:34:45+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-rate-limiting/</loc>
+    <loc>https://blog.aixin.me/post/springboot-rate-limiting/</loc>
     <lastmod>2025-04-25T14:21:48+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/antdv/</loc>
+    <loc>https://blog.aixin.me/post/antdv/</loc>
     <lastmod>2025-03-19T21:06:33+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/tags/vue/</loc>
+    <loc>https://blog.aixin.me/tags/vue/</loc>
     <lastmod>2025-03-19T21:06:33+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/mockjs/</loc>
+    <loc>https://blog.aixin.me/post/mockjs/</loc>
     <lastmod>2025-03-14T21:23:23+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/vue-axios-mock/</loc>
+    <loc>https://blog.aixin.me/post/vue-axios-mock/</loc>
     <lastmod>2025-03-13T22:47:43+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-lombok/</loc>
+    <loc>https://blog.aixin.me/post/springboot-lombok/</loc>
     <lastmod>2025-03-12T14:16:07+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-nested-data/</loc>
+    <loc>https://blog.aixin.me/post/springboot-nested-data/</loc>
     <lastmod>2025-03-11T17:12:03+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/spring-data-jpa/</loc>
+    <loc>https://blog.aixin.me/post/spring-data-jpa/</loc>
     <lastmod>2025-03-10T23:02:18+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/tags/sql/</loc>
+    <loc>https://blog.aixin.me/tags/sql/</loc>
     <lastmod>2025-03-08T23:54:43+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/basic-knowledge-of-sql/</loc>
+    <loc>https://blog.aixin.me/post/basic-knowledge-of-sql/</loc>
     <lastmod>2025-03-08T23:54:43+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-redis/</loc>
+    <loc>https://blog.aixin.me/post/springboot-redis/</loc>
     <lastmod>2025-03-06T13:47:43+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-filter/</loc>
+    <loc>https://blog.aixin.me/post/springboot-filter/</loc>
     <lastmod>2025-03-05T12:16:21+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-interceptor/</loc>
+    <loc>https://blog.aixin.me/post/springboot-interceptor/</loc>
     <lastmod>2025-03-05T12:16:02+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-config/</loc>
+    <loc>https://blog.aixin.me/post/springboot-config/</loc>
     <lastmod>2025-03-05T12:02:26+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/springboot-helloworld/</loc>
+    <loc>https://blog.aixin.me/post/springboot-helloworld/</loc>
     <lastmod>2025-03-05T11:27:57+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/regexp-tutorial/</loc>
+    <loc>https://blog.aixin.me/post/regexp-tutorial/</loc>
     <lastmod>2022-12-19T11:03:20+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/three-elements-of-project-management/</loc>
+    <loc>https://blog.aixin.me/post/three-elements-of-project-management/</loc>
     <lastmod>2022-10-28T10:42:00+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/opportunity-model/</loc>
+    <loc>https://blog.aixin.me/post/opportunity-model/</loc>
     <lastmod>2022-07-13T13:28:52+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/tags/javascript/</loc>
+    <loc>https://blog.aixin.me/tags/javascript/</loc>
     <lastmod>2021-11-15T12:33:04+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/javascript-validation-method/</loc>
+    <loc>https://blog.aixin.me/post/javascript-validation-method/</loc>
     <lastmod>2021-11-15T12:33:04+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/tags/axure/</loc>
+    <loc>https://blog.aixin.me/tags/axure/</loc>
     <lastmod>2021-08-06T16:09:52+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/axure-advanced-tutorial/</loc>
+    <loc>https://blog.aixin.me/post/axure-advanced-tutorial/</loc>
     <lastmod>2021-08-06T16:09:52+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/finance-accounting/</loc>
+    <loc>https://blog.aixin.me/post/finance-accounting/</loc>
     <lastmod>2020-01-17T15:06:55+00:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/</loc>
+    <loc>https://blog.aixin.me/tags/%E8%B4%A2%E4%BC%9A%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2020-01-17T15:06:55+00:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/average-true-range/</loc>
+    <loc>https://blog.aixin.me/post/average-true-range/</loc>
     <lastmod>2019-12-27T10:41:39+00:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</loc>
+    <loc>https://blog.aixin.me/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</loc>
     <lastmod>2019-12-27T10:41:39+00:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/backtrader/</loc>
+    <loc>https://blog.aixin.me/post/backtrader/</loc>
     <lastmod>2019-12-23T10:17:48+00:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/moving-average/</loc>
+    <loc>https://blog.aixin.me/post/moving-average/</loc>
     <lastmod>2019-12-20T18:13:57+00:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/average/</loc>
+    <loc>https://blog.aixin.me/post/average/</loc>
     <lastmod>2019-12-20T16:10:56+00:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/macd/</loc>
+    <loc>https://blog.aixin.me/post/macd/</loc>
     <lastmod>2019-12-20T15:46:45+00:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/quantitative-trading-learning/</loc>
+    <loc>https://blog.aixin.me/post/quantitative-trading-learning/</loc>
     <lastmod>2019-12-17T14:49:55+00:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/post/how-to-hugo/</loc>
+    <loc>https://blog.aixin.me/post/how-to-hugo/</loc>
     <lastmod>2019-01-05T09:52:17+08:00</lastmod>
   </url><url>
-    <loc>https://aixin.me/archives/</loc>
+    <loc>https://blog.aixin.me/archives/</loc>
   </url><url>
-    <loc>https://aixin.me/categories/</loc>
+    <loc>https://blog.aixin.me/categories/</loc>
   </url><url>
-    <loc>https://aixin.me/search/</loc>
+    <loc>https://blog.aixin.me/search/</loc>
   </url>
 </urlset>
